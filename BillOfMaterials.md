@@ -2,3 +2,33 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
+|DeWalt DWP611 compact router (required, not included in the Maslow kit; D26200 in 240 V regions)|1|$0.00||
+|1/4 Inch Two Flute Up Spiral Router Bit|1|$9.75|https://shop.maslowcnc.com/products/1-4-inch-two-flute-up-spiral-router-bit|
+|148ZZ Bearing (7 per arm: idler gear, drive shaft and belt rollers; one shown)|28|$5.60|https://shop.maslowcnc.com/products/148zz-bearing|
+|Arm Half - Maslow 4.1|8|$43.68|https://shop.maslowcnc.com/products/arm-half-maslow-4-1|
+|Belt and Spool (spool with 14.5 ft steel reinforced 2GT belt)|4|$20.00|https://shop.maslowcnc.com/products/belt-and-spool|
+|Belt End Half|8|$8.00|https://shop.maslowcnc.com/products/belt-end-bag|
+|Belt Guard (Belt Guard Bag - Maslow 4.1, 4 per bag)|4|$6.36|https://shop.maslowcnc.com/products/belt-guard-bag-maslow-4-1|
+|Original Clamp Wedge|2|$4.00|https://shop.maslowcnc.com/products/clamp-wedge|
+|Cooling Fan - Maslow 4.1 (60 mm, brushless)|1|$11.25|https://shop.maslowcnc.com/products/cooling-fan|
+|DC Motor (planetary gearbox drive motor)|4|$143.60|https://shop.maslowcnc.com/products/dc-motor|
+|Delrin Leadscrew Nut (comes installed on the Stepper Motor; spares sold in packs of 2)|2|$0.00|https://shop.maslowcnc.com/products/delrin-leadscrew-nut|
+|Drive Gear (steel, fits D-shaped 8 mm shaft, with set screw)|4|$14.00|https://shop.maslowcnc.com/products/drive-gear-bag|
+|Dust Cover (laser cut acrylic)|1|$2.80|https://shop.maslowcnc.com/products/dust-cover|
+|Encoder Magnet (glued into one belt roller)|4|$13.00|https://shop.maslowcnc.com/products/encoder-magnet-pack|
+|Encoder PCB, JST-XH (Encoder PCB 4 Pack)|4|$26.44|https://shop.maslowcnc.com/products/encoder-pcb-4-pack|
+|Idler Gear (steel, connects the drive gear to the spool)|4|$33.00|https://shop.maslowcnc.com/products/idler-gear-bag|
+|Inner Post|8|$14.00|https://shop.maslowcnc.com/products/inner-post-bag|
+|JST-XH 5 Axis Control Board|1|$35.50|https://shop.maslowcnc.com/products/jst-xh-5-axis-control-board-maslow|
+|Linear Bearing, fits 10 mm shaft (Linear Bearing Bag, 2 per bag)|4|$6.52|https://shop.maslowcnc.com/products/linear-bearing-bag|
+|Linear Rod Clamp (Linear Rod Clamp Bag, 2 per bag)|2|$2.26|https://shop.maslowcnc.com/products/linear-rod-clamp-bag-maslow|
+|Linear Rod, 10 mm hardened steel (Linear Rod Pack - Maslow 4.1, 2 per pack)|2|$7.26|https://shop.maslowcnc.com/products/linear-rod-pack|
+|PCB Enclosure Bottom (PCB holder)|1|$2.00|https://shop.maslowcnc.com/products/pcb-enclosure-bottom|
+|PCB Enclosure Top (PCB cover)|1|$4.25|https://shop.maslowcnc.com/products/pcb-enclosure-top|
+|Belt Roller (Roller Bag, 8 per bag)|8|$5.28|https://shop.maslowcnc.com/products/roller-bag|
+|Router Clamp|2|$22.12|https://shop.maslowcnc.com/products/router-clamp|
+|Sled|1|$25.25|https://shop.maslowcnc.com/products/sled|
+|Stepper Motor (Z axis, 5 mm x 2 mm pitch lead screw with POM nut)|2|$62.94|https://shop.maslowcnc.com/products/stepper-motor|
+|Support Riser (linear rod support)|2|$9.60|https://shop.maslowcnc.com/products/support-riser|
+|Support Riser Top (bag of 2)|2|$4.26|https://shop.maslowcnc.com/products/support-riser-top|
+|Total: |116|$542.72| |
