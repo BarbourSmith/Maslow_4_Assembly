@@ -14,6 +14,8 @@
 
 The machine above uses the 2.5 in adapter. These are the other sizes from the Maslow4 repository (1.25 in, 1.5 in, 2 in, 2.31 in, 4 in and 40 mm Festool), lined up side by side. Each has an Export atom so it can be downloaded as a STEP file and printed.
 
+__GEOMETRY_INPUT__
+
 # Maslow 4.1 Assembly
 
 A complete 3D assembly of the [Maslow 4.1](https://www.maslowcnc.com) CNC router, built to show how the machine goes together and what every part is. The printed and molded parts are the official STEP files from [MaslowCNC/Maslow4](https://github.com/MaslowCNC/Maslow4), loaded unmodified straight from that repository.
@@ -38,6 +40,8 @@ Each purchased part has a BOM tag that links to its page on [shop.maslowcnc.com]
 ## Building one
 
 Step-by-step instructions are in the [Maslow assembly guide](https://www.maslowcnc.com/assembly-guide). The CAD files are released under the CC BY-SA 4.0 license.
+
+__GEOMETRY_INPUT__
 
 
 

@@ -6793,8 +6793,7 @@
                                     },
                                     {
                                       "name": "y length",
-                                      "ioValue": 10,
-                                      "currentEquation": "10"
+                                      "ioValue": 10
                                     }
                                   ]
                                 },
@@ -7666,8 +7665,7 @@
                               "ioValues": [
                                 {
                                   "name": "number of sides",
-                                  "ioValue": 6,
-                                  "currentEquation": "6"
+                                  "ioValue": 6
                                 },
                                 {
                                   "name": "diameter",
