@@ -2,9 +2,7 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|12mm M3 Bolt|66|$0.00||
 |DeWalt DWP611 compact router (required, not included in the Maslow kit; D26200 in 240 V regions)|1|$0.00||
-|New Item|24|$0.00||
 |1/4 Inch Two Flute Up Spiral Router Bit|1|$9.75|https://shop.maslowcnc.com/products/1-4-inch-two-flute-up-spiral-router-bit|
 |148ZZ Bearing (7 per arm: idler gear, drive shaft and belt rollers; one shown)|28|$5.60|https://shop.maslowcnc.com/products/148zz-bearing|
 |Arm Half - Maslow 4.1|8|$43.68|https://shop.maslowcnc.com/products/arm-half-maslow-4-1|
@@ -23,15 +21,17 @@
 |Idler Gear (steel, connects the drive gear to the spool)|4|$33.00|https://shop.maslowcnc.com/products/idler-gear-bag|
 |Inner Post|8|$14.00|https://shop.maslowcnc.com/products/inner-post-bag|
 |JST-XH 5 Axis Control Board|1|$35.50|https://shop.maslowcnc.com/products/jst-xh-5-axis-control-board-maslow|
+|JST-XH Encoder Wire (encoder board to control board; shown as a short stub)|4|$13.88|https://shop.maslowcnc.com/products/jst-xh-encoder-wire-maslow|
 |Linear Bearing, fits 10 mm shaft (Linear Bearing Bag, 2 per bag)|4|$6.52|https://shop.maslowcnc.com/products/linear-bearing-bag|
 |Linear Rod Clamp (Linear Rod Clamp Bag, 2 per bag)|2|$2.26|https://shop.maslowcnc.com/products/linear-rod-clamp-bag-maslow|
 |Linear Rod, 10 mm hardened steel (Linear Rod Pack - Maslow 4.1, 2 per pack)|2|$7.26|https://shop.maslowcnc.com/products/linear-rod-pack|
 |PCB Enclosure Bottom (PCB holder)|1|$2.00|https://shop.maslowcnc.com/products/pcb-enclosure-bottom|
 |PCB Enclosure Top (PCB cover)|1|$4.25|https://shop.maslowcnc.com/products/pcb-enclosure-top|
+|Power Supply (UL listed, 120-240 V input, US cord included)|1|$35.00|https://shop.maslowcnc.com/products/power-supply|
 |Belt Roller (Roller Bag, 8 per bag)|8|$5.28|https://shop.maslowcnc.com/products/roller-bag|
 |Router Clamp|2|$22.12|https://shop.maslowcnc.com/products/router-clamp|
 |Sled|1|$25.25|https://shop.maslowcnc.com/products/sled|
 |Stepper Motor (Z axis, 5 mm x 2 mm pitch lead screw with POM nut)|2|$62.94|https://shop.maslowcnc.com/products/stepper-motor|
 |Support Riser (linear rod support)|2|$9.60|https://shop.maslowcnc.com/products/support-riser|
 |Support Riser Top (bag of 2)|2|$4.26|https://shop.maslowcnc.com/products/support-riser-top|
-|Total: |207|$550.95| |
+|Total: |122|$599.83| |

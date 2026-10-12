@@ -6,5 +6,38 @@
 
 
 
- 
+ ### Sled Assembly
+
+### Dust Hose Adapter Options
+
+## Dust hose adapter options
+
+The machine above uses the 2.5 in adapter. These are the other sizes from the Maslow4 repository (1.25 in, 1.5 in, 2 in, 2.31 in, 4 in and 40 mm Festool), lined up side by side. Each has an Export atom so it can be downloaded as a STEP file and printed.
+
+# Maslow 4.1 Assembly
+
+A complete 3D assembly of the [Maslow 4.1](https://www.maslowcnc.com) CNC router, built to show how the machine goes together and what every part is. The printed and molded parts are the official STEP files from [MaslowCNC/Maslow4](https://github.com/MaslowCNC/Maslow4), loaded unmodified straight from that repository.
+
+## How the project is organized
+
+- **Sled Assembly**: the sled, the acrylic dust cover, the 2.5 in dust hose adapter, the two Z axis stepper motors with their lead screws, and the two linear rod towers (linear rod, rod clamp, support riser and riser top). The other dust hose adapter sizes are in *Dust Hose Adapter Options*.
+- **Router Assembly**: the DeWalt DWP611 router held by two Router Clamps (each with its clamp wedge), the four uprights (two Inner Posts each, with linear bearings riding on the rods), the stack of four Arms, and the Controller (PCB holder, control board, cooling fan and PCB cover). Change the Move at the end of this molecule to raise or lower the router along the Z axis.
+- **Arm** (used four times): two Arm Halves around the Belt and Spool, the drive motor, encoder board and wire, drive and idler gears, the two belt rollers (one carries the encoder magnet), the belt guard, the belt and the two-piece belt end. The arms are stacked in the order shown in the assembly guide.
+- **Power Supply**.
+
+## Downloads
+
+Every part that comes from the Maslow4 repository has an Export atom, so in Run mode each one can be downloaded as a STEP file (Arm, Belt End, Belt Guard, Belt Roller, Clamp, Clamp Wedge, Dust Cover, all seven Dust Hose adapters, Inner Post, Linear Rods Clamp, PCB Cover, PCB Holder, Post Support, Post Top, Sled and Spool).
+
+Motors, gears, bearings, rods, circuit boards, the fan, the router and the M3 fasteners are simplified stand-ins, not manufacturer models.
+
+## Bill of materials
+
+Each purchased part has a BOM tag that links to its page on [shop.maslowcnc.com](https://shop.maslowcnc.com). Parts sold in bags or packs are priced per piece. All of the nuts and bolts come in the Hardware Bag. A DeWalt DWP611 router (D26200 in 240 V regions) is needed but is not included in the kit.
+
+## Building one
+
+Step-by-step instructions are in the [Maslow assembly guide](https://www.maslowcnc.com/assembly-guide). The CAD files are released under the CC BY-SA 4.0 license.
+
+
 
