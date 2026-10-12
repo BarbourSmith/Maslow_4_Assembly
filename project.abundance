@@ -7939,8 +7939,7 @@
                                       "ioValues": [
                                         {
                                           "name": "diameter",
-                                          "ioValue": 10,
-                                          "currentEquation": "10"
+                                          "ioValue": 10
                                         }
                                       ]
                                     },
