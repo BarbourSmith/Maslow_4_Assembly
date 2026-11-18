@@ -7,6 +7,663 @@
   "topLevel": true,
   "allAtoms": [
     {
+      "atomType": "Molecule",
+      "x": 0.2355,
+      "y": 0.7585,
+      "uniqueID": "id-14224",
+      "name": "Power Cable",
+      "ioValues": [
+        {
+          "name": "Power Supply",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Router",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-14226",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0254,
+          "y": 0.1538,
+          "uniqueID": "id-14228",
+          "name": "Power Supply",
+          "type": "geometry",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0254,
+          "y": 0.2462,
+          "uniqueID": "id-14231",
+          "name": "Router",
+          "type": "geometry",
+          "options": []
+        },
+        {
+          "atomType": "ExtractTag",
+          "x": 0.2,
+          "y": 0.3,
+          "uniqueID": "id-14234",
+          "name": "Extract Power Cable PSU End",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tagIndex": 0,
+          "selectedTags": [
+            "Power Cable PSU End"
+          ],
+          "includeUntagged": false,
+          "notKeepOut": false
+        },
+        {
+          "atomType": "ExtractTag",
+          "x": 0.2,
+          "y": 0.7,
+          "uniqueID": "id-14237",
+          "name": "Extract Power Cable Board End",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tagIndex": 0,
+          "selectedTags": [
+            "Power Cable Board End"
+          ],
+          "includeUntagged": false,
+          "notKeepOut": false
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.25,
+          "y": 0.5,
+          "uniqueID": "id-14240",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 0.4
+            },
+            {
+              "name": "y length",
+              "ioValue": 0.4
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.33,
+          "y": 0.5,
+          "uniqueID": "id-14244",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 0.4
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.42,
+          "y": 0.35,
+          "uniqueID": "id-14248",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": -242
+            },
+            {
+              "name": "yDist",
+              "ioValue": -187.25
+            },
+            {
+              "name": "zDist",
+              "ioValue": 18.8
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.42,
+          "y": 0.65,
+          "uniqueID": "id-14254",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0,
+              "currentEquation": "0"
+            },
+            {
+              "name": "yDist",
+              "ioValue": -68.4
+            },
+            {
+              "name": "zDist",
+              "ioValue": 243.25
+            }
+          ]
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.55,
+          "y": 0.3,
+          "uniqueID": "id-14265",
+          "name": "selected.EdgesByShape",
+          "ioValues": [
+            {
+              "name": "edgesOf",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "intersecting",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-14261",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.3451,
+              "y": 0.4486,
+              "uniqueID": "id-14262",
+              "ioValues": [
+                {
+                  "name": "input",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "boundingShape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "function run(input: Assembly, boundingShape: Assembly) {\n  const bounds: replicad.AnyShape[] = []\n  boundingShape.onLeafs((leaf) => {\n    if (!(leaf.geometry instanceof replicad.Drawing)) {\n      bounds.push(leaf.geometry)\n    }\n    return leaf;\n  })\n\n  if (bounds.length == 0) {\n    return input;\n  }\n\n  console.log(`Using ${bounds.length} bounding shapes`)\n\n  return input.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      throw new Error(\"Drawings have no Edges. Input must be 3d\")\n    }\n    // identify new indexes to mark as selected\n    const selectedIndexes = []\n    for (const bound of bounds) {\n      const finder = new replicad.EdgeFinder().inShape(bound)\n      const foundEdges = finder.find(leaf.geometry)\n      const allEdges = leaf.geometry.edges;\n      const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n      console.log(`found edges: ${foundEdges} indexes: ${indexes}`)\n      selectedIndexes.push(...indexes)\n    }\n\n    if (leaf.selection == undefined) {\n      leaf.selection = { edges: [] }\n    }\n    const before = leaf.selection.edges as number[];\n    leaf.selection.edges = [... new Set([...before, ...selectedIndexes])]\n    console.log(`updated selection list ${before} to ${leaf.selection.edges}`)\n    return leaf;\n  })\n}",
+              "compiledCode": "\"use strict\";\nfunction run(input, boundingShape) {\n    const bounds = [];\n    boundingShape.onLeafs((leaf) => {\n        if (!(leaf.geometry instanceof replicad.Drawing)) {\n            bounds.push(leaf.geometry);\n        }\n        return leaf;\n    });\n    if (bounds.length == 0) {\n        return input;\n    }\n    console.log(`Using ${bounds.length} bounding shapes`);\n    return input.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            throw new Error(\"Drawings have no Edges. Input must be 3d\");\n        }\n        // identify new indexes to mark as selected\n        const selectedIndexes = [];\n        for (const bound of bounds) {\n            const finder = new replicad.EdgeFinder().inShape(bound);\n            const foundEdges = finder.find(leaf.geometry);\n            const allEdges = leaf.geometry.edges;\n            const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n            console.log(`found edges: ${foundEdges} indexes: ${indexes}`);\n            selectedIndexes.push(...indexes);\n        }\n        if (leaf.selection == undefined) {\n            leaf.selection = { edges: [] };\n        }\n        const before = leaf.selection.edges;\n        leaf.selection.edges = [...new Set([...before, ...selectedIndexes])];\n        console.log(`updated selection list ${before} to ${leaf.selection.edges}`);\n        return leaf;\n    });\n}\n"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.1538,
+              "uniqueID": "id-14263",
+              "name": "edgesOf",
+              "type": "geometry",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.2462,
+              "uniqueID": "id-14264",
+              "name": "intersecting",
+              "type": "geometry",
+              "options": []
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-14262",
+              "ap2ID": "id-14261"
+            },
+            {
+              "ap2Name": "input",
+              "ap1ID": "id-14263",
+              "ap2ID": "id-14262"
+            },
+            {
+              "ap2Name": "boundingShape",
+              "ap1ID": "id-14264",
+              "ap2ID": "id-14262"
+            }
+          ],
+          "parentRepo": {
+            "owner": "tristan-huber",
+            "repoName": "selected.EdgesByShape",
+            "privateRepo": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1,
+          "scaleToProjectUnits": true,
+          "lastReloadedFromGithubAt": 1795037827049
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.55,
+          "y": 0.7,
+          "uniqueID": "id-14282",
+          "name": "selected.EdgesByShape",
+          "ioValues": [
+            {
+              "name": "edgesOf",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "intersecting",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-14278",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.3451,
+              "y": 0.4486,
+              "uniqueID": "id-14279",
+              "ioValues": [
+                {
+                  "name": "input",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "boundingShape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "function run(input: Assembly, boundingShape: Assembly) {\n  const bounds: replicad.AnyShape[] = []\n  boundingShape.onLeafs((leaf) => {\n    if (!(leaf.geometry instanceof replicad.Drawing)) {\n      bounds.push(leaf.geometry)\n    }\n    return leaf;\n  })\n\n  if (bounds.length == 0) {\n    return input;\n  }\n\n  console.log(`Using ${bounds.length} bounding shapes`)\n\n  return input.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      throw new Error(\"Drawings have no Edges. Input must be 3d\")\n    }\n    // identify new indexes to mark as selected\n    const selectedIndexes = []\n    for (const bound of bounds) {\n      const finder = new replicad.EdgeFinder().inShape(bound)\n      const foundEdges = finder.find(leaf.geometry)\n      const allEdges = leaf.geometry.edges;\n      const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n      console.log(`found edges: ${foundEdges} indexes: ${indexes}`)\n      selectedIndexes.push(...indexes)\n    }\n\n    if (leaf.selection == undefined) {\n      leaf.selection = { edges: [] }\n    }\n    const before = leaf.selection.edges as number[];\n    leaf.selection.edges = [... new Set([...before, ...selectedIndexes])]\n    console.log(`updated selection list ${before} to ${leaf.selection.edges}`)\n    return leaf;\n  })\n}",
+              "compiledCode": "\"use strict\";\nfunction run(input, boundingShape) {\n    const bounds = [];\n    boundingShape.onLeafs((leaf) => {\n        if (!(leaf.geometry instanceof replicad.Drawing)) {\n            bounds.push(leaf.geometry);\n        }\n        return leaf;\n    });\n    if (bounds.length == 0) {\n        return input;\n    }\n    console.log(`Using ${bounds.length} bounding shapes`);\n    return input.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            throw new Error(\"Drawings have no Edges. Input must be 3d\");\n        }\n        // identify new indexes to mark as selected\n        const selectedIndexes = [];\n        for (const bound of bounds) {\n            const finder = new replicad.EdgeFinder().inShape(bound);\n            const foundEdges = finder.find(leaf.geometry);\n            const allEdges = leaf.geometry.edges;\n            const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n            console.log(`found edges: ${foundEdges} indexes: ${indexes}`);\n            selectedIndexes.push(...indexes);\n        }\n        if (leaf.selection == undefined) {\n            leaf.selection = { edges: [] };\n        }\n        const before = leaf.selection.edges;\n        leaf.selection.edges = [...new Set([...before, ...selectedIndexes])];\n        console.log(`updated selection list ${before} to ${leaf.selection.edges}`);\n        return leaf;\n    });\n}\n"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.1538,
+              "uniqueID": "id-14280",
+              "name": "edgesOf",
+              "type": "geometry",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.2462,
+              "uniqueID": "id-14281",
+              "name": "intersecting",
+              "type": "geometry",
+              "options": []
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-14279",
+              "ap2ID": "id-14278"
+            },
+            {
+              "ap2Name": "input",
+              "ap1ID": "id-14280",
+              "ap2ID": "id-14279"
+            },
+            {
+              "ap2Name": "boundingShape",
+              "ap1ID": "id-14281",
+              "ap2ID": "id-14279"
+            }
+          ],
+          "parentRepo": {
+            "owner": "tristan-huber",
+            "repoName": "selected.EdgesByShape",
+            "privateRepo": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1,
+          "scaleToProjectUnits": true,
+          "lastReloadedFromGithubAt": 1795037832437
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.72,
+          "y": 0.5,
+          "uniqueID": "id-14303",
+          "name": "Wire_Between_Points",
+          "ioValues": [
+            {
+              "name": "Start Shape",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "End Shape",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Stiffness",
+              "ioValue": 0.5
+            },
+            {
+              "name": "Flip Start",
+              "ioValue": false
+            },
+            {
+              "name": "Flip End",
+              "ioValue": false
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-14295",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.6,
+              "y": 0.5,
+              "uniqueID": "id-14296",
+              "ioValues": [
+                {
+                  "name": "startShape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "endShape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "stiffness",
+                  "ioValue": 0.5
+                },
+                {
+                  "name": "flipStart",
+                  "ioValue": false
+                },
+                {
+                  "name": "flipEnd",
+                  "ioValue": false
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "/**\n * A round wire (or cable, hose, tube) routed smoothly between two round edges.\n *\n * Wire the parts in and pick a circular edge on each: on Start Shape where the\n * wire begins and on End Shape where it ends (a hole rim, the end of a pin or\n * terminal). The wire runs from the center of each circle, leaving straight\n * out along the circle's axis, and curves smoothly between them. Each end\n * leaves on the side facing the other end; Flip Start or Flip End sends it\n * out the other side. The wire is as thick as the start circle. For a wire\n * that has to go around something, chain several wires end to end.\n *\n * The centerline is a cubic Bezier curve, and the start circle is swept\n * along it.\n */\ntype V = [number, number, number];\n\nconst add = (a: V, b: V): V => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];\nconst sub = (a: V, b: V): V => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];\nconst mul = (a: V, k: number): V => [a[0] * k, a[1] * k, a[2] * k];\nconst dot = (a: V, b: V) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];\nconst cross = (a: V, b: V): V => [\n  a[1] * b[2] - a[2] * b[1],\n  a[2] * b[0] - a[0] * b[2],\n  a[0] * b[1] - a[1] * b[0],\n];\nconst len = (a: V) => Math.sqrt(dot(a, a));\nconst vec = (p: any): V => [p.x ?? p[0], p.y ?? p[1], p.z ?? p[2]];\n\n/** Center, axis and radius of a round edge from three points on it; null if straight. */\nfunction circleOf(edge: any): { center: V; axis: V; radius: number } | null {\n  const a = vec(edge.pointAt(0));\n  const b = vec(edge.pointAt(1 / 3));\n  const c = vec(edge.pointAt(2 / 3));\n  const ab = sub(b, a);\n  const ac = sub(c, a);\n  const n = cross(ab, ac);\n  const n2 = dot(n, n);\n  if (n2 < 1e-12 * dot(ab, ab) * dot(ac, ac)) return null; // collinear: straight edge\n  // Circumcenter of triangle abc\n  const center = add(\n    a,\n    mul(add(mul(cross(n, ab), dot(ac, ac)), mul(cross(ac, n), dot(ab, ab))), 1 / (2 * n2)),\n  );\n  return { center, axis: mul(n, 1 / Math.sqrt(n2)), radius: len(sub(a, center)) };\n}\n\n/** The circle picked on a shape input, with an error that says what to do. */\nfunction pickedCircle(shape: Assembly | undefined, label: string) {\n  const ask = `Pick a circular edge on ${label} Shape for this end of the wire (a hole rim or the end of a pin).`;\n  // An edge input with nothing wired in passes a number, not a shape.\n  if (!shape || typeof (shape as any).getSelectedEdges !== \"function\")\n    throw new Error(`Connect the part the wire ${label === \"Start\" ? \"starts\" : \"ends\"} at to ${label} Shape. ${ask}`);\n  const edges = shape.getSelectedEdges();\n  if (!edges || edges.length === 0) throw new Error(ask);\n  if (edges.length > 1) console.warn(`${label} Shape: ${edges.length} edges picked; using the first.`);\n  const circle = circleOf(edges[0]);\n  if (!circle) throw new Error(`The edge picked on ${label} Shape is straight. ${ask}`);\n  return circle;\n}\n\n/** Sweep a closed profile along a spine with OpenCascade's discrete trihedron. */\nfunction sweepDiscrete(profile: any, spine: any) {\n  const oc = replicad.getOC();\n  const builder = new oc.BRepOffsetAPI_MakePipeShell(spine.wrapped);\n  try {\n    builder.SetDiscreteMode();\n    builder.Add(profile.wrapped, false, true);\n    builder.Build();\n    builder.MakeSolid();\n    return replicad.cast(builder.Shape());\n  } finally {\n    builder.delete();\n  }\n}\n\nfunction run(\n  startShape: Assembly | undefined = undefined, // pick the circular edge the wire starts at\n  endShape: Assembly | undefined = undefined, // pick the circular edge the wire ends at\n  stiffness: number = 0.5, // how far the wire runs straight out before bending\n  flipStart: boolean = false, // leave the start circle out its other side\n  flipEnd: boolean = false, // leave the end circle out its other side\n): Assembly {\n  const stiff = Number(stiffness);\n  if (!(stiff > 0)) throw new Error(\"Stiffness must be more than 0.\");\n\n  const start = pickedCircle(startShape, \"Start\");\n  const end = pickedCircle(endShape, \"End\");\n  const p0 = start.center;\n  const p1 = end.center;\n  const gap = len(sub(p1, p0));\n  if (gap < 1e-6) throw new Error(\"The start and end circles are in the same place.\");\n\n  // A circle's axis points either way: take the side facing the other end,\n  // then let the flip toggle reverse it.\n  const outward = (axis: V, from: V, toward: V, flip: boolean): V => {\n    const d = dot(axis, sub(toward, from)) < 0 ? mul(axis, -1) : axis;\n    return flip === true ? mul(d, -1) : d;\n  };\n  const d0 = outward(start.axis, p0, p1, flipStart);\n  const d1 = outward(end.axis, p1, p0, flipEnd);\n\n  // One cubic Bezier: its control points sit out along each end's direction,\n  // a stiffness fraction of the gap away.\n  const reach = gap * stiff;\n  const spine = replicad.assembleWire([\n    replicad.makeBezierCurve([p0, add(p0, mul(d0, reach)), add(p1, mul(d1, reach)), p1]),\n  ]);\n\n  // Sweep the start circle's size, square to the start direction, along the centerline.\n  const profile = () => replicad.assembleWire([replicad.makeCircle(start.radius, p0, d0)]);\n  let wire;\n  try {\n    wire = sweepDiscrete(profile(), spine);\n  } catch (e) {\n    // The default (corrected Frenet) mode fails on these curves; Frenet works\n    // where the discrete trihedron doesn't.\n    wire = replicad.genericSweep(profile(), spine, { frenet: true });\n  }\n\n  const length = replicad.measureLength(spine);\n  console.log(`Wire: ${(start.radius * 2).toFixed(2)} diameter, ${length.toFixed(1)} long`);\n\n  return new Assembly({ geometry: wire, tags: [\"wire\"] });\n}\n",
+              "compiledCode": "\"use strict\";\nconst add = (a, b) => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];\nconst sub = (a, b) => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];\nconst mul = (a, k) => [a[0] * k, a[1] * k, a[2] * k];\nconst dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];\nconst cross = (a, b) => [\n    a[1] * b[2] - a[2] * b[1],\n    a[2] * b[0] - a[0] * b[2],\n    a[0] * b[1] - a[1] * b[0],\n];\nconst len = (a) => Math.sqrt(dot(a, a));\nconst vec = (p) => [p.x ?? p[0], p.y ?? p[1], p.z ?? p[2]];\n/** Center, axis and radius of a round edge from three points on it; null if straight. */\nfunction circleOf(edge) {\n    const a = vec(edge.pointAt(0));\n    const b = vec(edge.pointAt(1 / 3));\n    const c = vec(edge.pointAt(2 / 3));\n    const ab = sub(b, a);\n    const ac = sub(c, a);\n    const n = cross(ab, ac);\n    const n2 = dot(n, n);\n    if (n2 < 1e-12 * dot(ab, ab) * dot(ac, ac))\n        return null; // collinear: straight edge\n    // Circumcenter of triangle abc\n    const center = add(a, mul(add(mul(cross(n, ab), dot(ac, ac)), mul(cross(ac, n), dot(ab, ab))), 1 / (2 * n2)));\n    return { center, axis: mul(n, 1 / Math.sqrt(n2)), radius: len(sub(a, center)) };\n}\n/** The circle picked on a shape input, with an error that says what to do. */\nfunction pickedCircle(shape, label) {\n    const ask = `Pick a circular edge on ${label} Shape for this end of the wire (a hole rim or the end of a pin).`;\n    // An edge input with nothing wired in passes a number, not a shape.\n    if (!shape || typeof shape.getSelectedEdges !== \"function\")\n        throw new Error(`Connect the part the wire ${label === \"Start\" ? \"starts\" : \"ends\"} at to ${label} Shape. ${ask}`);\n    const edges = shape.getSelectedEdges();\n    if (!edges || edges.length === 0)\n        throw new Error(ask);\n    if (edges.length > 1)\n        console.warn(`${label} Shape: ${edges.length} edges picked; using the first.`);\n    const circle = circleOf(edges[0]);\n    if (!circle)\n        throw new Error(`The edge picked on ${label} Shape is straight. ${ask}`);\n    return circle;\n}\n/** Sweep a closed profile along a spine with OpenCascade's discrete trihedron. */\nfunction sweepDiscrete(profile, spine) {\n    const oc = replicad.getOC();\n    const builder = new oc.BRepOffsetAPI_MakePipeShell(spine.wrapped);\n    try {\n        builder.SetDiscreteMode();\n        builder.Add(profile.wrapped, false, true);\n        builder.Build();\n        builder.MakeSolid();\n        return replicad.cast(builder.Shape());\n    }\n    finally {\n        builder.delete();\n    }\n}\nfunction run(startShape = undefined, // pick the circular edge the wire starts at\nendShape = undefined, // pick the circular edge the wire ends at\nstiffness = 0.5, // how far the wire runs straight out before bending\nflipStart = false, // leave the start circle out its other side\nflipEnd = false) {\n    const stiff = Number(stiffness);\n    if (!(stiff > 0))\n        throw new Error(\"Stiffness must be more than 0.\");\n    const start = pickedCircle(startShape, \"Start\");\n    const end = pickedCircle(endShape, \"End\");\n    const p0 = start.center;\n    const p1 = end.center;\n    const gap = len(sub(p1, p0));\n    if (gap < 1e-6)\n        throw new Error(\"The start and end circles are in the same place.\");\n    // A circle's axis points either way: take the side facing the other end,\n    // then let the flip toggle reverse it.\n    const outward = (axis, from, toward, flip) => {\n        const d = dot(axis, sub(toward, from)) < 0 ? mul(axis, -1) : axis;\n        return flip === true ? mul(d, -1) : d;\n    };\n    const d0 = outward(start.axis, p0, p1, flipStart);\n    const d1 = outward(end.axis, p1, p0, flipEnd);\n    // One cubic Bezier: its control points sit out along each end's direction,\n    // a stiffness fraction of the gap away.\n    const reach = gap * stiff;\n    const spine = replicad.assembleWire([\n        replicad.makeBezierCurve([p0, add(p0, mul(d0, reach)), add(p1, mul(d1, reach)), p1]),\n    ]);\n    // Sweep the start circle's size, square to the start direction, along the centerline.\n    const profile = () => replicad.assembleWire([replicad.makeCircle(start.radius, p0, d0)]);\n    let wire;\n    try {\n        wire = sweepDiscrete(profile(), spine);\n    }\n    catch (e) {\n        // The default (corrected Frenet) mode fails on these curves; Frenet works\n        // where the discrete trihedron doesn't.\n        wire = replicad.genericSweep(profile(), spine, { frenet: true });\n    }\n    const length = replicad.measureLength(spine);\n    console.log(`Wire: ${(start.radius * 2).toFixed(2)} diameter, ${length.toFixed(1)} long`);\n    return new Assembly({ geometry: wire, tags: [\"wire\"] });\n}\n"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.1538,
+              "uniqueID": "id-14297",
+              "name": "Start Shape",
+              "type": "edgeselect",
+              "options": [],
+              "selectedEdgeData": {
+                "1": [
+                  3
+                ]
+              }
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.2462,
+              "uniqueID": "id-14298",
+              "name": "End Shape",
+              "type": "edgeselect",
+              "options": [],
+              "selectedEdgeData": {
+                "1": [
+                  3
+                ]
+              }
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.3385,
+              "uniqueID": "id-14299",
+              "name": "Stiffness",
+              "type": "number",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.4308,
+              "uniqueID": "id-14300",
+              "name": "Flip Start",
+              "type": "boolean",
+              "options": []
+            },
+            {
+              "atomType": "Input",
+              "x": 0.0254,
+              "y": 0.5231,
+              "uniqueID": "id-14301",
+              "name": "Flip End",
+              "type": "boolean",
+              "options": []
+            },
+            {
+              "atomType": "Color",
+              "x": 0.78,
+              "y": 0.5,
+              "uniqueID": "id-14302",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "selectedColor": "Default"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-14296",
+              "ap2ID": "id-14302"
+            },
+            {
+              "ap2Name": "startShape",
+              "ap1ID": "id-14297",
+              "ap2ID": "id-14296"
+            },
+            {
+              "ap2Name": "endShape",
+              "ap1ID": "id-14298",
+              "ap2ID": "id-14296"
+            },
+            {
+              "ap2Name": "stiffness",
+              "ap1ID": "id-14299",
+              "ap2ID": "id-14296"
+            },
+            {
+              "ap2Name": "flipStart",
+              "ap1ID": "id-14300",
+              "ap2ID": "id-14296"
+            },
+            {
+              "ap2Name": "flipEnd",
+              "ap1ID": "id-14301",
+              "ap2ID": "id-14296"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-14302",
+              "ap2ID": "id-14295"
+            }
+          ],
+          "parentRepo": {
+            "owner": "BarbourSmith",
+            "repoName": "Wire_Between_Points",
+            "privateRepo": false
+          },
+          "unitsKey": "MM",
+          "fileTypeVersion": 1,
+          "scaleToProjectUnits": true,
+          "lastReloadedFromGithubAt": 1795037833112
+        },
+        {
+          "atomType": "Color",
+          "x": 0.86,
+          "y": 0.5,
+          "uniqueID": "id-14326",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "selectedColor": "Black"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-14228",
+          "ap2ID": "id-14234"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-14231",
+          "ap2ID": "id-14237"
+        },
+        {
+          "ap2Name": "edgesOf",
+          "ap1ID": "id-14234",
+          "ap2ID": "id-14265"
+        },
+        {
+          "ap2Name": "edgesOf",
+          "ap1ID": "id-14237",
+          "ap2ID": "id-14282"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-14240",
+          "ap2ID": "id-14244"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-14244",
+          "ap2ID": "id-14248"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-14244",
+          "ap2ID": "id-14254"
+        },
+        {
+          "ap2Name": "intersecting",
+          "ap1ID": "id-14248",
+          "ap2ID": "id-14265"
+        },
+        {
+          "ap2Name": "intersecting",
+          "ap1ID": "id-14254",
+          "ap2ID": "id-14282"
+        },
+        {
+          "ap2Name": "Start Shape",
+          "ap1ID": "id-14265",
+          "ap2ID": "id-14303"
+        },
+        {
+          "ap2Name": "End Shape",
+          "ap1ID": "id-14282",
+          "ap2ID": "id-14303"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-14303",
+          "ap2ID": "id-14326"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-14326",
+          "ap2ID": "id-14226"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.9,
+      "y": 0.9,
+      "uniqueID": "id-14333",
+      "ioValues": [
+        {
+          "name": "makeDisjoint",
+          "ioValue": false
+        },
+        {
+          "name": "Shape 1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape3",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape4",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
       "atomType": "Output",
       "x": 1,
       "y": 0.5,
@@ -42,6 +699,10 @@
         },
         {
           "name": "Shape4",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape5",
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
@@ -4946,6 +5607,206 @@
       "topLevel": false,
       "allAtoms": [
         {
+          "atomType": "Molecule",
+          "x": 0.45,
+          "y": 0.8,
+          "uniqueID": "id-14189",
+          "name": "DC Cable Gland",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-14191",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.1,
+              "y": 0.5,
+              "uniqueID": "id-14193",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 5.5
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.25,
+              "y": 0.5,
+              "uniqueID": "id-14196",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 3
+                }
+              ]
+            },
+            {
+              "atomType": "Rotate",
+              "x": 0.4,
+              "y": 0.5,
+              "uniqueID": "id-14200",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "x-axis degrees",
+                  "ioValue": 0
+                },
+                {
+                  "name": "y-axis degrees",
+                  "ioValue": 90
+                },
+                {
+                  "name": "z-axis degrees",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.55,
+              "y": 0.5,
+              "uniqueID": "id-14206",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": -245
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": -190
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 19
+                }
+              ]
+            },
+            {
+              "atomType": "Color",
+              "x": 0.7,
+              "y": 0.5,
+              "uniqueID": "id-14212",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "selectedColor": "Black"
+            },
+            {
+              "atomType": "Tag",
+              "x": 0.85,
+              "y": 0.5,
+              "uniqueID": "id-14215",
+              "name": "Power Cable PSU End",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tags": [
+                "Power Cable PSU End"
+              ]
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-14193",
+              "ap2ID": "id-14196"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-14196",
+              "ap2ID": "id-14200"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-14200",
+              "ap2ID": "id-14206"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-14206",
+              "ap2ID": "id-14212"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-14212",
+              "ap2ID": "id-14215"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-14215",
+              "ap2ID": "id-14191"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.65,
+          "y": 0.6,
+          "uniqueID": "id-14218",
+          "ioValues": [
+            {
+              "name": "makeDisjoint",
+              "ioValue": false
+            },
+            {
+              "name": "Shape 1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape3",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Tag",
+          "x": 0.75,
+          "y": 0.6,
+          "uniqueID": "id-14329",
+          "name": "Power Cable PSU End",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tags": [
+            "Power Cable PSU End"
+          ]
+        },
+        {
           "atomType": "Output",
           "x": 1,
           "y": 0.5,
@@ -5066,6 +5927,21 @@
       ],
       "allConnectors": [
         {
+          "ap2Name": "Shape2",
+          "ap1ID": "id-14189",
+          "ap2ID": "id-14218"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-14218",
+          "ap2ID": "id-14329"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-14329",
+          "ap2ID": "id-4583"
+        },
+        {
           "ap2Name": "geometry",
           "ap1ID": "id-4566",
           "ap2ID": "id-4570"
@@ -5081,9 +5957,9 @@
           "ap2ID": "id-4577"
         },
         {
-          "ap2Name": "geometry",
+          "ap2Name": "Shape 1",
           "ap1ID": "id-4577",
-          "ap2ID": "id-4583"
+          "ap2ID": "id-14218"
         },
         {
           "ap2Name": "number or geometry",
@@ -8107,30 +8983,6 @@
                                       ]
                                     },
                                     {
-                                      "atomType": "Rotate",
-                                      "x": 0.4,
-                                      "y": 0.5,
-                                      "uniqueID": "id-14122",
-                                      "ioValues": [
-                                        {
-                                          "name": "geometry",
-                                          "ioValue": "__GEOMETRY_INPUT__"
-                                        },
-                                        {
-                                          "name": "x-axis degrees",
-                                          "ioValue": 0
-                                        },
-                                        {
-                                          "name": "y-axis degrees",
-                                          "ioValue": -90
-                                        },
-                                        {
-                                          "name": "z-axis degrees",
-                                          "ioValue": 0
-                                        }
-                                      ]
-                                    },
-                                    {
                                       "atomType": "Output",
                                       "x": 1,
                                       "y": 0.5,
@@ -8166,7 +9018,7 @@
                                         },
                                         {
                                           "name": "height",
-                                          "ioValue": 5
+                                          "ioValue": 2
                                         }
                                       ]
                                     },
@@ -8182,15 +9034,15 @@
                                         },
                                         {
                                           "name": "xDist",
-                                          "ioValue": -12
+                                          "ioValue": 7
                                         },
                                         {
                                           "name": "yDist",
-                                          "ioValue": 3.5
+                                          "ioValue": 0
                                         },
                                         {
                                           "name": "zDist",
-                                          "ioValue": 84.8
+                                          "ioValue": 82
                                         }
                                       ]
                                     },
@@ -8219,15 +9071,15 @@
                                         },
                                         {
                                           "name": "xDist",
-                                          "ioValue": -12
+                                          "ioValue": -7
                                         },
                                         {
                                           "name": "yDist",
-                                          "ioValue": -3.5
+                                          "ioValue": 0
                                         },
                                         {
                                           "name": "zDist",
-                                          "ioValue": 84.8
+                                          "ioValue": 82
                                         }
                                       ]
                                     },
@@ -8277,23 +9129,18 @@
                                     },
                                     {
                                       "ap2Name": "geometry",
-                                      "ap1ID": "id-14122",
-                                      "ap2ID": "id-6968"
-                                    },
-                                    {
-                                      "ap2Name": "geometry",
-                                      "ap1ID": "id-14122",
-                                      "ap2ID": "id-6977"
-                                    },
-                                    {
-                                      "ap2Name": "geometry",
                                       "ap1ID": "id-6961",
                                       "ap2ID": "id-6964"
                                     },
                                     {
                                       "ap2Name": "geometry",
                                       "ap1ID": "id-6964",
-                                      "ap2ID": "id-14122"
+                                      "ap2ID": "id-6968"
+                                    },
+                                    {
+                                      "ap2Name": "geometry",
+                                      "ap1ID": "id-6964",
+                                      "ap2ID": "id-6977"
                                     },
                                     {
                                       "ap2Name": "geometry",
@@ -14464,15 +15311,15 @@
                             },
                             {
                               "name": "xDist",
-                              "ioValue": -51.979
+                              "ioValue": -66.475
                             },
                             {
                               "name": "yDist",
-                              "ioValue": 45.898
+                              "ioValue": 65.344
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 182.7
+                              "ioValue": 181.9
                             }
                           ]
                         },
@@ -14707,11 +15554,11 @@
                             },
                             {
                               "name": "Stiffness",
-                              "ioValue": 0.5
+                              "ioValue": 0.45
                             },
                             {
                               "name": "Flip Start",
-                              "ioValue": false
+                              "ioValue": true
                             },
                             {
                               "name": "Flip End",
@@ -14748,11 +15595,11 @@
                                 },
                                 {
                                   "name": "stiffness",
-                                  "ioValue": 0.5
+                                  "ioValue": 0.45
                                 },
                                 {
                                   "name": "flipStart",
-                                  "ioValue": false
+                                  "ioValue": true
                                 },
                                 {
                                   "name": "flipEnd",
@@ -15044,15 +15891,15 @@
                             },
                             {
                               "name": "xDist",
-                              "ioValue": -45.898
+                              "ioValue": -56.576
                             },
                             {
                               "name": "yDist",
-                              "ioValue": 51.979
+                              "ioValue": 55.444
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 182.7
+                              "ioValue": 181.9
                             }
                           ]
                         },
@@ -15287,11 +16134,11 @@
                             },
                             {
                               "name": "Stiffness",
-                              "ioValue": 0.5
+                              "ioValue": 0.45
                             },
                             {
                               "name": "Flip Start",
-                              "ioValue": false
+                              "ioValue": true
                             },
                             {
                               "name": "Flip End",
@@ -15328,11 +16175,11 @@
                                 },
                                 {
                                   "name": "stiffness",
-                                  "ioValue": 0.5
+                                  "ioValue": 0.45
                                 },
                                 {
                                   "name": "flipStart",
-                                  "ioValue": false
+                                  "ioValue": true
                                 },
                                 {
                                   "name": "flipEnd",
@@ -15353,7 +16200,7 @@
                               "options": [],
                               "selectedEdgeData": {
                                 "1": [
-                                  5
+                                  3
                                 ]
                               }
                             },
@@ -15736,15 +16583,15 @@
                             },
                             {
                               "name": "xDist",
-                              "ioValue": 51.979
+                              "ioValue": 66.475
                             },
                             {
                               "name": "yDist",
-                              "ioValue": -45.898
+                              "ioValue": -65.344
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 161.2
+                              "ioValue": 160.4
                             }
                           ]
                         },
@@ -16316,15 +17163,15 @@
                             },
                             {
                               "name": "xDist",
-                              "ioValue": 45.898
+                              "ioValue": 56.576
                             },
                             {
                               "name": "yDist",
-                              "ioValue": -51.979
+                              "ioValue": -55.444
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 161.2
+                              "ioValue": 160.4
                             }
                           ]
                         },
@@ -16625,7 +17472,7 @@
                               "options": [],
                               "selectedEdgeData": {
                                 "3": [
-                                  5
+                                  3
                                 ]
                               }
                             },
@@ -17008,15 +17855,15 @@
                             },
                             {
                               "name": "xDist",
-                              "ioValue": 45.898
+                              "ioValue": 65.344
                             },
                             {
                               "name": "yDist",
-                              "ioValue": 51.979
+                              "ioValue": 66.475
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 139.7
+                              "ioValue": 138.9
                             }
                           ]
                         },
@@ -17588,15 +18435,15 @@
                             },
                             {
                               "name": "xDist",
-                              "ioValue": 51.979
+                              "ioValue": 55.444
                             },
                             {
                               "name": "yDist",
-                              "ioValue": 45.898
+                              "ioValue": 56.576
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 139.7
+                              "ioValue": 138.9
                             }
                           ]
                         },
@@ -17897,7 +18744,7 @@
                               "options": [],
                               "selectedEdgeData": {
                                 "5": [
-                                  5
+                                  3
                                 ]
                               }
                             },
@@ -18280,15 +19127,15 @@
                             },
                             {
                               "name": "xDist",
-                              "ioValue": -45.898
+                              "ioValue": -65.344
                             },
                             {
                               "name": "yDist",
-                              "ioValue": -51.979
+                              "ioValue": -66.475
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 118.2
+                              "ioValue": 117.4
                             }
                           ]
                         },
@@ -18860,15 +19707,15 @@
                             },
                             {
                               "name": "xDist",
-                              "ioValue": -51.979
+                              "ioValue": -55.444
                             },
                             {
                               "name": "yDist",
-                              "ioValue": -45.898
+                              "ioValue": -56.576
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 118.2
+                              "ioValue": 117.4
                             }
                           ]
                         },
@@ -19169,7 +20016,7 @@
                               "options": [],
                               "selectedEdgeData": {
                                 "7": [
-                                  5
+                                  3
                                 ]
                               }
                             },
@@ -20927,8 +21774,352 @@
                     {
                       "name": "Shape3",
                       "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "Shape4",
+                      "ioValue": "__GEOMETRY_INPUT__"
                     }
                   ]
+                },
+                {
+                  "atomType": "Molecule",
+                  "x": 0.3,
+                  "y": 0.85,
+                  "uniqueID": "id-14128",
+                  "name": "XT60 Plug",
+                  "topLevel": false,
+                  "allAtoms": [
+                    {
+                      "atomType": "Output",
+                      "x": 0.98,
+                      "y": 0.5,
+                      "uniqueID": "id-14130",
+                      "ioValues": [
+                        {
+                          "name": "number or geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Molecule",
+                      "x": 0.3,
+                      "y": 0.3,
+                      "uniqueID": "id-14132",
+                      "name": "Plug Body",
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-14134",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Rectangle",
+                          "x": 0.15,
+                          "y": 0.5,
+                          "uniqueID": "id-14136",
+                          "ioValues": [
+                            {
+                              "name": "x length",
+                              "ioValue": 15.5
+                            },
+                            {
+                              "name": "y length",
+                              "ioValue": 16
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Extrude",
+                          "x": 0.35,
+                          "y": 0.5,
+                          "uniqueID": "id-14140",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "height",
+                              "ioValue": 8.2
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Move",
+                          "x": 0.55,
+                          "y": 0.5,
+                          "uniqueID": "id-14144",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "xDist",
+                              "ioValue": 0,
+                              "currentEquation": "0"
+                            },
+                            {
+                              "name": "yDist",
+                              "ioValue": -58.4
+                            },
+                            {
+                              "name": "zDist",
+                              "ioValue": 157.6
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Color",
+                          "x": 0.75,
+                          "y": 0.5,
+                          "uniqueID": "id-14150",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "selectedColor": "Yellow"
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-14136",
+                          "ap2ID": "id-14140"
+                        },
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-14140",
+                          "ap2ID": "id-14144"
+                        },
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-14144",
+                          "ap2ID": "id-14150"
+                        },
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-14150",
+                          "ap2ID": "id-14134"
+                        }
+                      ],
+                      "fileTypeVersion": 1
+                    },
+                    {
+                      "atomType": "Molecule",
+                      "x": 0.3,
+                      "y": 0.7,
+                      "uniqueID": "id-14153",
+                      "name": "Cable Stub",
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-14155",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Circle",
+                          "x": 0.12,
+                          "y": 0.5,
+                          "uniqueID": "id-14157",
+                          "ioValues": [
+                            {
+                              "name": "diameter",
+                              "ioValue": 5.5
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Extrude",
+                          "x": 0.3,
+                          "y": 0.5,
+                          "uniqueID": "id-14160",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "height",
+                              "ioValue": 2
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Rotate",
+                          "x": 0.48,
+                          "y": 0.5,
+                          "uniqueID": "id-14164",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "x-axis degrees",
+                              "ioValue": 90
+                            },
+                            {
+                              "name": "y-axis degrees",
+                              "ioValue": 0
+                            },
+                            {
+                              "name": "z-axis degrees",
+                              "ioValue": 0
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Move",
+                          "x": 0.66,
+                          "y": 0.5,
+                          "uniqueID": "id-14170",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "xDist",
+                              "ioValue": 0,
+                              "currentEquation": "0"
+                            },
+                            {
+                              "name": "yDist",
+                              "ioValue": -66.4
+                            },
+                            {
+                              "name": "zDist",
+                              "ioValue": 161.7
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Color",
+                          "x": 0.84,
+                          "y": 0.5,
+                          "uniqueID": "id-14176",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "selectedColor": "Black"
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-14157",
+                          "ap2ID": "id-14160"
+                        },
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-14160",
+                          "ap2ID": "id-14164"
+                        },
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-14164",
+                          "ap2ID": "id-14170"
+                        },
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-14170",
+                          "ap2ID": "id-14176"
+                        },
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-14176",
+                          "ap2ID": "id-14155"
+                        }
+                      ],
+                      "fileTypeVersion": 1
+                    },
+                    {
+                      "atomType": "Assembly",
+                      "x": 0.6,
+                      "y": 0.5,
+                      "uniqueID": "id-14179",
+                      "ioValues": [
+                        {
+                          "name": "makeDisjoint",
+                          "ioValue": false
+                        },
+                        {
+                          "name": "Shape 1",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "Shape2",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "Shape3",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Tag",
+                      "x": 0.8,
+                      "y": 0.5,
+                      "uniqueID": "id-14185",
+                      "name": "Power Cable Board End",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "tags": [
+                        "Power Cable Board End"
+                      ]
+                    }
+                  ],
+                  "allConnectors": [
+                    {
+                      "ap2Name": "Shape 1",
+                      "ap1ID": "id-14132",
+                      "ap2ID": "id-14179"
+                    },
+                    {
+                      "ap2Name": "Shape2",
+                      "ap1ID": "id-14153",
+                      "ap2ID": "id-14179"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-14179",
+                      "ap2ID": "id-14185"
+                    },
+                    {
+                      "ap2Name": "number or geometry",
+                      "ap1ID": "id-14185",
+                      "ap2ID": "id-14130"
+                    }
+                  ],
+                  "fileTypeVersion": 1
                 }
               ],
               "allConnectors": [
@@ -20946,6 +22137,11 @@
                   "ap2Name": "number or geometry",
                   "ap1ID": "id-12464",
                   "ap2ID": "id-12225"
+                },
+                {
+                  "ap2Name": "Shape3",
+                  "ap1ID": "id-14128",
+                  "ap2ID": "id-12464"
                 }
               ],
               "fileTypeVersion": 1
@@ -27156,9 +28352,24 @@
   ],
   "allConnectors": [
     {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-14224",
+      "ap2ID": "id-14333"
+    },
+    {
+      "ap2Name": "Shape4",
+      "ap1ID": "id-14224",
+      "ap2ID": "id-1791"
+    },
+    {
       "ap2Name": "number or geometry",
       "ap1ID": "id-1791",
       "ap2ID": "id-165"
+    },
+    {
+      "ap2Name": "Shape2",
+      "ap1ID": "id-323",
+      "ap2ID": "id-14333"
     },
     {
       "ap2Name": "Shape 1",
@@ -27171,9 +28382,24 @@
       "ap2ID": "id-9626"
     },
     {
+      "ap2Name": "Power Supply",
+      "ap1ID": "id-4562",
+      "ap2ID": "id-14224"
+    },
+    {
       "ap2Name": "Shape3",
       "ap1ID": "id-4562",
       "ap2ID": "id-1791"
+    },
+    {
+      "ap2Name": "Router",
+      "ap1ID": "id-657",
+      "ap2ID": "id-14224"
+    },
+    {
+      "ap2Name": "Shape3",
+      "ap1ID": "id-657",
+      "ap2ID": "id-14333"
     },
     {
       "ap2Name": "Shape2",
