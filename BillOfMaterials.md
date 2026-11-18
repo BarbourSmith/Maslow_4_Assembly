@@ -21,7 +21,7 @@
 |Idler Gear (steel, connects the drive gear to the spool)|4|$33.00|https://shop.maslowcnc.com/products/idler-gear-bag|
 |Inner Post|8|$14.00|https://shop.maslowcnc.com/products/inner-post-bag|
 |JST-XH 5 Axis Control Board|1|$35.50|https://shop.maslowcnc.com/products/jst-xh-5-axis-control-board-maslow|
-|JST-XH Encoder Wire (encoder board to control board; shown as a short stub)|4|$13.88|https://shop.maslowcnc.com/products/jst-xh-encoder-wire-maslow|
+|JST-XH Encoder Wire (encoder board to control board)|4|$13.88|https://shop.maslowcnc.com/products/jst-xh-encoder-wire-maslow|
 |Linear Bearing, fits 10 mm shaft (Linear Bearing Bag, 2 per bag)|4|$6.52|https://shop.maslowcnc.com/products/linear-bearing-bag|
 |Linear Rod Clamp (Linear Rod Clamp Bag, 2 per bag)|2|$2.26|https://shop.maslowcnc.com/products/linear-rod-clamp-bag-maslow|
 |Linear Rod, 10 mm hardened steel (Linear Rod Pack - Maslow 4.1, 2 per pack)|2|$7.26|https://shop.maslowcnc.com/products/linear-rod-pack|
