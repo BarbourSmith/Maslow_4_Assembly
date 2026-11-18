@@ -11736,7 +11736,7 @@
               "x": 0.25,
               "y": 0.15,
               "uniqueID": "id-12487",
-              "name": "Extract Tag",
+              "name": "Extract Encoder Cable Arm End",
               "ioValues": [
                 {
                   "name": "geometry",
@@ -11744,7 +11744,9 @@
                 }
               ],
               "tagIndex": 0,
-              "selectedTags": [],
+              "selectedTags": [
+                "Encoder Cable Arm End"
+              ],
               "includeUntagged": false,
               "notKeepOut": false
             },
@@ -11753,7 +11755,7 @@
               "x": 0.25,
               "y": 0.4,
               "uniqueID": "id-12490",
-              "name": "Extract Tag",
+              "name": "Extract Encoder Cable Board End",
               "ioValues": [
                 {
                   "name": "geometry",
@@ -11761,7 +11763,9 @@
                 }
               ],
               "tagIndex": 0,
-              "selectedTags": [],
+              "selectedTags": [
+                "Encoder Cable Board End"
+              ],
               "includeUntagged": false,
               "notKeepOut": false
             },
@@ -11770,7 +11774,7 @@
               "x": 0.25,
               "y": 0.62,
               "uniqueID": "id-12493",
-              "name": "Extract Tag",
+              "name": "Extract Motor Lead End",
               "ioValues": [
                 {
                   "name": "geometry",
@@ -11778,7 +11782,9 @@
                 }
               ],
               "tagIndex": 0,
-              "selectedTags": [],
+              "selectedTags": [
+                "Motor Lead End"
+              ],
               "includeUntagged": false,
               "notKeepOut": false
             },
@@ -11787,7 +11793,7 @@
               "x": 0.25,
               "y": 0.85,
               "uniqueID": "id-12496",
-              "name": "Extract Tag",
+              "name": "Extract Motor Cable Board End",
               "ioValues": [
                 {
                   "name": "geometry",
@@ -11795,9 +11801,2447 @@
                 }
               ],
               "tagIndex": 0,
-              "selectedTags": [],
+              "selectedTags": [
+                "Motor Cable Board End"
+              ],
               "includeUntagged": false,
               "notKeepOut": false
+            },
+            {
+              "atomType": "Molecule",
+              "x": 0.55,
+              "y": 0.3,
+              "uniqueID": "id-12499",
+              "name": "Encoder Cables",
+              "ioValues": [
+                {
+                  "name": "Arm Ends",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Board Ends",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 0.98,
+                  "y": 0.5,
+                  "uniqueID": "id-12501",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0254,
+                  "y": 0.1538,
+                  "uniqueID": "id-12503",
+                  "name": "Arm Ends",
+                  "type": "geometry",
+                  "options": []
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0254,
+                  "y": 0.2462,
+                  "uniqueID": "id-12506",
+                  "name": "Board Ends",
+                  "type": "geometry",
+                  "options": []
+                },
+                {
+                  "atomType": "Color",
+                  "x": 0.9,
+                  "y": 0.5,
+                  "uniqueID": "id-12837",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "selectedColor": "Black"
+                },
+                {
+                  "atomType": "Molecule",
+                  "x": 0.4,
+                  "y": 0.15,
+                  "uniqueID": "id-12840",
+                  "name": "Encoder Cable, Top Arm",
+                  "ioValues": [
+                    {
+                      "name": "Arm Ends",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "Board Ends",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "topLevel": false,
+                  "allAtoms": [
+                    {
+                      "atomType": "Output",
+                      "x": 0.98,
+                      "y": 0.5,
+                      "uniqueID": "id-12842",
+                      "ioValues": [
+                        {
+                          "name": "number or geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Input",
+                      "x": 0.0254,
+                      "y": 0.1538,
+                      "uniqueID": "id-12844",
+                      "name": "Arm Ends",
+                      "type": "geometry",
+                      "options": []
+                    },
+                    {
+                      "atomType": "Input",
+                      "x": 0.0254,
+                      "y": 0.2462,
+                      "uniqueID": "id-12847",
+                      "name": "Board Ends",
+                      "type": "geometry",
+                      "options": []
+                    },
+                    {
+                      "atomType": "Rectangle",
+                      "x": 0.15,
+                      "y": 0.5,
+                      "uniqueID": "id-12850",
+                      "ioValues": [
+                        {
+                          "name": "x length",
+                          "ioValue": 0.4
+                        },
+                        {
+                          "name": "y length",
+                          "ioValue": 0.4
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Extrude",
+                      "x": 0.27,
+                      "y": 0.5,
+                      "uniqueID": "id-12854",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "height",
+                          "ioValue": 0.4
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Move",
+                      "x": 0.4,
+                      "y": 0.3,
+                      "uniqueID": "id-12858",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "xDist",
+                          "ioValue": -78.312
+                        },
+                        {
+                          "name": "yDist",
+                          "ioValue": 75.837
+                        },
+                        {
+                          "name": "zDist",
+                          "ioValue": 105.9
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Move",
+                      "x": 0.4,
+                      "y": 0.7,
+                      "uniqueID": "id-12864",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "xDist",
+                          "ioValue": -47.4
+                        },
+                        {
+                          "name": "yDist",
+                          "ioValue": 5.75
+                        },
+                        {
+                          "name": "zDist",
+                          "ioValue": 160.5
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "GitHubMolecule",
+                      "x": 0.55,
+                      "y": 0.3,
+                      "uniqueID": "id-12875",
+                      "name": "selected.EdgesByShape",
+                      "ioValues": [
+                        {
+                          "name": "edgesOf",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "intersecting",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-12871",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Code",
+                          "x": 0.3451,
+                          "y": 0.4486,
+                          "uniqueID": "id-12872",
+                          "ioValues": [
+                            {
+                              "name": "input",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "boundingShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "interpreterVersion": 1,
+                          "code": "function run(input: Assembly, boundingShape: Assembly) {\n  const bounds: replicad.AnyShape[] = []\n  boundingShape.onLeafs((leaf) => {\n    if (!(leaf.geometry instanceof replicad.Drawing)) {\n      bounds.push(leaf.geometry)\n    }\n    return leaf;\n  })\n\n  if (bounds.length == 0) {\n    return input;\n  }\n\n  console.log(`Using ${bounds.length} bounding shapes`)\n\n  return input.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      throw new Error(\"Drawings have no Edges. Input must be 3d\")\n    }\n    // identify new indexes to mark as selected\n    const selectedIndexes = []\n    for (const bound of bounds) {\n      const finder = new replicad.EdgeFinder().inShape(bound)\n      const foundEdges = finder.find(leaf.geometry)\n      const allEdges = leaf.geometry.edges;\n      const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n      console.log(`found edges: ${foundEdges} indexes: ${indexes}`)\n      selectedIndexes.push(...indexes)\n    }\n\n    if (leaf.selection == undefined) {\n      leaf.selection = { edges: [] }\n    }\n    const before = leaf.selection.edges as number[];\n    leaf.selection.edges = [... new Set([...before, ...selectedIndexes])]\n    console.log(`updated selection list ${before} to ${leaf.selection.edges}`)\n    return leaf;\n  })\n}",
+                          "compiledCode": "\"use strict\";\nfunction run(input, boundingShape) {\n    const bounds = [];\n    boundingShape.onLeafs((leaf) => {\n        if (!(leaf.geometry instanceof replicad.Drawing)) {\n            bounds.push(leaf.geometry);\n        }\n        return leaf;\n    });\n    if (bounds.length == 0) {\n        return input;\n    }\n    console.log(`Using ${bounds.length} bounding shapes`);\n    return input.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            throw new Error(\"Drawings have no Edges. Input must be 3d\");\n        }\n        // identify new indexes to mark as selected\n        const selectedIndexes = [];\n        for (const bound of bounds) {\n            const finder = new replicad.EdgeFinder().inShape(bound);\n            const foundEdges = finder.find(leaf.geometry);\n            const allEdges = leaf.geometry.edges;\n            const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n            console.log(`found edges: ${foundEdges} indexes: ${indexes}`);\n            selectedIndexes.push(...indexes);\n        }\n        if (leaf.selection == undefined) {\n            leaf.selection = { edges: [] };\n        }\n        const before = leaf.selection.edges;\n        leaf.selection.edges = [...new Set([...before, ...selectedIndexes])];\n        console.log(`updated selection list ${before} to ${leaf.selection.edges}`);\n        return leaf;\n    });\n}\n"
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.1538,
+                          "uniqueID": "id-12873",
+                          "name": "edgesOf",
+                          "type": "geometry",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.2462,
+                          "uniqueID": "id-12874",
+                          "name": "intersecting",
+                          "type": "geometry",
+                          "options": []
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-12872",
+                          "ap2ID": "id-12871"
+                        },
+                        {
+                          "ap2Name": "input",
+                          "ap1ID": "id-12873",
+                          "ap2ID": "id-12872"
+                        },
+                        {
+                          "ap2Name": "boundingShape",
+                          "ap1ID": "id-12874",
+                          "ap2ID": "id-12872"
+                        }
+                      ],
+                      "parentRepo": {
+                        "owner": "tristan-huber",
+                        "repoName": "selected.EdgesByShape",
+                        "privateRepo": false
+                      },
+                      "unitsKey": "Unitless",
+                      "fileTypeVersion": 1,
+                      "scaleToProjectUnits": true,
+                      "lastReloadedFromGithubAt": 1795036326360
+                    },
+                    {
+                      "atomType": "GitHubMolecule",
+                      "x": 0.55,
+                      "y": 0.7,
+                      "uniqueID": "id-12892",
+                      "name": "selected.EdgesByShape",
+                      "ioValues": [
+                        {
+                          "name": "edgesOf",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "intersecting",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-12888",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Code",
+                          "x": 0.3451,
+                          "y": 0.4486,
+                          "uniqueID": "id-12889",
+                          "ioValues": [
+                            {
+                              "name": "input",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "boundingShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "interpreterVersion": 1,
+                          "code": "function run(input: Assembly, boundingShape: Assembly) {\n  const bounds: replicad.AnyShape[] = []\n  boundingShape.onLeafs((leaf) => {\n    if (!(leaf.geometry instanceof replicad.Drawing)) {\n      bounds.push(leaf.geometry)\n    }\n    return leaf;\n  })\n\n  if (bounds.length == 0) {\n    return input;\n  }\n\n  console.log(`Using ${bounds.length} bounding shapes`)\n\n  return input.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      throw new Error(\"Drawings have no Edges. Input must be 3d\")\n    }\n    // identify new indexes to mark as selected\n    const selectedIndexes = []\n    for (const bound of bounds) {\n      const finder = new replicad.EdgeFinder().inShape(bound)\n      const foundEdges = finder.find(leaf.geometry)\n      const allEdges = leaf.geometry.edges;\n      const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n      console.log(`found edges: ${foundEdges} indexes: ${indexes}`)\n      selectedIndexes.push(...indexes)\n    }\n\n    if (leaf.selection == undefined) {\n      leaf.selection = { edges: [] }\n    }\n    const before = leaf.selection.edges as number[];\n    leaf.selection.edges = [... new Set([...before, ...selectedIndexes])]\n    console.log(`updated selection list ${before} to ${leaf.selection.edges}`)\n    return leaf;\n  })\n}",
+                          "compiledCode": "\"use strict\";\nfunction run(input, boundingShape) {\n    const bounds = [];\n    boundingShape.onLeafs((leaf) => {\n        if (!(leaf.geometry instanceof replicad.Drawing)) {\n            bounds.push(leaf.geometry);\n        }\n        return leaf;\n    });\n    if (bounds.length == 0) {\n        return input;\n    }\n    console.log(`Using ${bounds.length} bounding shapes`);\n    return input.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            throw new Error(\"Drawings have no Edges. Input must be 3d\");\n        }\n        // identify new indexes to mark as selected\n        const selectedIndexes = [];\n        for (const bound of bounds) {\n            const finder = new replicad.EdgeFinder().inShape(bound);\n            const foundEdges = finder.find(leaf.geometry);\n            const allEdges = leaf.geometry.edges;\n            const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n            console.log(`found edges: ${foundEdges} indexes: ${indexes}`);\n            selectedIndexes.push(...indexes);\n        }\n        if (leaf.selection == undefined) {\n            leaf.selection = { edges: [] };\n        }\n        const before = leaf.selection.edges;\n        leaf.selection.edges = [...new Set([...before, ...selectedIndexes])];\n        console.log(`updated selection list ${before} to ${leaf.selection.edges}`);\n        return leaf;\n    });\n}\n"
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.1538,
+                          "uniqueID": "id-12890",
+                          "name": "edgesOf",
+                          "type": "geometry",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.2462,
+                          "uniqueID": "id-12891",
+                          "name": "intersecting",
+                          "type": "geometry",
+                          "options": []
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-12889",
+                          "ap2ID": "id-12888"
+                        },
+                        {
+                          "ap2Name": "input",
+                          "ap1ID": "id-12890",
+                          "ap2ID": "id-12889"
+                        },
+                        {
+                          "ap2Name": "boundingShape",
+                          "ap1ID": "id-12891",
+                          "ap2ID": "id-12889"
+                        }
+                      ],
+                      "parentRepo": {
+                        "owner": "tristan-huber",
+                        "repoName": "selected.EdgesByShape",
+                        "privateRepo": false
+                      },
+                      "unitsKey": "Unitless",
+                      "fileTypeVersion": 1,
+                      "scaleToProjectUnits": true,
+                      "lastReloadedFromGithubAt": 1795036326827
+                    },
+                    {
+                      "atomType": "GitHubMolecule",
+                      "x": 0.72,
+                      "y": 0.5,
+                      "uniqueID": "id-12913",
+                      "name": "Wire_Between_Points",
+                      "ioValues": [
+                        {
+                          "name": "Start Shape",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "End Shape",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "Stiffness",
+                          "ioValue": 0.5
+                        },
+                        {
+                          "name": "Flip Start",
+                          "ioValue": false
+                        },
+                        {
+                          "name": "Flip End",
+                          "ioValue": false
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-12905",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Code",
+                          "x": 0.6,
+                          "y": 0.5,
+                          "uniqueID": "id-12906",
+                          "ioValues": [
+                            {
+                              "name": "startShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "endShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "stiffness",
+                              "ioValue": 0.5
+                            },
+                            {
+                              "name": "flipStart",
+                              "ioValue": false
+                            },
+                            {
+                              "name": "flipEnd",
+                              "ioValue": false
+                            }
+                          ],
+                          "interpreterVersion": 1,
+                          "code": "/**\n * A round wire (or cable, hose, tube) routed smoothly between two round edges.\n *\n * Wire the parts in and pick a circular edge on each: on Start Shape where the\n * wire begins and on End Shape where it ends (a hole rim, the end of a pin or\n * terminal). The wire runs from the center of each circle, leaving straight\n * out along the circle's axis, and curves smoothly between them. Each end\n * leaves on the side facing the other end; Flip Start or Flip End sends it\n * out the other side. The wire is as thick as the start circle. For a wire\n * that has to go around something, chain several wires end to end.\n *\n * The centerline is a cubic Bezier curve, and the start circle is swept\n * along it.\n */\ntype V = [number, number, number];\n\nconst add = (a: V, b: V): V => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];\nconst sub = (a: V, b: V): V => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];\nconst mul = (a: V, k: number): V => [a[0] * k, a[1] * k, a[2] * k];\nconst dot = (a: V, b: V) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];\nconst cross = (a: V, b: V): V => [\n  a[1] * b[2] - a[2] * b[1],\n  a[2] * b[0] - a[0] * b[2],\n  a[0] * b[1] - a[1] * b[0],\n];\nconst len = (a: V) => Math.sqrt(dot(a, a));\nconst vec = (p: any): V => [p.x ?? p[0], p.y ?? p[1], p.z ?? p[2]];\n\n/** Center, axis and radius of a round edge from three points on it; null if straight. */\nfunction circleOf(edge: any): { center: V; axis: V; radius: number } | null {\n  const a = vec(edge.pointAt(0));\n  const b = vec(edge.pointAt(1 / 3));\n  const c = vec(edge.pointAt(2 / 3));\n  const ab = sub(b, a);\n  const ac = sub(c, a);\n  const n = cross(ab, ac);\n  const n2 = dot(n, n);\n  if (n2 < 1e-12 * dot(ab, ab) * dot(ac, ac)) return null; // collinear: straight edge\n  // Circumcenter of triangle abc\n  const center = add(\n    a,\n    mul(add(mul(cross(n, ab), dot(ac, ac)), mul(cross(ac, n), dot(ab, ab))), 1 / (2 * n2)),\n  );\n  return { center, axis: mul(n, 1 / Math.sqrt(n2)), radius: len(sub(a, center)) };\n}\n\n/** The circle picked on a shape input, with an error that says what to do. */\nfunction pickedCircle(shape: Assembly | undefined, label: string) {\n  const ask = `Pick a circular edge on ${label} Shape for this end of the wire (a hole rim or the end of a pin).`;\n  // An edge input with nothing wired in passes a number, not a shape.\n  if (!shape || typeof (shape as any).getSelectedEdges !== \"function\")\n    throw new Error(`Connect the part the wire ${label === \"Start\" ? \"starts\" : \"ends\"} at to ${label} Shape. ${ask}`);\n  const edges = shape.getSelectedEdges();\n  if (!edges || edges.length === 0) throw new Error(ask);\n  if (edges.length > 1) console.warn(`${label} Shape: ${edges.length} edges picked; using the first.`);\n  const circle = circleOf(edges[0]);\n  if (!circle) throw new Error(`The edge picked on ${label} Shape is straight. ${ask}`);\n  return circle;\n}\n\n/** Sweep a closed profile along a spine with OpenCascade's discrete trihedron. */\nfunction sweepDiscrete(profile: any, spine: any) {\n  const oc = replicad.getOC();\n  const builder = new oc.BRepOffsetAPI_MakePipeShell(spine.wrapped);\n  try {\n    builder.SetDiscreteMode();\n    builder.Add(profile.wrapped, false, true);\n    builder.Build();\n    builder.MakeSolid();\n    return replicad.cast(builder.Shape());\n  } finally {\n    builder.delete();\n  }\n}\n\nfunction run(\n  startShape: Assembly | undefined = undefined, // pick the circular edge the wire starts at\n  endShape: Assembly | undefined = undefined, // pick the circular edge the wire ends at\n  stiffness: number = 0.5, // how far the wire runs straight out before bending\n  flipStart: boolean = false, // leave the start circle out its other side\n  flipEnd: boolean = false, // leave the end circle out its other side\n): Assembly {\n  const stiff = Number(stiffness);\n  if (!(stiff > 0)) throw new Error(\"Stiffness must be more than 0.\");\n\n  const start = pickedCircle(startShape, \"Start\");\n  const end = pickedCircle(endShape, \"End\");\n  const p0 = start.center;\n  const p1 = end.center;\n  const gap = len(sub(p1, p0));\n  if (gap < 1e-6) throw new Error(\"The start and end circles are in the same place.\");\n\n  // A circle's axis points either way: take the side facing the other end,\n  // then let the flip toggle reverse it.\n  const outward = (axis: V, from: V, toward: V, flip: boolean): V => {\n    const d = dot(axis, sub(toward, from)) < 0 ? mul(axis, -1) : axis;\n    return flip === true ? mul(d, -1) : d;\n  };\n  const d0 = outward(start.axis, p0, p1, flipStart);\n  const d1 = outward(end.axis, p1, p0, flipEnd);\n\n  // One cubic Bezier: its control points sit out along each end's direction,\n  // a stiffness fraction of the gap away.\n  const reach = gap * stiff;\n  const spine = replicad.assembleWire([\n    replicad.makeBezierCurve([p0, add(p0, mul(d0, reach)), add(p1, mul(d1, reach)), p1]),\n  ]);\n\n  // Sweep the start circle's size, square to the start direction, along the centerline.\n  const profile = () => replicad.assembleWire([replicad.makeCircle(start.radius, p0, d0)]);\n  let wire;\n  try {\n    wire = sweepDiscrete(profile(), spine);\n  } catch (e) {\n    // The default (corrected Frenet) mode fails on these curves; Frenet works\n    // where the discrete trihedron doesn't.\n    wire = replicad.genericSweep(profile(), spine, { frenet: true });\n  }\n\n  const length = replicad.measureLength(spine);\n  console.log(`Wire: ${(start.radius * 2).toFixed(2)} diameter, ${length.toFixed(1)} long`);\n\n  return new Assembly({ geometry: wire, tags: [\"wire\"] });\n}\n",
+                          "compiledCode": "\"use strict\";\nconst add = (a, b) => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];\nconst sub = (a, b) => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];\nconst mul = (a, k) => [a[0] * k, a[1] * k, a[2] * k];\nconst dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];\nconst cross = (a, b) => [\n    a[1] * b[2] - a[2] * b[1],\n    a[2] * b[0] - a[0] * b[2],\n    a[0] * b[1] - a[1] * b[0],\n];\nconst len = (a) => Math.sqrt(dot(a, a));\nconst vec = (p) => [p.x ?? p[0], p.y ?? p[1], p.z ?? p[2]];\n/** Center, axis and radius of a round edge from three points on it; null if straight. */\nfunction circleOf(edge) {\n    const a = vec(edge.pointAt(0));\n    const b = vec(edge.pointAt(1 / 3));\n    const c = vec(edge.pointAt(2 / 3));\n    const ab = sub(b, a);\n    const ac = sub(c, a);\n    const n = cross(ab, ac);\n    const n2 = dot(n, n);\n    if (n2 < 1e-12 * dot(ab, ab) * dot(ac, ac))\n        return null; // collinear: straight edge\n    // Circumcenter of triangle abc\n    const center = add(a, mul(add(mul(cross(n, ab), dot(ac, ac)), mul(cross(ac, n), dot(ab, ab))), 1 / (2 * n2)));\n    return { center, axis: mul(n, 1 / Math.sqrt(n2)), radius: len(sub(a, center)) };\n}\n/** The circle picked on a shape input, with an error that says what to do. */\nfunction pickedCircle(shape, label) {\n    const ask = `Pick a circular edge on ${label} Shape for this end of the wire (a hole rim or the end of a pin).`;\n    // An edge input with nothing wired in passes a number, not a shape.\n    if (!shape || typeof shape.getSelectedEdges !== \"function\")\n        throw new Error(`Connect the part the wire ${label === \"Start\" ? \"starts\" : \"ends\"} at to ${label} Shape. ${ask}`);\n    const edges = shape.getSelectedEdges();\n    if (!edges || edges.length === 0)\n        throw new Error(ask);\n    if (edges.length > 1)\n        console.warn(`${label} Shape: ${edges.length} edges picked; using the first.`);\n    const circle = circleOf(edges[0]);\n    if (!circle)\n        throw new Error(`The edge picked on ${label} Shape is straight. ${ask}`);\n    return circle;\n}\n/** Sweep a closed profile along a spine with OpenCascade's discrete trihedron. */\nfunction sweepDiscrete(profile, spine) {\n    const oc = replicad.getOC();\n    const builder = new oc.BRepOffsetAPI_MakePipeShell(spine.wrapped);\n    try {\n        builder.SetDiscreteMode();\n        builder.Add(profile.wrapped, false, true);\n        builder.Build();\n        builder.MakeSolid();\n        return replicad.cast(builder.Shape());\n    }\n    finally {\n        builder.delete();\n    }\n}\nfunction run(startShape = undefined, // pick the circular edge the wire starts at\nendShape = undefined, // pick the circular edge the wire ends at\nstiffness = 0.5, // how far the wire runs straight out before bending\nflipStart = false, // leave the start circle out its other side\nflipEnd = false) {\n    const stiff = Number(stiffness);\n    if (!(stiff > 0))\n        throw new Error(\"Stiffness must be more than 0.\");\n    const start = pickedCircle(startShape, \"Start\");\n    const end = pickedCircle(endShape, \"End\");\n    const p0 = start.center;\n    const p1 = end.center;\n    const gap = len(sub(p1, p0));\n    if (gap < 1e-6)\n        throw new Error(\"The start and end circles are in the same place.\");\n    // A circle's axis points either way: take the side facing the other end,\n    // then let the flip toggle reverse it.\n    const outward = (axis, from, toward, flip) => {\n        const d = dot(axis, sub(toward, from)) < 0 ? mul(axis, -1) : axis;\n        return flip === true ? mul(d, -1) : d;\n    };\n    const d0 = outward(start.axis, p0, p1, flipStart);\n    const d1 = outward(end.axis, p1, p0, flipEnd);\n    // One cubic Bezier: its control points sit out along each end's direction,\n    // a stiffness fraction of the gap away.\n    const reach = gap * stiff;\n    const spine = replicad.assembleWire([\n        replicad.makeBezierCurve([p0, add(p0, mul(d0, reach)), add(p1, mul(d1, reach)), p1]),\n    ]);\n    // Sweep the start circle's size, square to the start direction, along the centerline.\n    const profile = () => replicad.assembleWire([replicad.makeCircle(start.radius, p0, d0)]);\n    let wire;\n    try {\n        wire = sweepDiscrete(profile(), spine);\n    }\n    catch (e) {\n        // The default (corrected Frenet) mode fails on these curves; Frenet works\n        // where the discrete trihedron doesn't.\n        wire = replicad.genericSweep(profile(), spine, { frenet: true });\n    }\n    const length = replicad.measureLength(spine);\n    console.log(`Wire: ${(start.radius * 2).toFixed(2)} diameter, ${length.toFixed(1)} long`);\n    return new Assembly({ geometry: wire, tags: [\"wire\"] });\n}\n"
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.1538,
+                          "uniqueID": "id-12907",
+                          "name": "Start Shape",
+                          "type": "edgeselect",
+                          "options": [],
+                          "selectedEdgeData": {
+                            "1": [
+                              3
+                            ]
+                          }
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.2462,
+                          "uniqueID": "id-12908",
+                          "name": "End Shape",
+                          "type": "edgeselect",
+                          "options": [],
+                          "selectedEdgeData": {
+                            "5": [
+                              3
+                            ]
+                          }
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.3385,
+                          "uniqueID": "id-12909",
+                          "name": "Stiffness",
+                          "type": "number",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.4308,
+                          "uniqueID": "id-12910",
+                          "name": "Flip Start",
+                          "type": "boolean",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.5231,
+                          "uniqueID": "id-12911",
+                          "name": "Flip End",
+                          "type": "boolean",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Color",
+                          "x": 0.78,
+                          "y": 0.5,
+                          "uniqueID": "id-12912",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "selectedColor": "Default"
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-12906",
+                          "ap2ID": "id-12912"
+                        },
+                        {
+                          "ap2Name": "startShape",
+                          "ap1ID": "id-12907",
+                          "ap2ID": "id-12906"
+                        },
+                        {
+                          "ap2Name": "endShape",
+                          "ap1ID": "id-12908",
+                          "ap2ID": "id-12906"
+                        },
+                        {
+                          "ap2Name": "stiffness",
+                          "ap1ID": "id-12909",
+                          "ap2ID": "id-12906"
+                        },
+                        {
+                          "ap2Name": "flipStart",
+                          "ap1ID": "id-12910",
+                          "ap2ID": "id-12906"
+                        },
+                        {
+                          "ap2Name": "flipEnd",
+                          "ap1ID": "id-12911",
+                          "ap2ID": "id-12906"
+                        },
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-12912",
+                          "ap2ID": "id-12905"
+                        }
+                      ],
+                      "parentRepo": {
+                        "owner": "BarbourSmith",
+                        "repoName": "Wire_Between_Points",
+                        "privateRepo": false
+                      },
+                      "unitsKey": "MM",
+                      "fileTypeVersion": 1,
+                      "scaleToProjectUnits": true,
+                      "lastReloadedFromGithubAt": 1795036327549
+                    }
+                  ],
+                  "allConnectors": [
+                    {
+                      "ap2Name": "edgesOf",
+                      "ap1ID": "id-12844",
+                      "ap2ID": "id-12875"
+                    },
+                    {
+                      "ap2Name": "edgesOf",
+                      "ap1ID": "id-12847",
+                      "ap2ID": "id-12892"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-12850",
+                      "ap2ID": "id-12854"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-12854",
+                      "ap2ID": "id-12858"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-12854",
+                      "ap2ID": "id-12864"
+                    },
+                    {
+                      "ap2Name": "intersecting",
+                      "ap1ID": "id-12858",
+                      "ap2ID": "id-12875"
+                    },
+                    {
+                      "ap2Name": "intersecting",
+                      "ap1ID": "id-12864",
+                      "ap2ID": "id-12892"
+                    },
+                    {
+                      "ap2Name": "Start Shape",
+                      "ap1ID": "id-12875",
+                      "ap2ID": "id-12913"
+                    },
+                    {
+                      "ap2Name": "End Shape",
+                      "ap1ID": "id-12892",
+                      "ap2ID": "id-12913"
+                    },
+                    {
+                      "ap2Name": "number or geometry",
+                      "ap1ID": "id-12913",
+                      "ap2ID": "id-12842"
+                    }
+                  ],
+                  "fileTypeVersion": 1
+                },
+                {
+                  "atomType": "Molecule",
+                  "x": 0.4,
+                  "y": 0.38,
+                  "uniqueID": "id-12936",
+                  "name": "Encoder Cable, Second Arm",
+                  "ioValues": [
+                    {
+                      "name": "Arm Ends",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "Board Ends",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "topLevel": false,
+                  "allAtoms": [
+                    {
+                      "atomType": "Output",
+                      "x": 0.98,
+                      "y": 0.5,
+                      "uniqueID": "id-12938",
+                      "ioValues": [
+                        {
+                          "name": "number or geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Input",
+                      "x": 0.0254,
+                      "y": 0.1538,
+                      "uniqueID": "id-12940",
+                      "name": "Arm Ends",
+                      "type": "geometry",
+                      "options": []
+                    },
+                    {
+                      "atomType": "Input",
+                      "x": 0.0254,
+                      "y": 0.2462,
+                      "uniqueID": "id-12943",
+                      "name": "Board Ends",
+                      "type": "geometry",
+                      "options": []
+                    },
+                    {
+                      "atomType": "Rectangle",
+                      "x": 0.15,
+                      "y": 0.5,
+                      "uniqueID": "id-12946",
+                      "ioValues": [
+                        {
+                          "name": "x length",
+                          "ioValue": 0.4
+                        },
+                        {
+                          "name": "y length",
+                          "ioValue": 0.4
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Extrude",
+                      "x": 0.27,
+                      "y": 0.5,
+                      "uniqueID": "id-12950",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "height",
+                          "ioValue": 0.4
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Move",
+                      "x": 0.4,
+                      "y": 0.3,
+                      "uniqueID": "id-12954",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "xDist",
+                          "ioValue": 78.312
+                        },
+                        {
+                          "name": "yDist",
+                          "ioValue": -75.837
+                        },
+                        {
+                          "name": "zDist",
+                          "ioValue": 84.4
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Move",
+                      "x": 0.4,
+                      "y": 0.7,
+                      "uniqueID": "id-12960",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "xDist",
+                          "ioValue": 47.4
+                        },
+                        {
+                          "name": "yDist",
+                          "ioValue": -5.75
+                        },
+                        {
+                          "name": "zDist",
+                          "ioValue": 160.5
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "GitHubMolecule",
+                      "x": 0.55,
+                      "y": 0.3,
+                      "uniqueID": "id-12971",
+                      "name": "selected.EdgesByShape",
+                      "ioValues": [
+                        {
+                          "name": "edgesOf",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "intersecting",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-12967",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Code",
+                          "x": 0.3451,
+                          "y": 0.4486,
+                          "uniqueID": "id-12968",
+                          "ioValues": [
+                            {
+                              "name": "input",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "boundingShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "interpreterVersion": 1,
+                          "code": "function run(input: Assembly, boundingShape: Assembly) {\n  const bounds: replicad.AnyShape[] = []\n  boundingShape.onLeafs((leaf) => {\n    if (!(leaf.geometry instanceof replicad.Drawing)) {\n      bounds.push(leaf.geometry)\n    }\n    return leaf;\n  })\n\n  if (bounds.length == 0) {\n    return input;\n  }\n\n  console.log(`Using ${bounds.length} bounding shapes`)\n\n  return input.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      throw new Error(\"Drawings have no Edges. Input must be 3d\")\n    }\n    // identify new indexes to mark as selected\n    const selectedIndexes = []\n    for (const bound of bounds) {\n      const finder = new replicad.EdgeFinder().inShape(bound)\n      const foundEdges = finder.find(leaf.geometry)\n      const allEdges = leaf.geometry.edges;\n      const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n      console.log(`found edges: ${foundEdges} indexes: ${indexes}`)\n      selectedIndexes.push(...indexes)\n    }\n\n    if (leaf.selection == undefined) {\n      leaf.selection = { edges: [] }\n    }\n    const before = leaf.selection.edges as number[];\n    leaf.selection.edges = [... new Set([...before, ...selectedIndexes])]\n    console.log(`updated selection list ${before} to ${leaf.selection.edges}`)\n    return leaf;\n  })\n}",
+                          "compiledCode": "\"use strict\";\nfunction run(input, boundingShape) {\n    const bounds = [];\n    boundingShape.onLeafs((leaf) => {\n        if (!(leaf.geometry instanceof replicad.Drawing)) {\n            bounds.push(leaf.geometry);\n        }\n        return leaf;\n    });\n    if (bounds.length == 0) {\n        return input;\n    }\n    console.log(`Using ${bounds.length} bounding shapes`);\n    return input.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            throw new Error(\"Drawings have no Edges. Input must be 3d\");\n        }\n        // identify new indexes to mark as selected\n        const selectedIndexes = [];\n        for (const bound of bounds) {\n            const finder = new replicad.EdgeFinder().inShape(bound);\n            const foundEdges = finder.find(leaf.geometry);\n            const allEdges = leaf.geometry.edges;\n            const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n            console.log(`found edges: ${foundEdges} indexes: ${indexes}`);\n            selectedIndexes.push(...indexes);\n        }\n        if (leaf.selection == undefined) {\n            leaf.selection = { edges: [] };\n        }\n        const before = leaf.selection.edges;\n        leaf.selection.edges = [...new Set([...before, ...selectedIndexes])];\n        console.log(`updated selection list ${before} to ${leaf.selection.edges}`);\n        return leaf;\n    });\n}\n"
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.1538,
+                          "uniqueID": "id-12969",
+                          "name": "edgesOf",
+                          "type": "geometry",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.2462,
+                          "uniqueID": "id-12970",
+                          "name": "intersecting",
+                          "type": "geometry",
+                          "options": []
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-12968",
+                          "ap2ID": "id-12967"
+                        },
+                        {
+                          "ap2Name": "input",
+                          "ap1ID": "id-12969",
+                          "ap2ID": "id-12968"
+                        },
+                        {
+                          "ap2Name": "boundingShape",
+                          "ap1ID": "id-12970",
+                          "ap2ID": "id-12968"
+                        }
+                      ],
+                      "parentRepo": {
+                        "owner": "tristan-huber",
+                        "repoName": "selected.EdgesByShape",
+                        "privateRepo": false
+                      },
+                      "unitsKey": "Unitless",
+                      "fileTypeVersion": 1,
+                      "scaleToProjectUnits": true,
+                      "lastReloadedFromGithubAt": 1795036328026
+                    },
+                    {
+                      "atomType": "GitHubMolecule",
+                      "x": 0.55,
+                      "y": 0.7,
+                      "uniqueID": "id-12988",
+                      "name": "selected.EdgesByShape",
+                      "ioValues": [
+                        {
+                          "name": "edgesOf",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "intersecting",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-12984",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Code",
+                          "x": 0.3451,
+                          "y": 0.4486,
+                          "uniqueID": "id-12985",
+                          "ioValues": [
+                            {
+                              "name": "input",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "boundingShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "interpreterVersion": 1,
+                          "code": "function run(input: Assembly, boundingShape: Assembly) {\n  const bounds: replicad.AnyShape[] = []\n  boundingShape.onLeafs((leaf) => {\n    if (!(leaf.geometry instanceof replicad.Drawing)) {\n      bounds.push(leaf.geometry)\n    }\n    return leaf;\n  })\n\n  if (bounds.length == 0) {\n    return input;\n  }\n\n  console.log(`Using ${bounds.length} bounding shapes`)\n\n  return input.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      throw new Error(\"Drawings have no Edges. Input must be 3d\")\n    }\n    // identify new indexes to mark as selected\n    const selectedIndexes = []\n    for (const bound of bounds) {\n      const finder = new replicad.EdgeFinder().inShape(bound)\n      const foundEdges = finder.find(leaf.geometry)\n      const allEdges = leaf.geometry.edges;\n      const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n      console.log(`found edges: ${foundEdges} indexes: ${indexes}`)\n      selectedIndexes.push(...indexes)\n    }\n\n    if (leaf.selection == undefined) {\n      leaf.selection = { edges: [] }\n    }\n    const before = leaf.selection.edges as number[];\n    leaf.selection.edges = [... new Set([...before, ...selectedIndexes])]\n    console.log(`updated selection list ${before} to ${leaf.selection.edges}`)\n    return leaf;\n  })\n}",
+                          "compiledCode": "\"use strict\";\nfunction run(input, boundingShape) {\n    const bounds = [];\n    boundingShape.onLeafs((leaf) => {\n        if (!(leaf.geometry instanceof replicad.Drawing)) {\n            bounds.push(leaf.geometry);\n        }\n        return leaf;\n    });\n    if (bounds.length == 0) {\n        return input;\n    }\n    console.log(`Using ${bounds.length} bounding shapes`);\n    return input.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            throw new Error(\"Drawings have no Edges. Input must be 3d\");\n        }\n        // identify new indexes to mark as selected\n        const selectedIndexes = [];\n        for (const bound of bounds) {\n            const finder = new replicad.EdgeFinder().inShape(bound);\n            const foundEdges = finder.find(leaf.geometry);\n            const allEdges = leaf.geometry.edges;\n            const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n            console.log(`found edges: ${foundEdges} indexes: ${indexes}`);\n            selectedIndexes.push(...indexes);\n        }\n        if (leaf.selection == undefined) {\n            leaf.selection = { edges: [] };\n        }\n        const before = leaf.selection.edges;\n        leaf.selection.edges = [...new Set([...before, ...selectedIndexes])];\n        console.log(`updated selection list ${before} to ${leaf.selection.edges}`);\n        return leaf;\n    });\n}\n"
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.1538,
+                          "uniqueID": "id-12986",
+                          "name": "edgesOf",
+                          "type": "geometry",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.2462,
+                          "uniqueID": "id-12987",
+                          "name": "intersecting",
+                          "type": "geometry",
+                          "options": []
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-12985",
+                          "ap2ID": "id-12984"
+                        },
+                        {
+                          "ap2Name": "input",
+                          "ap1ID": "id-12986",
+                          "ap2ID": "id-12985"
+                        },
+                        {
+                          "ap2Name": "boundingShape",
+                          "ap1ID": "id-12987",
+                          "ap2ID": "id-12985"
+                        }
+                      ],
+                      "parentRepo": {
+                        "owner": "tristan-huber",
+                        "repoName": "selected.EdgesByShape",
+                        "privateRepo": false
+                      },
+                      "unitsKey": "Unitless",
+                      "fileTypeVersion": 1,
+                      "scaleToProjectUnits": true,
+                      "lastReloadedFromGithubAt": 1795036328514
+                    },
+                    {
+                      "atomType": "GitHubMolecule",
+                      "x": 0.72,
+                      "y": 0.5,
+                      "uniqueID": "id-13009",
+                      "name": "Wire_Between_Points",
+                      "ioValues": [
+                        {
+                          "name": "Start Shape",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "End Shape",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "Stiffness",
+                          "ioValue": 0.5
+                        },
+                        {
+                          "name": "Flip Start",
+                          "ioValue": false
+                        },
+                        {
+                          "name": "Flip End",
+                          "ioValue": false
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-13001",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Code",
+                          "x": 0.6,
+                          "y": 0.5,
+                          "uniqueID": "id-13002",
+                          "ioValues": [
+                            {
+                              "name": "startShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "endShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "stiffness",
+                              "ioValue": 0.5
+                            },
+                            {
+                              "name": "flipStart",
+                              "ioValue": false
+                            },
+                            {
+                              "name": "flipEnd",
+                              "ioValue": false
+                            }
+                          ],
+                          "interpreterVersion": 1,
+                          "code": "/**\n * A round wire (or cable, hose, tube) routed smoothly between two round edges.\n *\n * Wire the parts in and pick a circular edge on each: on Start Shape where the\n * wire begins and on End Shape where it ends (a hole rim, the end of a pin or\n * terminal). The wire runs from the center of each circle, leaving straight\n * out along the circle's axis, and curves smoothly between them. Each end\n * leaves on the side facing the other end; Flip Start or Flip End sends it\n * out the other side. The wire is as thick as the start circle. For a wire\n * that has to go around something, chain several wires end to end.\n *\n * The centerline is a cubic Bezier curve, and the start circle is swept\n * along it.\n */\ntype V = [number, number, number];\n\nconst add = (a: V, b: V): V => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];\nconst sub = (a: V, b: V): V => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];\nconst mul = (a: V, k: number): V => [a[0] * k, a[1] * k, a[2] * k];\nconst dot = (a: V, b: V) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];\nconst cross = (a: V, b: V): V => [\n  a[1] * b[2] - a[2] * b[1],\n  a[2] * b[0] - a[0] * b[2],\n  a[0] * b[1] - a[1] * b[0],\n];\nconst len = (a: V) => Math.sqrt(dot(a, a));\nconst vec = (p: any): V => [p.x ?? p[0], p.y ?? p[1], p.z ?? p[2]];\n\n/** Center, axis and radius of a round edge from three points on it; null if straight. */\nfunction circleOf(edge: any): { center: V; axis: V; radius: number } | null {\n  const a = vec(edge.pointAt(0));\n  const b = vec(edge.pointAt(1 / 3));\n  const c = vec(edge.pointAt(2 / 3));\n  const ab = sub(b, a);\n  const ac = sub(c, a);\n  const n = cross(ab, ac);\n  const n2 = dot(n, n);\n  if (n2 < 1e-12 * dot(ab, ab) * dot(ac, ac)) return null; // collinear: straight edge\n  // Circumcenter of triangle abc\n  const center = add(\n    a,\n    mul(add(mul(cross(n, ab), dot(ac, ac)), mul(cross(ac, n), dot(ab, ab))), 1 / (2 * n2)),\n  );\n  return { center, axis: mul(n, 1 / Math.sqrt(n2)), radius: len(sub(a, center)) };\n}\n\n/** The circle picked on a shape input, with an error that says what to do. */\nfunction pickedCircle(shape: Assembly | undefined, label: string) {\n  const ask = `Pick a circular edge on ${label} Shape for this end of the wire (a hole rim or the end of a pin).`;\n  // An edge input with nothing wired in passes a number, not a shape.\n  if (!shape || typeof (shape as any).getSelectedEdges !== \"function\")\n    throw new Error(`Connect the part the wire ${label === \"Start\" ? \"starts\" : \"ends\"} at to ${label} Shape. ${ask}`);\n  const edges = shape.getSelectedEdges();\n  if (!edges || edges.length === 0) throw new Error(ask);\n  if (edges.length > 1) console.warn(`${label} Shape: ${edges.length} edges picked; using the first.`);\n  const circle = circleOf(edges[0]);\n  if (!circle) throw new Error(`The edge picked on ${label} Shape is straight. ${ask}`);\n  return circle;\n}\n\n/** Sweep a closed profile along a spine with OpenCascade's discrete trihedron. */\nfunction sweepDiscrete(profile: any, spine: any) {\n  const oc = replicad.getOC();\n  const builder = new oc.BRepOffsetAPI_MakePipeShell(spine.wrapped);\n  try {\n    builder.SetDiscreteMode();\n    builder.Add(profile.wrapped, false, true);\n    builder.Build();\n    builder.MakeSolid();\n    return replicad.cast(builder.Shape());\n  } finally {\n    builder.delete();\n  }\n}\n\nfunction run(\n  startShape: Assembly | undefined = undefined, // pick the circular edge the wire starts at\n  endShape: Assembly | undefined = undefined, // pick the circular edge the wire ends at\n  stiffness: number = 0.5, // how far the wire runs straight out before bending\n  flipStart: boolean = false, // leave the start circle out its other side\n  flipEnd: boolean = false, // leave the end circle out its other side\n): Assembly {\n  const stiff = Number(stiffness);\n  if (!(stiff > 0)) throw new Error(\"Stiffness must be more than 0.\");\n\n  const start = pickedCircle(startShape, \"Start\");\n  const end = pickedCircle(endShape, \"End\");\n  const p0 = start.center;\n  const p1 = end.center;\n  const gap = len(sub(p1, p0));\n  if (gap < 1e-6) throw new Error(\"The start and end circles are in the same place.\");\n\n  // A circle's axis points either way: take the side facing the other end,\n  // then let the flip toggle reverse it.\n  const outward = (axis: V, from: V, toward: V, flip: boolean): V => {\n    const d = dot(axis, sub(toward, from)) < 0 ? mul(axis, -1) : axis;\n    return flip === true ? mul(d, -1) : d;\n  };\n  const d0 = outward(start.axis, p0, p1, flipStart);\n  const d1 = outward(end.axis, p1, p0, flipEnd);\n\n  // One cubic Bezier: its control points sit out along each end's direction,\n  // a stiffness fraction of the gap away.\n  const reach = gap * stiff;\n  const spine = replicad.assembleWire([\n    replicad.makeBezierCurve([p0, add(p0, mul(d0, reach)), add(p1, mul(d1, reach)), p1]),\n  ]);\n\n  // Sweep the start circle's size, square to the start direction, along the centerline.\n  const profile = () => replicad.assembleWire([replicad.makeCircle(start.radius, p0, d0)]);\n  let wire;\n  try {\n    wire = sweepDiscrete(profile(), spine);\n  } catch (e) {\n    // The default (corrected Frenet) mode fails on these curves; Frenet works\n    // where the discrete trihedron doesn't.\n    wire = replicad.genericSweep(profile(), spine, { frenet: true });\n  }\n\n  const length = replicad.measureLength(spine);\n  console.log(`Wire: ${(start.radius * 2).toFixed(2)} diameter, ${length.toFixed(1)} long`);\n\n  return new Assembly({ geometry: wire, tags: [\"wire\"] });\n}\n",
+                          "compiledCode": "\"use strict\";\nconst add = (a, b) => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];\nconst sub = (a, b) => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];\nconst mul = (a, k) => [a[0] * k, a[1] * k, a[2] * k];\nconst dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];\nconst cross = (a, b) => [\n    a[1] * b[2] - a[2] * b[1],\n    a[2] * b[0] - a[0] * b[2],\n    a[0] * b[1] - a[1] * b[0],\n];\nconst len = (a) => Math.sqrt(dot(a, a));\nconst vec = (p) => [p.x ?? p[0], p.y ?? p[1], p.z ?? p[2]];\n/** Center, axis and radius of a round edge from three points on it; null if straight. */\nfunction circleOf(edge) {\n    const a = vec(edge.pointAt(0));\n    const b = vec(edge.pointAt(1 / 3));\n    const c = vec(edge.pointAt(2 / 3));\n    const ab = sub(b, a);\n    const ac = sub(c, a);\n    const n = cross(ab, ac);\n    const n2 = dot(n, n);\n    if (n2 < 1e-12 * dot(ab, ab) * dot(ac, ac))\n        return null; // collinear: straight edge\n    // Circumcenter of triangle abc\n    const center = add(a, mul(add(mul(cross(n, ab), dot(ac, ac)), mul(cross(ac, n), dot(ab, ab))), 1 / (2 * n2)));\n    return { center, axis: mul(n, 1 / Math.sqrt(n2)), radius: len(sub(a, center)) };\n}\n/** The circle picked on a shape input, with an error that says what to do. */\nfunction pickedCircle(shape, label) {\n    const ask = `Pick a circular edge on ${label} Shape for this end of the wire (a hole rim or the end of a pin).`;\n    // An edge input with nothing wired in passes a number, not a shape.\n    if (!shape || typeof shape.getSelectedEdges !== \"function\")\n        throw new Error(`Connect the part the wire ${label === \"Start\" ? \"starts\" : \"ends\"} at to ${label} Shape. ${ask}`);\n    const edges = shape.getSelectedEdges();\n    if (!edges || edges.length === 0)\n        throw new Error(ask);\n    if (edges.length > 1)\n        console.warn(`${label} Shape: ${edges.length} edges picked; using the first.`);\n    const circle = circleOf(edges[0]);\n    if (!circle)\n        throw new Error(`The edge picked on ${label} Shape is straight. ${ask}`);\n    return circle;\n}\n/** Sweep a closed profile along a spine with OpenCascade's discrete trihedron. */\nfunction sweepDiscrete(profile, spine) {\n    const oc = replicad.getOC();\n    const builder = new oc.BRepOffsetAPI_MakePipeShell(spine.wrapped);\n    try {\n        builder.SetDiscreteMode();\n        builder.Add(profile.wrapped, false, true);\n        builder.Build();\n        builder.MakeSolid();\n        return replicad.cast(builder.Shape());\n    }\n    finally {\n        builder.delete();\n    }\n}\nfunction run(startShape = undefined, // pick the circular edge the wire starts at\nendShape = undefined, // pick the circular edge the wire ends at\nstiffness = 0.5, // how far the wire runs straight out before bending\nflipStart = false, // leave the start circle out its other side\nflipEnd = false) {\n    const stiff = Number(stiffness);\n    if (!(stiff > 0))\n        throw new Error(\"Stiffness must be more than 0.\");\n    const start = pickedCircle(startShape, \"Start\");\n    const end = pickedCircle(endShape, \"End\");\n    const p0 = start.center;\n    const p1 = end.center;\n    const gap = len(sub(p1, p0));\n    if (gap < 1e-6)\n        throw new Error(\"The start and end circles are in the same place.\");\n    // A circle's axis points either way: take the side facing the other end,\n    // then let the flip toggle reverse it.\n    const outward = (axis, from, toward, flip) => {\n        const d = dot(axis, sub(toward, from)) < 0 ? mul(axis, -1) : axis;\n        return flip === true ? mul(d, -1) : d;\n    };\n    const d0 = outward(start.axis, p0, p1, flipStart);\n    const d1 = outward(end.axis, p1, p0, flipEnd);\n    // One cubic Bezier: its control points sit out along each end's direction,\n    // a stiffness fraction of the gap away.\n    const reach = gap * stiff;\n    const spine = replicad.assembleWire([\n        replicad.makeBezierCurve([p0, add(p0, mul(d0, reach)), add(p1, mul(d1, reach)), p1]),\n    ]);\n    // Sweep the start circle's size, square to the start direction, along the centerline.\n    const profile = () => replicad.assembleWire([replicad.makeCircle(start.radius, p0, d0)]);\n    let wire;\n    try {\n        wire = sweepDiscrete(profile(), spine);\n    }\n    catch (e) {\n        // The default (corrected Frenet) mode fails on these curves; Frenet works\n        // where the discrete trihedron doesn't.\n        wire = replicad.genericSweep(profile(), spine, { frenet: true });\n    }\n    const length = replicad.measureLength(spine);\n    console.log(`Wire: ${(start.radius * 2).toFixed(2)} diameter, ${length.toFixed(1)} long`);\n    return new Assembly({ geometry: wire, tags: [\"wire\"] });\n}\n"
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.1538,
+                          "uniqueID": "id-13003",
+                          "name": "Start Shape",
+                          "type": "edgeselect",
+                          "options": [],
+                          "selectedEdgeData": {
+                            "3": [
+                              3
+                            ]
+                          }
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.2462,
+                          "uniqueID": "id-13004",
+                          "name": "End Shape",
+                          "type": "edgeselect",
+                          "options": [],
+                          "selectedEdgeData": {
+                            "3": [
+                              3
+                            ]
+                          }
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.3385,
+                          "uniqueID": "id-13005",
+                          "name": "Stiffness",
+                          "type": "number",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.4308,
+                          "uniqueID": "id-13006",
+                          "name": "Flip Start",
+                          "type": "boolean",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.5231,
+                          "uniqueID": "id-13007",
+                          "name": "Flip End",
+                          "type": "boolean",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Color",
+                          "x": 0.78,
+                          "y": 0.5,
+                          "uniqueID": "id-13008",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "selectedColor": "Default"
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-13002",
+                          "ap2ID": "id-13008"
+                        },
+                        {
+                          "ap2Name": "startShape",
+                          "ap1ID": "id-13003",
+                          "ap2ID": "id-13002"
+                        },
+                        {
+                          "ap2Name": "endShape",
+                          "ap1ID": "id-13004",
+                          "ap2ID": "id-13002"
+                        },
+                        {
+                          "ap2Name": "stiffness",
+                          "ap1ID": "id-13005",
+                          "ap2ID": "id-13002"
+                        },
+                        {
+                          "ap2Name": "flipStart",
+                          "ap1ID": "id-13006",
+                          "ap2ID": "id-13002"
+                        },
+                        {
+                          "ap2Name": "flipEnd",
+                          "ap1ID": "id-13007",
+                          "ap2ID": "id-13002"
+                        },
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-13008",
+                          "ap2ID": "id-13001"
+                        }
+                      ],
+                      "parentRepo": {
+                        "owner": "BarbourSmith",
+                        "repoName": "Wire_Between_Points",
+                        "privateRepo": false
+                      },
+                      "unitsKey": "MM",
+                      "fileTypeVersion": 1,
+                      "scaleToProjectUnits": true,
+                      "lastReloadedFromGithubAt": 1795036329007
+                    }
+                  ],
+                  "allConnectors": [
+                    {
+                      "ap2Name": "edgesOf",
+                      "ap1ID": "id-12940",
+                      "ap2ID": "id-12971"
+                    },
+                    {
+                      "ap2Name": "edgesOf",
+                      "ap1ID": "id-12943",
+                      "ap2ID": "id-12988"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-12946",
+                      "ap2ID": "id-12950"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-12950",
+                      "ap2ID": "id-12954"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-12950",
+                      "ap2ID": "id-12960"
+                    },
+                    {
+                      "ap2Name": "intersecting",
+                      "ap1ID": "id-12954",
+                      "ap2ID": "id-12971"
+                    },
+                    {
+                      "ap2Name": "intersecting",
+                      "ap1ID": "id-12960",
+                      "ap2ID": "id-12988"
+                    },
+                    {
+                      "ap2Name": "Start Shape",
+                      "ap1ID": "id-12971",
+                      "ap2ID": "id-13009"
+                    },
+                    {
+                      "ap2Name": "End Shape",
+                      "ap1ID": "id-12988",
+                      "ap2ID": "id-13009"
+                    },
+                    {
+                      "ap2Name": "number or geometry",
+                      "ap1ID": "id-13009",
+                      "ap2ID": "id-12938"
+                    }
+                  ],
+                  "fileTypeVersion": 1
+                },
+                {
+                  "atomType": "Molecule",
+                  "x": 0.4,
+                  "y": 0.62,
+                  "uniqueID": "id-13032",
+                  "name": "Encoder Cable, Third Arm",
+                  "ioValues": [
+                    {
+                      "name": "Arm Ends",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "Board Ends",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "topLevel": false,
+                  "allAtoms": [
+                    {
+                      "atomType": "Output",
+                      "x": 0.98,
+                      "y": 0.5,
+                      "uniqueID": "id-13034",
+                      "ioValues": [
+                        {
+                          "name": "number or geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Input",
+                      "x": 0.0254,
+                      "y": 0.1538,
+                      "uniqueID": "id-13036",
+                      "name": "Arm Ends",
+                      "type": "geometry",
+                      "options": []
+                    },
+                    {
+                      "atomType": "Input",
+                      "x": 0.0254,
+                      "y": 0.2462,
+                      "uniqueID": "id-13039",
+                      "name": "Board Ends",
+                      "type": "geometry",
+                      "options": []
+                    },
+                    {
+                      "atomType": "Rectangle",
+                      "x": 0.15,
+                      "y": 0.5,
+                      "uniqueID": "id-13042",
+                      "ioValues": [
+                        {
+                          "name": "x length",
+                          "ioValue": 0.4
+                        },
+                        {
+                          "name": "y length",
+                          "ioValue": 0.4
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Extrude",
+                      "x": 0.27,
+                      "y": 0.5,
+                      "uniqueID": "id-13046",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "height",
+                          "ioValue": 0.4
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Move",
+                      "x": 0.4,
+                      "y": 0.3,
+                      "uniqueID": "id-13050",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "xDist",
+                          "ioValue": 75.837
+                        },
+                        {
+                          "name": "yDist",
+                          "ioValue": 78.312
+                        },
+                        {
+                          "name": "zDist",
+                          "ioValue": 62.9
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Move",
+                      "x": 0.4,
+                      "y": 0.7,
+                      "uniqueID": "id-13056",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "xDist",
+                          "ioValue": 47.4
+                        },
+                        {
+                          "name": "yDist",
+                          "ioValue": 9.25
+                        },
+                        {
+                          "name": "zDist",
+                          "ioValue": 160.5
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "GitHubMolecule",
+                      "x": 0.55,
+                      "y": 0.3,
+                      "uniqueID": "id-13067",
+                      "name": "selected.EdgesByShape",
+                      "ioValues": [
+                        {
+                          "name": "edgesOf",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "intersecting",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-13063",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Code",
+                          "x": 0.3451,
+                          "y": 0.4486,
+                          "uniqueID": "id-13064",
+                          "ioValues": [
+                            {
+                              "name": "input",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "boundingShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "interpreterVersion": 1,
+                          "code": "function run(input: Assembly, boundingShape: Assembly) {\n  const bounds: replicad.AnyShape[] = []\n  boundingShape.onLeafs((leaf) => {\n    if (!(leaf.geometry instanceof replicad.Drawing)) {\n      bounds.push(leaf.geometry)\n    }\n    return leaf;\n  })\n\n  if (bounds.length == 0) {\n    return input;\n  }\n\n  console.log(`Using ${bounds.length} bounding shapes`)\n\n  return input.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      throw new Error(\"Drawings have no Edges. Input must be 3d\")\n    }\n    // identify new indexes to mark as selected\n    const selectedIndexes = []\n    for (const bound of bounds) {\n      const finder = new replicad.EdgeFinder().inShape(bound)\n      const foundEdges = finder.find(leaf.geometry)\n      const allEdges = leaf.geometry.edges;\n      const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n      console.log(`found edges: ${foundEdges} indexes: ${indexes}`)\n      selectedIndexes.push(...indexes)\n    }\n\n    if (leaf.selection == undefined) {\n      leaf.selection = { edges: [] }\n    }\n    const before = leaf.selection.edges as number[];\n    leaf.selection.edges = [... new Set([...before, ...selectedIndexes])]\n    console.log(`updated selection list ${before} to ${leaf.selection.edges}`)\n    return leaf;\n  })\n}",
+                          "compiledCode": "\"use strict\";\nfunction run(input, boundingShape) {\n    const bounds = [];\n    boundingShape.onLeafs((leaf) => {\n        if (!(leaf.geometry instanceof replicad.Drawing)) {\n            bounds.push(leaf.geometry);\n        }\n        return leaf;\n    });\n    if (bounds.length == 0) {\n        return input;\n    }\n    console.log(`Using ${bounds.length} bounding shapes`);\n    return input.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            throw new Error(\"Drawings have no Edges. Input must be 3d\");\n        }\n        // identify new indexes to mark as selected\n        const selectedIndexes = [];\n        for (const bound of bounds) {\n            const finder = new replicad.EdgeFinder().inShape(bound);\n            const foundEdges = finder.find(leaf.geometry);\n            const allEdges = leaf.geometry.edges;\n            const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n            console.log(`found edges: ${foundEdges} indexes: ${indexes}`);\n            selectedIndexes.push(...indexes);\n        }\n        if (leaf.selection == undefined) {\n            leaf.selection = { edges: [] };\n        }\n        const before = leaf.selection.edges;\n        leaf.selection.edges = [...new Set([...before, ...selectedIndexes])];\n        console.log(`updated selection list ${before} to ${leaf.selection.edges}`);\n        return leaf;\n    });\n}\n"
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.1538,
+                          "uniqueID": "id-13065",
+                          "name": "edgesOf",
+                          "type": "geometry",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.2462,
+                          "uniqueID": "id-13066",
+                          "name": "intersecting",
+                          "type": "geometry",
+                          "options": []
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-13064",
+                          "ap2ID": "id-13063"
+                        },
+                        {
+                          "ap2Name": "input",
+                          "ap1ID": "id-13065",
+                          "ap2ID": "id-13064"
+                        },
+                        {
+                          "ap2Name": "boundingShape",
+                          "ap1ID": "id-13066",
+                          "ap2ID": "id-13064"
+                        }
+                      ],
+                      "parentRepo": {
+                        "owner": "tristan-huber",
+                        "repoName": "selected.EdgesByShape",
+                        "privateRepo": false
+                      },
+                      "unitsKey": "Unitless",
+                      "fileTypeVersion": 1,
+                      "scaleToProjectUnits": true,
+                      "lastReloadedFromGithubAt": 1795036329551
+                    },
+                    {
+                      "atomType": "GitHubMolecule",
+                      "x": 0.55,
+                      "y": 0.7,
+                      "uniqueID": "id-13084",
+                      "name": "selected.EdgesByShape",
+                      "ioValues": [
+                        {
+                          "name": "edgesOf",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "intersecting",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-13080",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Code",
+                          "x": 0.3451,
+                          "y": 0.4486,
+                          "uniqueID": "id-13081",
+                          "ioValues": [
+                            {
+                              "name": "input",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "boundingShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "interpreterVersion": 1,
+                          "code": "function run(input: Assembly, boundingShape: Assembly) {\n  const bounds: replicad.AnyShape[] = []\n  boundingShape.onLeafs((leaf) => {\n    if (!(leaf.geometry instanceof replicad.Drawing)) {\n      bounds.push(leaf.geometry)\n    }\n    return leaf;\n  })\n\n  if (bounds.length == 0) {\n    return input;\n  }\n\n  console.log(`Using ${bounds.length} bounding shapes`)\n\n  return input.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      throw new Error(\"Drawings have no Edges. Input must be 3d\")\n    }\n    // identify new indexes to mark as selected\n    const selectedIndexes = []\n    for (const bound of bounds) {\n      const finder = new replicad.EdgeFinder().inShape(bound)\n      const foundEdges = finder.find(leaf.geometry)\n      const allEdges = leaf.geometry.edges;\n      const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n      console.log(`found edges: ${foundEdges} indexes: ${indexes}`)\n      selectedIndexes.push(...indexes)\n    }\n\n    if (leaf.selection == undefined) {\n      leaf.selection = { edges: [] }\n    }\n    const before = leaf.selection.edges as number[];\n    leaf.selection.edges = [... new Set([...before, ...selectedIndexes])]\n    console.log(`updated selection list ${before} to ${leaf.selection.edges}`)\n    return leaf;\n  })\n}",
+                          "compiledCode": "\"use strict\";\nfunction run(input, boundingShape) {\n    const bounds = [];\n    boundingShape.onLeafs((leaf) => {\n        if (!(leaf.geometry instanceof replicad.Drawing)) {\n            bounds.push(leaf.geometry);\n        }\n        return leaf;\n    });\n    if (bounds.length == 0) {\n        return input;\n    }\n    console.log(`Using ${bounds.length} bounding shapes`);\n    return input.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            throw new Error(\"Drawings have no Edges. Input must be 3d\");\n        }\n        // identify new indexes to mark as selected\n        const selectedIndexes = [];\n        for (const bound of bounds) {\n            const finder = new replicad.EdgeFinder().inShape(bound);\n            const foundEdges = finder.find(leaf.geometry);\n            const allEdges = leaf.geometry.edges;\n            const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n            console.log(`found edges: ${foundEdges} indexes: ${indexes}`);\n            selectedIndexes.push(...indexes);\n        }\n        if (leaf.selection == undefined) {\n            leaf.selection = { edges: [] };\n        }\n        const before = leaf.selection.edges;\n        leaf.selection.edges = [...new Set([...before, ...selectedIndexes])];\n        console.log(`updated selection list ${before} to ${leaf.selection.edges}`);\n        return leaf;\n    });\n}\n"
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.1538,
+                          "uniqueID": "id-13082",
+                          "name": "edgesOf",
+                          "type": "geometry",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.2462,
+                          "uniqueID": "id-13083",
+                          "name": "intersecting",
+                          "type": "geometry",
+                          "options": []
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-13081",
+                          "ap2ID": "id-13080"
+                        },
+                        {
+                          "ap2Name": "input",
+                          "ap1ID": "id-13082",
+                          "ap2ID": "id-13081"
+                        },
+                        {
+                          "ap2Name": "boundingShape",
+                          "ap1ID": "id-13083",
+                          "ap2ID": "id-13081"
+                        }
+                      ],
+                      "parentRepo": {
+                        "owner": "tristan-huber",
+                        "repoName": "selected.EdgesByShape",
+                        "privateRepo": false
+                      },
+                      "unitsKey": "Unitless",
+                      "fileTypeVersion": 1,
+                      "scaleToProjectUnits": true,
+                      "lastReloadedFromGithubAt": 1795036330035
+                    },
+                    {
+                      "atomType": "GitHubMolecule",
+                      "x": 0.72,
+                      "y": 0.5,
+                      "uniqueID": "id-13105",
+                      "name": "Wire_Between_Points",
+                      "ioValues": [
+                        {
+                          "name": "Start Shape",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "End Shape",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "Stiffness",
+                          "ioValue": 0.5
+                        },
+                        {
+                          "name": "Flip Start",
+                          "ioValue": false
+                        },
+                        {
+                          "name": "Flip End",
+                          "ioValue": false
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-13097",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Code",
+                          "x": 0.6,
+                          "y": 0.5,
+                          "uniqueID": "id-13098",
+                          "ioValues": [
+                            {
+                              "name": "startShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "endShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "stiffness",
+                              "ioValue": 0.5
+                            },
+                            {
+                              "name": "flipStart",
+                              "ioValue": false
+                            },
+                            {
+                              "name": "flipEnd",
+                              "ioValue": false
+                            }
+                          ],
+                          "interpreterVersion": 1,
+                          "code": "/**\n * A round wire (or cable, hose, tube) routed smoothly between two round edges.\n *\n * Wire the parts in and pick a circular edge on each: on Start Shape where the\n * wire begins and on End Shape where it ends (a hole rim, the end of a pin or\n * terminal). The wire runs from the center of each circle, leaving straight\n * out along the circle's axis, and curves smoothly between them. Each end\n * leaves on the side facing the other end; Flip Start or Flip End sends it\n * out the other side. The wire is as thick as the start circle. For a wire\n * that has to go around something, chain several wires end to end.\n *\n * The centerline is a cubic Bezier curve, and the start circle is swept\n * along it.\n */\ntype V = [number, number, number];\n\nconst add = (a: V, b: V): V => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];\nconst sub = (a: V, b: V): V => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];\nconst mul = (a: V, k: number): V => [a[0] * k, a[1] * k, a[2] * k];\nconst dot = (a: V, b: V) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];\nconst cross = (a: V, b: V): V => [\n  a[1] * b[2] - a[2] * b[1],\n  a[2] * b[0] - a[0] * b[2],\n  a[0] * b[1] - a[1] * b[0],\n];\nconst len = (a: V) => Math.sqrt(dot(a, a));\nconst vec = (p: any): V => [p.x ?? p[0], p.y ?? p[1], p.z ?? p[2]];\n\n/** Center, axis and radius of a round edge from three points on it; null if straight. */\nfunction circleOf(edge: any): { center: V; axis: V; radius: number } | null {\n  const a = vec(edge.pointAt(0));\n  const b = vec(edge.pointAt(1 / 3));\n  const c = vec(edge.pointAt(2 / 3));\n  const ab = sub(b, a);\n  const ac = sub(c, a);\n  const n = cross(ab, ac);\n  const n2 = dot(n, n);\n  if (n2 < 1e-12 * dot(ab, ab) * dot(ac, ac)) return null; // collinear: straight edge\n  // Circumcenter of triangle abc\n  const center = add(\n    a,\n    mul(add(mul(cross(n, ab), dot(ac, ac)), mul(cross(ac, n), dot(ab, ab))), 1 / (2 * n2)),\n  );\n  return { center, axis: mul(n, 1 / Math.sqrt(n2)), radius: len(sub(a, center)) };\n}\n\n/** The circle picked on a shape input, with an error that says what to do. */\nfunction pickedCircle(shape: Assembly | undefined, label: string) {\n  const ask = `Pick a circular edge on ${label} Shape for this end of the wire (a hole rim or the end of a pin).`;\n  // An edge input with nothing wired in passes a number, not a shape.\n  if (!shape || typeof (shape as any).getSelectedEdges !== \"function\")\n    throw new Error(`Connect the part the wire ${label === \"Start\" ? \"starts\" : \"ends\"} at to ${label} Shape. ${ask}`);\n  const edges = shape.getSelectedEdges();\n  if (!edges || edges.length === 0) throw new Error(ask);\n  if (edges.length > 1) console.warn(`${label} Shape: ${edges.length} edges picked; using the first.`);\n  const circle = circleOf(edges[0]);\n  if (!circle) throw new Error(`The edge picked on ${label} Shape is straight. ${ask}`);\n  return circle;\n}\n\n/** Sweep a closed profile along a spine with OpenCascade's discrete trihedron. */\nfunction sweepDiscrete(profile: any, spine: any) {\n  const oc = replicad.getOC();\n  const builder = new oc.BRepOffsetAPI_MakePipeShell(spine.wrapped);\n  try {\n    builder.SetDiscreteMode();\n    builder.Add(profile.wrapped, false, true);\n    builder.Build();\n    builder.MakeSolid();\n    return replicad.cast(builder.Shape());\n  } finally {\n    builder.delete();\n  }\n}\n\nfunction run(\n  startShape: Assembly | undefined = undefined, // pick the circular edge the wire starts at\n  endShape: Assembly | undefined = undefined, // pick the circular edge the wire ends at\n  stiffness: number = 0.5, // how far the wire runs straight out before bending\n  flipStart: boolean = false, // leave the start circle out its other side\n  flipEnd: boolean = false, // leave the end circle out its other side\n): Assembly {\n  const stiff = Number(stiffness);\n  if (!(stiff > 0)) throw new Error(\"Stiffness must be more than 0.\");\n\n  const start = pickedCircle(startShape, \"Start\");\n  const end = pickedCircle(endShape, \"End\");\n  const p0 = start.center;\n  const p1 = end.center;\n  const gap = len(sub(p1, p0));\n  if (gap < 1e-6) throw new Error(\"The start and end circles are in the same place.\");\n\n  // A circle's axis points either way: take the side facing the other end,\n  // then let the flip toggle reverse it.\n  const outward = (axis: V, from: V, toward: V, flip: boolean): V => {\n    const d = dot(axis, sub(toward, from)) < 0 ? mul(axis, -1) : axis;\n    return flip === true ? mul(d, -1) : d;\n  };\n  const d0 = outward(start.axis, p0, p1, flipStart);\n  const d1 = outward(end.axis, p1, p0, flipEnd);\n\n  // One cubic Bezier: its control points sit out along each end's direction,\n  // a stiffness fraction of the gap away.\n  const reach = gap * stiff;\n  const spine = replicad.assembleWire([\n    replicad.makeBezierCurve([p0, add(p0, mul(d0, reach)), add(p1, mul(d1, reach)), p1]),\n  ]);\n\n  // Sweep the start circle's size, square to the start direction, along the centerline.\n  const profile = () => replicad.assembleWire([replicad.makeCircle(start.radius, p0, d0)]);\n  let wire;\n  try {\n    wire = sweepDiscrete(profile(), spine);\n  } catch (e) {\n    // The default (corrected Frenet) mode fails on these curves; Frenet works\n    // where the discrete trihedron doesn't.\n    wire = replicad.genericSweep(profile(), spine, { frenet: true });\n  }\n\n  const length = replicad.measureLength(spine);\n  console.log(`Wire: ${(start.radius * 2).toFixed(2)} diameter, ${length.toFixed(1)} long`);\n\n  return new Assembly({ geometry: wire, tags: [\"wire\"] });\n}\n",
+                          "compiledCode": "\"use strict\";\nconst add = (a, b) => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];\nconst sub = (a, b) => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];\nconst mul = (a, k) => [a[0] * k, a[1] * k, a[2] * k];\nconst dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];\nconst cross = (a, b) => [\n    a[1] * b[2] - a[2] * b[1],\n    a[2] * b[0] - a[0] * b[2],\n    a[0] * b[1] - a[1] * b[0],\n];\nconst len = (a) => Math.sqrt(dot(a, a));\nconst vec = (p) => [p.x ?? p[0], p.y ?? p[1], p.z ?? p[2]];\n/** Center, axis and radius of a round edge from three points on it; null if straight. */\nfunction circleOf(edge) {\n    const a = vec(edge.pointAt(0));\n    const b = vec(edge.pointAt(1 / 3));\n    const c = vec(edge.pointAt(2 / 3));\n    const ab = sub(b, a);\n    const ac = sub(c, a);\n    const n = cross(ab, ac);\n    const n2 = dot(n, n);\n    if (n2 < 1e-12 * dot(ab, ab) * dot(ac, ac))\n        return null; // collinear: straight edge\n    // Circumcenter of triangle abc\n    const center = add(a, mul(add(mul(cross(n, ab), dot(ac, ac)), mul(cross(ac, n), dot(ab, ab))), 1 / (2 * n2)));\n    return { center, axis: mul(n, 1 / Math.sqrt(n2)), radius: len(sub(a, center)) };\n}\n/** The circle picked on a shape input, with an error that says what to do. */\nfunction pickedCircle(shape, label) {\n    const ask = `Pick a circular edge on ${label} Shape for this end of the wire (a hole rim or the end of a pin).`;\n    // An edge input with nothing wired in passes a number, not a shape.\n    if (!shape || typeof shape.getSelectedEdges !== \"function\")\n        throw new Error(`Connect the part the wire ${label === \"Start\" ? \"starts\" : \"ends\"} at to ${label} Shape. ${ask}`);\n    const edges = shape.getSelectedEdges();\n    if (!edges || edges.length === 0)\n        throw new Error(ask);\n    if (edges.length > 1)\n        console.warn(`${label} Shape: ${edges.length} edges picked; using the first.`);\n    const circle = circleOf(edges[0]);\n    if (!circle)\n        throw new Error(`The edge picked on ${label} Shape is straight. ${ask}`);\n    return circle;\n}\n/** Sweep a closed profile along a spine with OpenCascade's discrete trihedron. */\nfunction sweepDiscrete(profile, spine) {\n    const oc = replicad.getOC();\n    const builder = new oc.BRepOffsetAPI_MakePipeShell(spine.wrapped);\n    try {\n        builder.SetDiscreteMode();\n        builder.Add(profile.wrapped, false, true);\n        builder.Build();\n        builder.MakeSolid();\n        return replicad.cast(builder.Shape());\n    }\n    finally {\n        builder.delete();\n    }\n}\nfunction run(startShape = undefined, // pick the circular edge the wire starts at\nendShape = undefined, // pick the circular edge the wire ends at\nstiffness = 0.5, // how far the wire runs straight out before bending\nflipStart = false, // leave the start circle out its other side\nflipEnd = false) {\n    const stiff = Number(stiffness);\n    if (!(stiff > 0))\n        throw new Error(\"Stiffness must be more than 0.\");\n    const start = pickedCircle(startShape, \"Start\");\n    const end = pickedCircle(endShape, \"End\");\n    const p0 = start.center;\n    const p1 = end.center;\n    const gap = len(sub(p1, p0));\n    if (gap < 1e-6)\n        throw new Error(\"The start and end circles are in the same place.\");\n    // A circle's axis points either way: take the side facing the other end,\n    // then let the flip toggle reverse it.\n    const outward = (axis, from, toward, flip) => {\n        const d = dot(axis, sub(toward, from)) < 0 ? mul(axis, -1) : axis;\n        return flip === true ? mul(d, -1) : d;\n    };\n    const d0 = outward(start.axis, p0, p1, flipStart);\n    const d1 = outward(end.axis, p1, p0, flipEnd);\n    // One cubic Bezier: its control points sit out along each end's direction,\n    // a stiffness fraction of the gap away.\n    const reach = gap * stiff;\n    const spine = replicad.assembleWire([\n        replicad.makeBezierCurve([p0, add(p0, mul(d0, reach)), add(p1, mul(d1, reach)), p1]),\n    ]);\n    // Sweep the start circle's size, square to the start direction, along the centerline.\n    const profile = () => replicad.assembleWire([replicad.makeCircle(start.radius, p0, d0)]);\n    let wire;\n    try {\n        wire = sweepDiscrete(profile(), spine);\n    }\n    catch (e) {\n        // The default (corrected Frenet) mode fails on these curves; Frenet works\n        // where the discrete trihedron doesn't.\n        wire = replicad.genericSweep(profile(), spine, { frenet: true });\n    }\n    const length = replicad.measureLength(spine);\n    console.log(`Wire: ${(start.radius * 2).toFixed(2)} diameter, ${length.toFixed(1)} long`);\n    return new Assembly({ geometry: wire, tags: [\"wire\"] });\n}\n"
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.1538,
+                          "uniqueID": "id-13099",
+                          "name": "Start Shape",
+                          "type": "edgeselect",
+                          "options": [],
+                          "selectedEdgeData": {
+                            "5": [
+                              3
+                            ]
+                          }
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.2462,
+                          "uniqueID": "id-13100",
+                          "name": "End Shape",
+                          "type": "edgeselect",
+                          "options": [],
+                          "selectedEdgeData": {
+                            "1": [
+                              3
+                            ]
+                          }
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.3385,
+                          "uniqueID": "id-13101",
+                          "name": "Stiffness",
+                          "type": "number",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.4308,
+                          "uniqueID": "id-13102",
+                          "name": "Flip Start",
+                          "type": "boolean",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.5231,
+                          "uniqueID": "id-13103",
+                          "name": "Flip End",
+                          "type": "boolean",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Color",
+                          "x": 0.78,
+                          "y": 0.5,
+                          "uniqueID": "id-13104",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "selectedColor": "Default"
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-13098",
+                          "ap2ID": "id-13104"
+                        },
+                        {
+                          "ap2Name": "startShape",
+                          "ap1ID": "id-13099",
+                          "ap2ID": "id-13098"
+                        },
+                        {
+                          "ap2Name": "endShape",
+                          "ap1ID": "id-13100",
+                          "ap2ID": "id-13098"
+                        },
+                        {
+                          "ap2Name": "stiffness",
+                          "ap1ID": "id-13101",
+                          "ap2ID": "id-13098"
+                        },
+                        {
+                          "ap2Name": "flipStart",
+                          "ap1ID": "id-13102",
+                          "ap2ID": "id-13098"
+                        },
+                        {
+                          "ap2Name": "flipEnd",
+                          "ap1ID": "id-13103",
+                          "ap2ID": "id-13098"
+                        },
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-13104",
+                          "ap2ID": "id-13097"
+                        }
+                      ],
+                      "parentRepo": {
+                        "owner": "BarbourSmith",
+                        "repoName": "Wire_Between_Points",
+                        "privateRepo": false
+                      },
+                      "unitsKey": "MM",
+                      "fileTypeVersion": 1,
+                      "scaleToProjectUnits": true,
+                      "lastReloadedFromGithubAt": 1795036331015
+                    }
+                  ],
+                  "allConnectors": [
+                    {
+                      "ap2Name": "edgesOf",
+                      "ap1ID": "id-13036",
+                      "ap2ID": "id-13067"
+                    },
+                    {
+                      "ap2Name": "edgesOf",
+                      "ap1ID": "id-13039",
+                      "ap2ID": "id-13084"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-13042",
+                      "ap2ID": "id-13046"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-13046",
+                      "ap2ID": "id-13050"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-13046",
+                      "ap2ID": "id-13056"
+                    },
+                    {
+                      "ap2Name": "intersecting",
+                      "ap1ID": "id-13050",
+                      "ap2ID": "id-13067"
+                    },
+                    {
+                      "ap2Name": "intersecting",
+                      "ap1ID": "id-13056",
+                      "ap2ID": "id-13084"
+                    },
+                    {
+                      "ap2Name": "Start Shape",
+                      "ap1ID": "id-13067",
+                      "ap2ID": "id-13105"
+                    },
+                    {
+                      "ap2Name": "End Shape",
+                      "ap1ID": "id-13084",
+                      "ap2ID": "id-13105"
+                    },
+                    {
+                      "ap2Name": "number or geometry",
+                      "ap1ID": "id-13105",
+                      "ap2ID": "id-13034"
+                    }
+                  ],
+                  "fileTypeVersion": 1
+                },
+                {
+                  "atomType": "Molecule",
+                  "x": 0.4,
+                  "y": 0.85,
+                  "uniqueID": "id-13128",
+                  "name": "Encoder Cable, Bottom Arm",
+                  "ioValues": [
+                    {
+                      "name": "Arm Ends",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "Board Ends",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "topLevel": false,
+                  "allAtoms": [
+                    {
+                      "atomType": "Output",
+                      "x": 0.98,
+                      "y": 0.5,
+                      "uniqueID": "id-13130",
+                      "ioValues": [
+                        {
+                          "name": "number or geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Input",
+                      "x": 0.0254,
+                      "y": 0.1538,
+                      "uniqueID": "id-13132",
+                      "name": "Arm Ends",
+                      "type": "geometry",
+                      "options": []
+                    },
+                    {
+                      "atomType": "Input",
+                      "x": 0.0254,
+                      "y": 0.2462,
+                      "uniqueID": "id-13135",
+                      "name": "Board Ends",
+                      "type": "geometry",
+                      "options": []
+                    },
+                    {
+                      "atomType": "Rectangle",
+                      "x": 0.15,
+                      "y": 0.5,
+                      "uniqueID": "id-13138",
+                      "ioValues": [
+                        {
+                          "name": "x length",
+                          "ioValue": 0.4
+                        },
+                        {
+                          "name": "y length",
+                          "ioValue": 0.4
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Extrude",
+                      "x": 0.27,
+                      "y": 0.5,
+                      "uniqueID": "id-13142",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "height",
+                          "ioValue": 0.4
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Move",
+                      "x": 0.4,
+                      "y": 0.3,
+                      "uniqueID": "id-13146",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "xDist",
+                          "ioValue": -75.837
+                        },
+                        {
+                          "name": "yDist",
+                          "ioValue": -78.312
+                        },
+                        {
+                          "name": "zDist",
+                          "ioValue": 41.4
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Move",
+                      "x": 0.4,
+                      "y": 0.7,
+                      "uniqueID": "id-13152",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "xDist",
+                          "ioValue": -47.4
+                        },
+                        {
+                          "name": "yDist",
+                          "ioValue": -9.25
+                        },
+                        {
+                          "name": "zDist",
+                          "ioValue": 160.5
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "GitHubMolecule",
+                      "x": 0.55,
+                      "y": 0.3,
+                      "uniqueID": "id-13163",
+                      "name": "selected.EdgesByShape",
+                      "ioValues": [
+                        {
+                          "name": "edgesOf",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "intersecting",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-13159",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Code",
+                          "x": 0.3451,
+                          "y": 0.4486,
+                          "uniqueID": "id-13160",
+                          "ioValues": [
+                            {
+                              "name": "input",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "boundingShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "interpreterVersion": 1,
+                          "code": "function run(input: Assembly, boundingShape: Assembly) {\n  const bounds: replicad.AnyShape[] = []\n  boundingShape.onLeafs((leaf) => {\n    if (!(leaf.geometry instanceof replicad.Drawing)) {\n      bounds.push(leaf.geometry)\n    }\n    return leaf;\n  })\n\n  if (bounds.length == 0) {\n    return input;\n  }\n\n  console.log(`Using ${bounds.length} bounding shapes`)\n\n  return input.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      throw new Error(\"Drawings have no Edges. Input must be 3d\")\n    }\n    // identify new indexes to mark as selected\n    const selectedIndexes = []\n    for (const bound of bounds) {\n      const finder = new replicad.EdgeFinder().inShape(bound)\n      const foundEdges = finder.find(leaf.geometry)\n      const allEdges = leaf.geometry.edges;\n      const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n      console.log(`found edges: ${foundEdges} indexes: ${indexes}`)\n      selectedIndexes.push(...indexes)\n    }\n\n    if (leaf.selection == undefined) {\n      leaf.selection = { edges: [] }\n    }\n    const before = leaf.selection.edges as number[];\n    leaf.selection.edges = [... new Set([...before, ...selectedIndexes])]\n    console.log(`updated selection list ${before} to ${leaf.selection.edges}`)\n    return leaf;\n  })\n}",
+                          "compiledCode": "\"use strict\";\nfunction run(input, boundingShape) {\n    const bounds = [];\n    boundingShape.onLeafs((leaf) => {\n        if (!(leaf.geometry instanceof replicad.Drawing)) {\n            bounds.push(leaf.geometry);\n        }\n        return leaf;\n    });\n    if (bounds.length == 0) {\n        return input;\n    }\n    console.log(`Using ${bounds.length} bounding shapes`);\n    return input.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            throw new Error(\"Drawings have no Edges. Input must be 3d\");\n        }\n        // identify new indexes to mark as selected\n        const selectedIndexes = [];\n        for (const bound of bounds) {\n            const finder = new replicad.EdgeFinder().inShape(bound);\n            const foundEdges = finder.find(leaf.geometry);\n            const allEdges = leaf.geometry.edges;\n            const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n            console.log(`found edges: ${foundEdges} indexes: ${indexes}`);\n            selectedIndexes.push(...indexes);\n        }\n        if (leaf.selection == undefined) {\n            leaf.selection = { edges: [] };\n        }\n        const before = leaf.selection.edges;\n        leaf.selection.edges = [...new Set([...before, ...selectedIndexes])];\n        console.log(`updated selection list ${before} to ${leaf.selection.edges}`);\n        return leaf;\n    });\n}\n"
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.1538,
+                          "uniqueID": "id-13161",
+                          "name": "edgesOf",
+                          "type": "geometry",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.2462,
+                          "uniqueID": "id-13162",
+                          "name": "intersecting",
+                          "type": "geometry",
+                          "options": []
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-13160",
+                          "ap2ID": "id-13159"
+                        },
+                        {
+                          "ap2Name": "input",
+                          "ap1ID": "id-13161",
+                          "ap2ID": "id-13160"
+                        },
+                        {
+                          "ap2Name": "boundingShape",
+                          "ap1ID": "id-13162",
+                          "ap2ID": "id-13160"
+                        }
+                      ],
+                      "parentRepo": {
+                        "owner": "tristan-huber",
+                        "repoName": "selected.EdgesByShape",
+                        "privateRepo": false
+                      },
+                      "unitsKey": "Unitless",
+                      "fileTypeVersion": 1,
+                      "scaleToProjectUnits": true,
+                      "lastReloadedFromGithubAt": 1795036331575
+                    },
+                    {
+                      "atomType": "GitHubMolecule",
+                      "x": 0.55,
+                      "y": 0.7,
+                      "uniqueID": "id-13180",
+                      "name": "selected.EdgesByShape",
+                      "ioValues": [
+                        {
+                          "name": "edgesOf",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "intersecting",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-13176",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Code",
+                          "x": 0.3451,
+                          "y": 0.4486,
+                          "uniqueID": "id-13177",
+                          "ioValues": [
+                            {
+                              "name": "input",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "boundingShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "interpreterVersion": 1,
+                          "code": "function run(input: Assembly, boundingShape: Assembly) {\n  const bounds: replicad.AnyShape[] = []\n  boundingShape.onLeafs((leaf) => {\n    if (!(leaf.geometry instanceof replicad.Drawing)) {\n      bounds.push(leaf.geometry)\n    }\n    return leaf;\n  })\n\n  if (bounds.length == 0) {\n    return input;\n  }\n\n  console.log(`Using ${bounds.length} bounding shapes`)\n\n  return input.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      throw new Error(\"Drawings have no Edges. Input must be 3d\")\n    }\n    // identify new indexes to mark as selected\n    const selectedIndexes = []\n    for (const bound of bounds) {\n      const finder = new replicad.EdgeFinder().inShape(bound)\n      const foundEdges = finder.find(leaf.geometry)\n      const allEdges = leaf.geometry.edges;\n      const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n      console.log(`found edges: ${foundEdges} indexes: ${indexes}`)\n      selectedIndexes.push(...indexes)\n    }\n\n    if (leaf.selection == undefined) {\n      leaf.selection = { edges: [] }\n    }\n    const before = leaf.selection.edges as number[];\n    leaf.selection.edges = [... new Set([...before, ...selectedIndexes])]\n    console.log(`updated selection list ${before} to ${leaf.selection.edges}`)\n    return leaf;\n  })\n}",
+                          "compiledCode": "\"use strict\";\nfunction run(input, boundingShape) {\n    const bounds = [];\n    boundingShape.onLeafs((leaf) => {\n        if (!(leaf.geometry instanceof replicad.Drawing)) {\n            bounds.push(leaf.geometry);\n        }\n        return leaf;\n    });\n    if (bounds.length == 0) {\n        return input;\n    }\n    console.log(`Using ${bounds.length} bounding shapes`);\n    return input.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            throw new Error(\"Drawings have no Edges. Input must be 3d\");\n        }\n        // identify new indexes to mark as selected\n        const selectedIndexes = [];\n        for (const bound of bounds) {\n            const finder = new replicad.EdgeFinder().inShape(bound);\n            const foundEdges = finder.find(leaf.geometry);\n            const allEdges = leaf.geometry.edges;\n            const indexes = foundEdges.map((f) => allEdges.findIndex((edge) => edge.isSame(f)));\n            console.log(`found edges: ${foundEdges} indexes: ${indexes}`);\n            selectedIndexes.push(...indexes);\n        }\n        if (leaf.selection == undefined) {\n            leaf.selection = { edges: [] };\n        }\n        const before = leaf.selection.edges;\n        leaf.selection.edges = [...new Set([...before, ...selectedIndexes])];\n        console.log(`updated selection list ${before} to ${leaf.selection.edges}`);\n        return leaf;\n    });\n}\n"
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.1538,
+                          "uniqueID": "id-13178",
+                          "name": "edgesOf",
+                          "type": "geometry",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.2462,
+                          "uniqueID": "id-13179",
+                          "name": "intersecting",
+                          "type": "geometry",
+                          "options": []
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-13177",
+                          "ap2ID": "id-13176"
+                        },
+                        {
+                          "ap2Name": "input",
+                          "ap1ID": "id-13178",
+                          "ap2ID": "id-13177"
+                        },
+                        {
+                          "ap2Name": "boundingShape",
+                          "ap1ID": "id-13179",
+                          "ap2ID": "id-13177"
+                        }
+                      ],
+                      "parentRepo": {
+                        "owner": "tristan-huber",
+                        "repoName": "selected.EdgesByShape",
+                        "privateRepo": false
+                      },
+                      "unitsKey": "Unitless",
+                      "fileTypeVersion": 1,
+                      "scaleToProjectUnits": true,
+                      "lastReloadedFromGithubAt": 1795036332097
+                    },
+                    {
+                      "atomType": "GitHubMolecule",
+                      "x": 0.72,
+                      "y": 0.5,
+                      "uniqueID": "id-13201",
+                      "name": "Wire_Between_Points",
+                      "ioValues": [
+                        {
+                          "name": "Start Shape",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "End Shape",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "Stiffness",
+                          "ioValue": 0.5
+                        },
+                        {
+                          "name": "Flip Start",
+                          "ioValue": false
+                        },
+                        {
+                          "name": "Flip End",
+                          "ioValue": false
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-13193",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Code",
+                          "x": 0.6,
+                          "y": 0.5,
+                          "uniqueID": "id-13194",
+                          "ioValues": [
+                            {
+                              "name": "startShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "endShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "stiffness",
+                              "ioValue": 0.5
+                            },
+                            {
+                              "name": "flipStart",
+                              "ioValue": false
+                            },
+                            {
+                              "name": "flipEnd",
+                              "ioValue": false
+                            }
+                          ],
+                          "interpreterVersion": 1,
+                          "code": "/**\n * A round wire (or cable, hose, tube) routed smoothly between two round edges.\n *\n * Wire the parts in and pick a circular edge on each: on Start Shape where the\n * wire begins and on End Shape where it ends (a hole rim, the end of a pin or\n * terminal). The wire runs from the center of each circle, leaving straight\n * out along the circle's axis, and curves smoothly between them. Each end\n * leaves on the side facing the other end; Flip Start or Flip End sends it\n * out the other side. The wire is as thick as the start circle. For a wire\n * that has to go around something, chain several wires end to end.\n *\n * The centerline is a cubic Bezier curve, and the start circle is swept\n * along it.\n */\ntype V = [number, number, number];\n\nconst add = (a: V, b: V): V => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];\nconst sub = (a: V, b: V): V => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];\nconst mul = (a: V, k: number): V => [a[0] * k, a[1] * k, a[2] * k];\nconst dot = (a: V, b: V) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];\nconst cross = (a: V, b: V): V => [\n  a[1] * b[2] - a[2] * b[1],\n  a[2] * b[0] - a[0] * b[2],\n  a[0] * b[1] - a[1] * b[0],\n];\nconst len = (a: V) => Math.sqrt(dot(a, a));\nconst vec = (p: any): V => [p.x ?? p[0], p.y ?? p[1], p.z ?? p[2]];\n\n/** Center, axis and radius of a round edge from three points on it; null if straight. */\nfunction circleOf(edge: any): { center: V; axis: V; radius: number } | null {\n  const a = vec(edge.pointAt(0));\n  const b = vec(edge.pointAt(1 / 3));\n  const c = vec(edge.pointAt(2 / 3));\n  const ab = sub(b, a);\n  const ac = sub(c, a);\n  const n = cross(ab, ac);\n  const n2 = dot(n, n);\n  if (n2 < 1e-12 * dot(ab, ab) * dot(ac, ac)) return null; // collinear: straight edge\n  // Circumcenter of triangle abc\n  const center = add(\n    a,\n    mul(add(mul(cross(n, ab), dot(ac, ac)), mul(cross(ac, n), dot(ab, ab))), 1 / (2 * n2)),\n  );\n  return { center, axis: mul(n, 1 / Math.sqrt(n2)), radius: len(sub(a, center)) };\n}\n\n/** The circle picked on a shape input, with an error that says what to do. */\nfunction pickedCircle(shape: Assembly | undefined, label: string) {\n  const ask = `Pick a circular edge on ${label} Shape for this end of the wire (a hole rim or the end of a pin).`;\n  // An edge input with nothing wired in passes a number, not a shape.\n  if (!shape || typeof (shape as any).getSelectedEdges !== \"function\")\n    throw new Error(`Connect the part the wire ${label === \"Start\" ? \"starts\" : \"ends\"} at to ${label} Shape. ${ask}`);\n  const edges = shape.getSelectedEdges();\n  if (!edges || edges.length === 0) throw new Error(ask);\n  if (edges.length > 1) console.warn(`${label} Shape: ${edges.length} edges picked; using the first.`);\n  const circle = circleOf(edges[0]);\n  if (!circle) throw new Error(`The edge picked on ${label} Shape is straight. ${ask}`);\n  return circle;\n}\n\n/** Sweep a closed profile along a spine with OpenCascade's discrete trihedron. */\nfunction sweepDiscrete(profile: any, spine: any) {\n  const oc = replicad.getOC();\n  const builder = new oc.BRepOffsetAPI_MakePipeShell(spine.wrapped);\n  try {\n    builder.SetDiscreteMode();\n    builder.Add(profile.wrapped, false, true);\n    builder.Build();\n    builder.MakeSolid();\n    return replicad.cast(builder.Shape());\n  } finally {\n    builder.delete();\n  }\n}\n\nfunction run(\n  startShape: Assembly | undefined = undefined, // pick the circular edge the wire starts at\n  endShape: Assembly | undefined = undefined, // pick the circular edge the wire ends at\n  stiffness: number = 0.5, // how far the wire runs straight out before bending\n  flipStart: boolean = false, // leave the start circle out its other side\n  flipEnd: boolean = false, // leave the end circle out its other side\n): Assembly {\n  const stiff = Number(stiffness);\n  if (!(stiff > 0)) throw new Error(\"Stiffness must be more than 0.\");\n\n  const start = pickedCircle(startShape, \"Start\");\n  const end = pickedCircle(endShape, \"End\");\n  const p0 = start.center;\n  const p1 = end.center;\n  const gap = len(sub(p1, p0));\n  if (gap < 1e-6) throw new Error(\"The start and end circles are in the same place.\");\n\n  // A circle's axis points either way: take the side facing the other end,\n  // then let the flip toggle reverse it.\n  const outward = (axis: V, from: V, toward: V, flip: boolean): V => {\n    const d = dot(axis, sub(toward, from)) < 0 ? mul(axis, -1) : axis;\n    return flip === true ? mul(d, -1) : d;\n  };\n  const d0 = outward(start.axis, p0, p1, flipStart);\n  const d1 = outward(end.axis, p1, p0, flipEnd);\n\n  // One cubic Bezier: its control points sit out along each end's direction,\n  // a stiffness fraction of the gap away.\n  const reach = gap * stiff;\n  const spine = replicad.assembleWire([\n    replicad.makeBezierCurve([p0, add(p0, mul(d0, reach)), add(p1, mul(d1, reach)), p1]),\n  ]);\n\n  // Sweep the start circle's size, square to the start direction, along the centerline.\n  const profile = () => replicad.assembleWire([replicad.makeCircle(start.radius, p0, d0)]);\n  let wire;\n  try {\n    wire = sweepDiscrete(profile(), spine);\n  } catch (e) {\n    // The default (corrected Frenet) mode fails on these curves; Frenet works\n    // where the discrete trihedron doesn't.\n    wire = replicad.genericSweep(profile(), spine, { frenet: true });\n  }\n\n  const length = replicad.measureLength(spine);\n  console.log(`Wire: ${(start.radius * 2).toFixed(2)} diameter, ${length.toFixed(1)} long`);\n\n  return new Assembly({ geometry: wire, tags: [\"wire\"] });\n}\n",
+                          "compiledCode": "\"use strict\";\nconst add = (a, b) => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];\nconst sub = (a, b) => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];\nconst mul = (a, k) => [a[0] * k, a[1] * k, a[2] * k];\nconst dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];\nconst cross = (a, b) => [\n    a[1] * b[2] - a[2] * b[1],\n    a[2] * b[0] - a[0] * b[2],\n    a[0] * b[1] - a[1] * b[0],\n];\nconst len = (a) => Math.sqrt(dot(a, a));\nconst vec = (p) => [p.x ?? p[0], p.y ?? p[1], p.z ?? p[2]];\n/** Center, axis and radius of a round edge from three points on it; null if straight. */\nfunction circleOf(edge) {\n    const a = vec(edge.pointAt(0));\n    const b = vec(edge.pointAt(1 / 3));\n    const c = vec(edge.pointAt(2 / 3));\n    const ab = sub(b, a);\n    const ac = sub(c, a);\n    const n = cross(ab, ac);\n    const n2 = dot(n, n);\n    if (n2 < 1e-12 * dot(ab, ab) * dot(ac, ac))\n        return null; // collinear: straight edge\n    // Circumcenter of triangle abc\n    const center = add(a, mul(add(mul(cross(n, ab), dot(ac, ac)), mul(cross(ac, n), dot(ab, ab))), 1 / (2 * n2)));\n    return { center, axis: mul(n, 1 / Math.sqrt(n2)), radius: len(sub(a, center)) };\n}\n/** The circle picked on a shape input, with an error that says what to do. */\nfunction pickedCircle(shape, label) {\n    const ask = `Pick a circular edge on ${label} Shape for this end of the wire (a hole rim or the end of a pin).`;\n    // An edge input with nothing wired in passes a number, not a shape.\n    if (!shape || typeof shape.getSelectedEdges !== \"function\")\n        throw new Error(`Connect the part the wire ${label === \"Start\" ? \"starts\" : \"ends\"} at to ${label} Shape. ${ask}`);\n    const edges = shape.getSelectedEdges();\n    if (!edges || edges.length === 0)\n        throw new Error(ask);\n    if (edges.length > 1)\n        console.warn(`${label} Shape: ${edges.length} edges picked; using the first.`);\n    const circle = circleOf(edges[0]);\n    if (!circle)\n        throw new Error(`The edge picked on ${label} Shape is straight. ${ask}`);\n    return circle;\n}\n/** Sweep a closed profile along a spine with OpenCascade's discrete trihedron. */\nfunction sweepDiscrete(profile, spine) {\n    const oc = replicad.getOC();\n    const builder = new oc.BRepOffsetAPI_MakePipeShell(spine.wrapped);\n    try {\n        builder.SetDiscreteMode();\n        builder.Add(profile.wrapped, false, true);\n        builder.Build();\n        builder.MakeSolid();\n        return replicad.cast(builder.Shape());\n    }\n    finally {\n        builder.delete();\n    }\n}\nfunction run(startShape = undefined, // pick the circular edge the wire starts at\nendShape = undefined, // pick the circular edge the wire ends at\nstiffness = 0.5, // how far the wire runs straight out before bending\nflipStart = false, // leave the start circle out its other side\nflipEnd = false) {\n    const stiff = Number(stiffness);\n    if (!(stiff > 0))\n        throw new Error(\"Stiffness must be more than 0.\");\n    const start = pickedCircle(startShape, \"Start\");\n    const end = pickedCircle(endShape, \"End\");\n    const p0 = start.center;\n    const p1 = end.center;\n    const gap = len(sub(p1, p0));\n    if (gap < 1e-6)\n        throw new Error(\"The start and end circles are in the same place.\");\n    // A circle's axis points either way: take the side facing the other end,\n    // then let the flip toggle reverse it.\n    const outward = (axis, from, toward, flip) => {\n        const d = dot(axis, sub(toward, from)) < 0 ? mul(axis, -1) : axis;\n        return flip === true ? mul(d, -1) : d;\n    };\n    const d0 = outward(start.axis, p0, p1, flipStart);\n    const d1 = outward(end.axis, p1, p0, flipEnd);\n    // One cubic Bezier: its control points sit out along each end's direction,\n    // a stiffness fraction of the gap away.\n    const reach = gap * stiff;\n    const spine = replicad.assembleWire([\n        replicad.makeBezierCurve([p0, add(p0, mul(d0, reach)), add(p1, mul(d1, reach)), p1]),\n    ]);\n    // Sweep the start circle's size, square to the start direction, along the centerline.\n    const profile = () => replicad.assembleWire([replicad.makeCircle(start.radius, p0, d0)]);\n    let wire;\n    try {\n        wire = sweepDiscrete(profile(), spine);\n    }\n    catch (e) {\n        // The default (corrected Frenet) mode fails on these curves; Frenet works\n        // where the discrete trihedron doesn't.\n        wire = replicad.genericSweep(profile(), spine, { frenet: true });\n    }\n    const length = replicad.measureLength(spine);\n    console.log(`Wire: ${(start.radius * 2).toFixed(2)} diameter, ${length.toFixed(1)} long`);\n    return new Assembly({ geometry: wire, tags: [\"wire\"] });\n}\n"
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.1538,
+                          "uniqueID": "id-13195",
+                          "name": "Start Shape",
+                          "type": "edgeselect",
+                          "options": [],
+                          "selectedEdgeData": {
+                            "7": [
+                              3
+                            ]
+                          }
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.2462,
+                          "uniqueID": "id-13196",
+                          "name": "End Shape",
+                          "type": "edgeselect",
+                          "options": [],
+                          "selectedEdgeData": {
+                            "7": [
+                              3
+                            ]
+                          }
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.3385,
+                          "uniqueID": "id-13197",
+                          "name": "Stiffness",
+                          "type": "number",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.4308,
+                          "uniqueID": "id-13198",
+                          "name": "Flip Start",
+                          "type": "boolean",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.0254,
+                          "y": 0.5231,
+                          "uniqueID": "id-13199",
+                          "name": "Flip End",
+                          "type": "boolean",
+                          "options": []
+                        },
+                        {
+                          "atomType": "Color",
+                          "x": 0.78,
+                          "y": 0.5,
+                          "uniqueID": "id-13200",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "selectedColor": "Default"
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-13194",
+                          "ap2ID": "id-13200"
+                        },
+                        {
+                          "ap2Name": "startShape",
+                          "ap1ID": "id-13195",
+                          "ap2ID": "id-13194"
+                        },
+                        {
+                          "ap2Name": "endShape",
+                          "ap1ID": "id-13196",
+                          "ap2ID": "id-13194"
+                        },
+                        {
+                          "ap2Name": "stiffness",
+                          "ap1ID": "id-13197",
+                          "ap2ID": "id-13194"
+                        },
+                        {
+                          "ap2Name": "flipStart",
+                          "ap1ID": "id-13198",
+                          "ap2ID": "id-13194"
+                        },
+                        {
+                          "ap2Name": "flipEnd",
+                          "ap1ID": "id-13199",
+                          "ap2ID": "id-13194"
+                        },
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-13200",
+                          "ap2ID": "id-13193"
+                        }
+                      ],
+                      "parentRepo": {
+                        "owner": "BarbourSmith",
+                        "repoName": "Wire_Between_Points",
+                        "privateRepo": false
+                      },
+                      "unitsKey": "MM",
+                      "fileTypeVersion": 1,
+                      "scaleToProjectUnits": true,
+                      "lastReloadedFromGithubAt": 1795036332555
+                    }
+                  ],
+                  "allConnectors": [
+                    {
+                      "ap2Name": "edgesOf",
+                      "ap1ID": "id-13132",
+                      "ap2ID": "id-13163"
+                    },
+                    {
+                      "ap2Name": "edgesOf",
+                      "ap1ID": "id-13135",
+                      "ap2ID": "id-13180"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-13138",
+                      "ap2ID": "id-13142"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-13142",
+                      "ap2ID": "id-13146"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-13142",
+                      "ap2ID": "id-13152"
+                    },
+                    {
+                      "ap2Name": "intersecting",
+                      "ap1ID": "id-13146",
+                      "ap2ID": "id-13163"
+                    },
+                    {
+                      "ap2Name": "intersecting",
+                      "ap1ID": "id-13152",
+                      "ap2ID": "id-13180"
+                    },
+                    {
+                      "ap2Name": "Start Shape",
+                      "ap1ID": "id-13163",
+                      "ap2ID": "id-13201"
+                    },
+                    {
+                      "ap2Name": "End Shape",
+                      "ap1ID": "id-13180",
+                      "ap2ID": "id-13201"
+                    },
+                    {
+                      "ap2Name": "number or geometry",
+                      "ap1ID": "id-13201",
+                      "ap2ID": "id-13130"
+                    }
+                  ],
+                  "fileTypeVersion": 1
+                },
+                {
+                  "atomType": "Assembly",
+                  "x": 0.7,
+                  "y": 0.5,
+                  "uniqueID": "id-13224",
+                  "ioValues": [
+                    {
+                      "name": "makeDisjoint",
+                      "ioValue": false
+                    },
+                    {
+                      "name": "Shape 1",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "Shape2",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "Shape3",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "Shape4",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "Shape5",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "Arm Ends",
+                  "ap1ID": "id-12503",
+                  "ap2ID": "id-12840"
+                },
+                {
+                  "ap2Name": "Arm Ends",
+                  "ap1ID": "id-12503",
+                  "ap2ID": "id-12936"
+                },
+                {
+                  "ap2Name": "Arm Ends",
+                  "ap1ID": "id-12503",
+                  "ap2ID": "id-13032"
+                },
+                {
+                  "ap2Name": "Arm Ends",
+                  "ap1ID": "id-12503",
+                  "ap2ID": "id-13128"
+                },
+                {
+                  "ap2Name": "Board Ends",
+                  "ap1ID": "id-12506",
+                  "ap2ID": "id-12840"
+                },
+                {
+                  "ap2Name": "Board Ends",
+                  "ap1ID": "id-12506",
+                  "ap2ID": "id-12936"
+                },
+                {
+                  "ap2Name": "Board Ends",
+                  "ap1ID": "id-12506",
+                  "ap2ID": "id-13032"
+                },
+                {
+                  "ap2Name": "Board Ends",
+                  "ap1ID": "id-12506",
+                  "ap2ID": "id-13128"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-12837",
+                  "ap2ID": "id-12501"
+                },
+                {
+                  "ap2Name": "Shape 1",
+                  "ap1ID": "id-12840",
+                  "ap2ID": "id-13224"
+                },
+                {
+                  "ap2Name": "Shape2",
+                  "ap1ID": "id-12936",
+                  "ap2ID": "id-13224"
+                },
+                {
+                  "ap2Name": "Shape3",
+                  "ap1ID": "id-13032",
+                  "ap2ID": "id-13224"
+                },
+                {
+                  "ap2Name": "Shape4",
+                  "ap1ID": "id-13128",
+                  "ap2ID": "id-13224"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-13224",
+                  "ap2ID": "id-12837"
+                }
+              ],
+              "fileTypeVersion": 1
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.85,
+              "y": 0.5,
+              "uniqueID": "id-13232",
+              "ioValues": [
+                {
+                  "name": "makeDisjoint",
+                  "ioValue": false
+                },
+                {
+                  "name": "Shape 1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
             }
           ],
           "allConnectors": [
@@ -11820,6 +14264,26 @@
               "ap2Name": "geometry",
               "ap1ID": "id-12484",
               "ap2ID": "id-12496"
+            },
+            {
+              "ap2Name": "Arm Ends",
+              "ap1ID": "id-12487",
+              "ap2ID": "id-12499"
+            },
+            {
+              "ap2Name": "Board Ends",
+              "ap1ID": "id-12490",
+              "ap2ID": "id-12499"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-12499",
+              "ap2ID": "id-13232"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-13232",
+              "ap2ID": "id-12479"
             }
           ],
           "fileTypeVersion": 1
@@ -18810,6 +21274,10 @@
             {
               "name": "Shape7",
               "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape8",
+              "ioValue": "__GEOMETRY_INPUT__"
             }
           ]
         },
@@ -19296,6 +21764,11 @@
         {
           "ap2Name": "Shape5",
           "ap1ID": "id-1058",
+          "ap2ID": "id-939"
+        },
+        {
+          "ap2Name": "Shape7",
+          "ap1ID": "id-12477",
           "ap2ID": "id-939"
         },
         {
