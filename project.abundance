@@ -8,8 +8,8 @@
   "allAtoms": [
     {
       "atomType": "Molecule",
-      "x": 0.2355,
-      "y": 0.7585,
+      "x": 0.2526,
+      "y": 0.6,
       "uniqueID": "id-14224",
       "name": "Power Cable",
       "ioValues": [
@@ -7146,8 +7146,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.0893,
-      "y": 0.9887,
+      "x": 0.1673,
+      "y": 0.8479,
       "uniqueID": "id-4562",
       "name": "Power Supply",
       "topLevel": false,
