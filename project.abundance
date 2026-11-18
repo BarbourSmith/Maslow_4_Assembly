@@ -1583,8 +1583,8 @@
                             },
                             {
                               "atomType": "Input",
-                              "x": 0,
-                              "y": 0.2,
+                              "x": 0.0254,
+                              "y": 0.1538,
                               "uniqueID": "id-6616",
                               "name": "Shape",
                               "type": "geometry",
@@ -1592,16 +1592,16 @@
                             },
                             {
                               "atomType": "Input",
-                              "x": 0,
-                              "y": 0.2,
+                              "x": 0.0254,
+                              "y": 0.2462,
                               "uniqueID": "id-6617",
                               "name": "Number",
                               "options": []
                             },
                             {
                               "atomType": "Input",
-                              "x": 0,
-                              "y": 0.3,
+                              "x": 0.0254,
+                              "y": 0.3385,
                               "uniqueID": "id-6618",
                               "name": "Angle",
                               "options": []
@@ -2555,8 +2555,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0,
-                      "y": 0.2,
+                      "x": 0.0254,
+                      "y": 0.1538,
                       "uniqueID": "id-7070",
                       "name": "Shape",
                       "type": "geometry",
@@ -2564,16 +2564,16 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0,
-                      "y": 0.2,
+                      "x": 0.0254,
+                      "y": 0.2462,
                       "uniqueID": "id-7071",
                       "name": "Number",
                       "options": []
                     },
                     {
                       "atomType": "Input",
-                      "x": 0,
-                      "y": 0.3,
+                      "x": 0.0254,
+                      "y": 0.3385,
                       "uniqueID": "id-7072",
                       "name": "Angle",
                       "options": []
@@ -3791,8 +3791,8 @@
                         },
                         {
                           "atomType": "Input",
-                          "x": 0,
-                          "y": 0.2,
+                          "x": 0.0254,
+                          "y": 0.1538,
                           "uniqueID": "id-2337",
                           "name": "Shape",
                           "type": "geometry",
@@ -3800,16 +3800,16 @@
                         },
                         {
                           "atomType": "Input",
-                          "x": 0,
-                          "y": 0.2,
+                          "x": 0.0254,
+                          "y": 0.2462,
                           "uniqueID": "id-2338",
                           "name": "Number",
                           "options": []
                         },
                         {
                           "atomType": "Input",
-                          "x": 0,
-                          "y": 0.3,
+                          "x": 0.0254,
+                          "y": 0.3385,
                           "uniqueID": "id-2339",
                           "name": "Angle",
                           "options": []
@@ -8758,8 +8758,8 @@
                                         },
                                         {
                                           "atomType": "Input",
-                                          "x": 0,
-                                          "y": 0.2,
+                                          "x": 0.0254,
+                                          "y": 0.1538,
                                           "uniqueID": "id-7181",
                                           "name": "Shape",
                                           "type": "geometry",
@@ -8767,16 +8767,16 @@
                                         },
                                         {
                                           "atomType": "Input",
-                                          "x": 0,
-                                          "y": 0.2,
+                                          "x": 0.0254,
+                                          "y": 0.2462,
                                           "uniqueID": "id-7182",
                                           "name": "Number",
                                           "options": []
                                         },
                                         {
                                           "atomType": "Input",
-                                          "x": 0,
-                                          "y": 0.3,
+                                          "x": 0.0254,
+                                          "y": 0.3385,
                                           "uniqueID": "id-7183",
                                           "name": "Angle",
                                           "options": []
@@ -10718,8 +10718,8 @@
                             },
                             {
                               "atomType": "Input",
-                              "x": 0,
-                              "y": 0.2,
+                              "x": 0.0254,
+                              "y": 0.1538,
                               "uniqueID": "id-2005",
                               "name": "Shape",
                               "type": "geometry",
@@ -10727,16 +10727,16 @@
                             },
                             {
                               "atomType": "Input",
-                              "x": 0,
-                              "y": 0.2,
+                              "x": 0.0254,
+                              "y": 0.2462,
                               "uniqueID": "id-2006",
                               "name": "Number",
                               "options": []
                             },
                             {
                               "atomType": "Input",
-                              "x": 0,
-                              "y": 0.3,
+                              "x": 0.0254,
+                              "y": 0.3385,
                               "uniqueID": "id-2007",
                               "name": "Angle",
                               "options": []
@@ -11067,8 +11067,8 @@
                             },
                             {
                               "atomType": "Input",
-                              "x": 0,
-                              "y": 0.2,
+                              "x": 0.0254,
+                              "y": 0.1538,
                               "uniqueID": "id-2083",
                               "name": "Shape",
                               "type": "geometry",
@@ -11076,16 +11076,16 @@
                             },
                             {
                               "atomType": "Input",
-                              "x": 0,
-                              "y": 0.2,
+                              "x": 0.0254,
+                              "y": 0.2462,
                               "uniqueID": "id-2084",
                               "name": "Number",
                               "options": []
                             },
                             {
                               "atomType": "Input",
-                              "x": 0,
-                              "y": 0.3,
+                              "x": 0.0254,
+                              "y": 0.3385,
                               "uniqueID": "id-2085",
                               "name": "Angle",
                               "options": []
@@ -12563,8 +12563,8 @@
                         },
                         {
                           "atomType": "Input",
-                          "x": 0,
-                          "y": 0.2,
+                          "x": 0.0254,
+                          "y": 0.1538,
                           "uniqueID": "id-2604",
                           "name": "Shape",
                           "type": "geometry",
@@ -12572,16 +12572,16 @@
                         },
                         {
                           "atomType": "Input",
-                          "x": 0,
-                          "y": 0.2,
+                          "x": 0.0254,
+                          "y": 0.2462,
                           "uniqueID": "id-2605",
                           "name": "Number",
                           "options": []
                         },
                         {
                           "atomType": "Input",
-                          "x": 0,
-                          "y": 0.3,
+                          "x": 0.0254,
+                          "y": 0.3385,
                           "uniqueID": "id-2606",
                           "name": "Angle",
                           "options": []
@@ -13057,8 +13057,8 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0,
-                      "y": 0.2,
+                      "x": 0.0254,
+                      "y": 0.1538,
                       "uniqueID": "id-2445",
                       "name": "Shape",
                       "type": "geometry",
@@ -13066,16 +13066,16 @@
                     },
                     {
                       "atomType": "Input",
-                      "x": 0,
-                      "y": 0.2,
+                      "x": 0.0254,
+                      "y": 0.2462,
                       "uniqueID": "id-2446",
                       "name": "Number",
                       "options": []
                     },
                     {
                       "atomType": "Input",
-                      "x": 0,
-                      "y": 0.3,
+                      "x": 0.0254,
+                      "y": 0.3385,
                       "uniqueID": "id-2447",
                       "name": "Angle",
                       "options": []
@@ -13481,8 +13481,8 @@
                         },
                         {
                           "atomType": "Input",
-                          "x": 0,
-                          "y": 0.2,
+                          "x": 0.0254,
+                          "y": 0.1538,
                           "uniqueID": "id-2190",
                           "name": "Shape",
                           "type": "geometry",
@@ -13490,16 +13490,16 @@
                         },
                         {
                           "atomType": "Input",
-                          "x": 0,
-                          "y": 0.2,
+                          "x": 0.0254,
+                          "y": 0.2462,
                           "uniqueID": "id-2191",
                           "name": "Number",
                           "options": []
                         },
                         {
                           "atomType": "Input",
-                          "x": 0,
-                          "y": 0.3,
+                          "x": 0.0254,
+                          "y": 0.3385,
                           "uniqueID": "id-2192",
                           "name": "Angle",
                           "options": []
@@ -13620,8 +13620,8 @@
                         },
                         {
                           "atomType": "Input",
-                          "x": 0,
-                          "y": 0.2,
+                          "x": 0.0254,
+                          "y": 0.1538,
                           "uniqueID": "id-2217",
                           "name": "Shape",
                           "type": "geometry",
@@ -13629,16 +13629,16 @@
                         },
                         {
                           "atomType": "Input",
-                          "x": 0,
-                          "y": 0.2,
+                          "x": 0.0254,
+                          "y": 0.2462,
                           "uniqueID": "id-2218",
                           "name": "Number",
                           "options": []
                         },
                         {
                           "atomType": "Input",
-                          "x": 0,
-                          "y": 0.3,
+                          "x": 0.0254,
+                          "y": 0.3385,
                           "uniqueID": "id-2219",
                           "name": "Angle",
                           "options": []
@@ -16233,6 +16233,64 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.5456,
+      "y": 0.7549,
+      "uniqueID": "id-9626",
+      "ioValues": [
+        {
+          "name": "makeDisjoint",
+          "ioValue": false
+        },
+        {
+          "name": "Shape 1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape3",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Export",
+      "x": 0.6825,
+      "y": 0.7972,
+      "uniqueID": "id-9632",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "GLB",
+          "currentEquation": "GLB"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "STL Tolerance",
+          "ioValue": 0.1
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Maslow_4_Assembly",
+          "currentEquation": "Maslow_4_Assembly"
+        }
+      ],
+      "type": "GLB",
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Maslow_4_Assembly"
     }
   ],
   "allConnectors": [
@@ -16247,6 +16305,11 @@
       "ap2ID": "id-1791"
     },
     {
+      "ap2Name": "Shape2",
+      "ap1ID": "id-323",
+      "ap2ID": "id-9626"
+    },
+    {
       "ap2Name": "Shape3",
       "ap1ID": "id-4562",
       "ap2ID": "id-1791"
@@ -16255,6 +16318,16 @@
       "ap2Name": "Shape2",
       "ap1ID": "id-657",
       "ap2ID": "id-1791"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-657",
+      "ap2ID": "id-9626"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-9626",
+      "ap2ID": "id-9632"
     }
   ],
   "unitsKey": "MM",
