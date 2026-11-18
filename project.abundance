@@ -4939,8 +4939,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.3,
-      "y": 0.9,
+      "x": 0.2409,
+      "y": 0.9063,
       "uniqueID": "id-4562",
       "name": "Power Supply",
       "topLevel": false,
@@ -14678,11 +14678,11 @@
                             },
                             {
                               "name": "Stiffness",
-                              "ioValue": 0.25
+                              "ioValue": 0.45
                             },
                             {
                               "name": "Flip Start",
-                              "ioValue": false
+                              "ioValue": true
                             },
                             {
                               "name": "Flip End",
@@ -14719,11 +14719,11 @@
                                 },
                                 {
                                   "name": "stiffness",
-                                  "ioValue": 0.25
+                                  "ioValue": 0.45
                                 },
                                 {
                                   "name": "flipStart",
-                                  "ioValue": false
+                                  "ioValue": true
                                 },
                                 {
                                   "name": "flipEnd",
@@ -15258,11 +15258,11 @@
                             },
                             {
                               "name": "Stiffness",
-                              "ioValue": 0.25
+                              "ioValue": 0.45
                             },
                             {
                               "name": "Flip Start",
-                              "ioValue": false
+                              "ioValue": true
                             },
                             {
                               "name": "Flip End",
@@ -15299,11 +15299,11 @@
                                 },
                                 {
                                   "name": "stiffness",
-                                  "ioValue": 0.25
+                                  "ioValue": 0.45
                                 },
                                 {
                                   "name": "flipStart",
-                                  "ioValue": false
+                                  "ioValue": true
                                 },
                                 {
                                   "name": "flipEnd",
