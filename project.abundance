@@ -818,11 +818,11 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 131.9
+                  "ioValue": 117.25
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 14.8
+                  "ioValue": 42.3
                 }
               ]
             },
@@ -1423,11 +1423,11 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -131.9
+                  "ioValue": -117.25
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 14.8
+                  "ioValue": 42.3
                 }
               ]
             },
@@ -1957,6 +1957,30 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.9,
+      "y": 0.95,
+      "uniqueID": "id-14822",
+      "ioValues": [
+        {
+          "name": "makeDisjoint",
+          "ioValue": false
+        },
+        {
+          "name": "Shape 1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape3",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     },
     {
       "atomType": "Output",
@@ -3111,11 +3135,11 @@
                             },
                             {
                               "name": "yDist",
-                              "ioValue": 130.15
+                              "ioValue": 115.5
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 7
+                              "ioValue": 34.5
                             }
                           ]
                         },
@@ -3246,11 +3270,11 @@
                             },
                             {
                               "name": "yDist",
-                              "ioValue": 130.15
+                              "ioValue": 115.5
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 13
+                              "ioValue": 40.5
                             }
                           ]
                         },
@@ -4434,11 +4458,11 @@
                             },
                             {
                               "name": "yDist",
-                              "ioValue": 24.15
+                              "ioValue": 15.5
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 1.5
+                              "ioValue": 22.5
                             }
                           ]
                         },
@@ -30511,6 +30535,11 @@
       "ap2ID": "id-1791"
     },
     {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-14495",
+      "ap2ID": "id-14822"
+    },
+    {
       "ap2Name": "Shape5",
       "ap1ID": "id-14495",
       "ap2ID": "id-1791"
@@ -30524,6 +30553,11 @@
       "ap2Name": "Sled",
       "ap1ID": "id-323",
       "ap2ID": "id-14495"
+    },
+    {
+      "ap2Name": "Shape2",
+      "ap1ID": "id-323",
+      "ap2ID": "id-14822"
     },
     {
       "ap2Name": "Shape 1",
