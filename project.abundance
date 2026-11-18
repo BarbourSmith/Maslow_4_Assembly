@@ -19575,34 +19575,6 @@
           "fileTypeVersion": 1
         },
         {
-          "atomType": "Assembly",
-          "x": 0.9,
-          "y": 0.9,
-          "uniqueID": "id-14114",
-          "ioValues": [
-            {
-              "name": "makeDisjoint",
-              "ioValue": false
-            },
-            {
-              "name": "Shape 1",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Shape2",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Shape3",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Shape4",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
           "atomType": "Molecule",
           "x": 0.4,
           "y": 0.2,
@@ -27076,19 +27048,9 @@
           "ap2ID": "id-12477"
         },
         {
-          "ap2Name": "Shape2",
-          "ap1ID": "id-1058",
-          "ap2ID": "id-14114"
-        },
-        {
           "ap2Name": "Shape5",
           "ap1ID": "id-1058",
           "ap2ID": "id-939"
-        },
-        {
-          "ap2Name": "Shape 1",
-          "ap1ID": "id-12477",
-          "ap2ID": "id-14114"
         },
         {
           "ap2Name": "Shape7",
@@ -27099,11 +27061,6 @@
           "ap2Name": "Controller",
           "ap1ID": "id-1590",
           "ap2ID": "id-12477"
-        },
-        {
-          "ap2Name": "Shape3",
-          "ap1ID": "id-1590",
-          "ap2ID": "id-14114"
         },
         {
           "ap2Name": "Shape6",
