@@ -636,34 +636,6 @@
       "fileTypeVersion": 1
     },
     {
-      "atomType": "Assembly",
-      "x": 0.9,
-      "y": 0.9,
-      "uniqueID": "id-14333",
-      "ioValues": [
-        {
-          "name": "makeDisjoint",
-          "ioValue": false
-        },
-        {
-          "name": "Shape 1",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Shape2",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Shape3",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Shape4",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ]
-    },
-    {
       "atomType": "Output",
       "x": 1,
       "y": 0.5,
@@ -5986,16 +5958,16 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.2,
-      "y": 0.6,
+      "x": 0.1987,
+      "y": 0.6051,
       "uniqueID": "id-657",
       "name": "Router Assembly",
       "topLevel": false,
       "allAtoms": [
         {
           "atomType": "Molecule",
-          "x": 0.2,
-          "y": 0.9,
+          "x": 0.4702,
+          "y": 0.8977,
           "uniqueID": "id-1029",
           "name": "Router Bit",
           "topLevel": false,
@@ -6166,8 +6138,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.2,
-              "y": 0.5,
+              "x": 0.2086,
+              "y": 0.5028,
               "uniqueID": "id-1062",
               "name": "Arm Pair",
               "topLevel": false,
@@ -10035,7 +10007,7 @@
                                       "ioValue": "__GEOMETRY_INPUT__"
                                     }
                                   ],
-                                  "selectedColor": "Green"
+                                  "selectedColor": "Grey"
                                 }
                               ],
                               "allConnectors": [
@@ -12561,8 +12533,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.3,
-          "y": 0.92,
+          "x": 0.415,
+          "y": 0.7159,
           "uniqueID": "id-12477",
           "name": "Arm Cables",
           "ioValues": [
@@ -22193,8 +22165,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.3,
-                  "y": 0.4,
+                  "x": 0.4095,
+                  "y": 0.3949,
                   "uniqueID": "id-1600",
                   "ioValues": [
                     {
@@ -24096,8 +24068,8 @@
                     },
                     {
                       "atomType": "Extrude",
-                      "x": 0.4,
-                      "y": 0.4,
+                      "x": 0.6722,
+                      "y": 0.4744,
                       "uniqueID": "id-1667",
                       "ioValues": [
                         {
@@ -24112,8 +24084,8 @@
                     },
                     {
                       "atomType": "Color",
-                      "x": 0.6,
-                      "y": 0.4,
+                      "x": 0.8377,
+                      "y": 0.4261,
                       "uniqueID": "id-1671",
                       "ioValues": [
                         {
@@ -24121,7 +24093,7 @@
                           "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
-                      "selectedColor": "Green"
+                      "selectedColor": "Grey"
                     }
                   ],
                   "allConnectors": [
@@ -24999,8 +24971,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.4,
-              "y": 0.9,
+              "x": 0.447,
+              "y": 0.9034,
               "uniqueID": "id-2363",
               "name": "Fan Bolts",
               "topLevel": false,
@@ -28352,11 +28324,6 @@
   ],
   "allConnectors": [
     {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-14224",
-      "ap2ID": "id-14333"
-    },
-    {
       "ap2Name": "Shape4",
       "ap1ID": "id-14224",
       "ap2ID": "id-1791"
@@ -28365,11 +28332,6 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-1791",
       "ap2ID": "id-165"
-    },
-    {
-      "ap2Name": "Shape2",
-      "ap1ID": "id-323",
-      "ap2ID": "id-14333"
     },
     {
       "ap2Name": "Shape 1",
@@ -28395,11 +28357,6 @@
       "ap2Name": "Router",
       "ap1ID": "id-657",
       "ap2ID": "id-14224"
-    },
-    {
-      "ap2Name": "Shape3",
-      "ap1ID": "id-657",
-      "ap2ID": "id-14333"
     },
     {
       "ap2Name": "Shape2",
