@@ -160,8 +160,7 @@
             },
             {
               "name": "xDist",
-              "ioValue": 0,
-              "currentEquation": "0"
+              "ioValue": 0
             },
             {
               "name": "yDist",
@@ -1056,8 +1055,7 @@
                 },
                 {
                   "name": "Stiffness",
-                  "ioValue": 0.6,
-                  "currentEquation": "0.6"
+                  "ioValue": 0.6
                 },
                 {
                   "name": "Flip Start",
@@ -2014,6 +2012,136 @@
       "allAtoms": [
         {
           "atomType": "Molecule",
+          "x": 0.338,
+          "y": 0.6338,
+          "uniqueID": "id-19065",
+          "name": "Dust Hose 40 mm (Festool)",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 1,
+              "y": 0.5,
+              "uniqueID": "id-19066",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Import",
+              "x": 0.2,
+              "y": 0.4,
+              "uniqueID": "id-19067",
+              "fileName": "Dust Hose 40mm (Festool).step",
+              "name": "Import",
+              "type": "STEP",
+              "repoOwner": "MaslowCNC",
+              "repoName": "Maslow4",
+              "gitRef": "main",
+              "SVGwidth": 10
+            },
+            {
+              "atomType": "Color",
+              "x": 0.4,
+              "y": 0.4,
+              "uniqueID": "id-19068",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "selectedColor": "Black"
+            },
+            {
+              "atomType": "Export",
+              "x": 0.4,
+              "y": 0.8,
+              "uniqueID": "id-19070",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "File Type",
+                  "ioValue": "STEP",
+                  "currentEquation": "STEP"
+                },
+                {
+                  "name": "Resolution (dpi)",
+                  "ioValue": 96
+                },
+                {
+                  "name": "STL Tolerance",
+                  "ioValue": 0.05
+                },
+                {
+                  "name": "Part Name",
+                  "ioValue": "Dust Hose 40mm (Festool)",
+                  "currentEquation": "Dust Hose 40mm (Festool)"
+                }
+              ],
+              "type": null,
+              "resolution": 96,
+              "importIndex": 0,
+              "partName": "Dust Hose 40mm (Festool)"
+            },
+            {
+              "atomType": "Move",
+              "x": 0.578,
+              "y": 0.6986,
+              "uniqueID": "id-19088",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": -87
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 20.5,
+                  "currentEquation": "20.5"
+                }
+              ]
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-19067",
+              "ap2ID": "id-19068"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-19067",
+              "ap2ID": "id-19070"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-19068",
+              "ap2ID": "id-19088"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-19088",
+              "ap2ID": "id-19066"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Molecule",
           "x": 0.5,
           "y": 0.5,
           "uniqueID": "id-2465",
@@ -2819,135 +2947,6 @@
               "ap2Name": "number or geometry",
               "ap1ID": "id-364",
               "ap2ID": "id-357"
-            }
-          ],
-          "fileTypeVersion": 1
-        },
-        {
-          "atomType": "Molecule",
-          "x": 0.2,
-          "y": 0.6,
-          "uniqueID": "id-377",
-          "name": "Dust Hose Adapter 2.5 in",
-          "topLevel": false,
-          "allAtoms": [
-            {
-              "atomType": "Output",
-              "x": 1,
-              "y": 0.5,
-              "uniqueID": "id-379",
-              "ioValues": [
-                {
-                  "name": "number or geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ]
-            },
-            {
-              "atomType": "Import",
-              "x": 0.2,
-              "y": 0.4,
-              "uniqueID": "id-381",
-              "fileName": "Dust Hose 2.5in.step",
-              "name": "Import",
-              "type": "STEP",
-              "repoOwner": "MaslowCNC",
-              "repoName": "Maslow4",
-              "gitRef": "main",
-              "SVGwidth": 10
-            },
-            {
-              "atomType": "Move",
-              "x": 0.4,
-              "y": 0.4,
-              "uniqueID": "id-383",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "xDist",
-                  "ioValue": 0
-                },
-                {
-                  "name": "yDist",
-                  "ioValue": -87
-                },
-                {
-                  "name": "zDist",
-                  "ioValue": 22.5
-                }
-              ]
-            },
-            {
-              "atomType": "Color",
-              "x": 0.6,
-              "y": 0.4,
-              "uniqueID": "id-389",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ],
-              "selectedColor": "Black"
-            },
-            {
-              "atomType": "Export",
-              "x": 0.4,
-              "y": 0.8,
-              "uniqueID": "id-392",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "File Type",
-                  "ioValue": "STEP",
-                  "currentEquation": "STEP"
-                },
-                {
-                  "name": "Resolution (dpi)",
-                  "ioValue": 96
-                },
-                {
-                  "name": "STL Tolerance",
-                  "ioValue": 0.05
-                },
-                {
-                  "name": "Part Name",
-                  "ioValue": "Dust Hose 2.5in",
-                  "currentEquation": "Dust Hose 2.5in"
-                }
-              ],
-              "type": null,
-              "resolution": 96,
-              "importIndex": 0,
-              "partName": "Dust Hose 2.5in"
-            }
-          ],
-          "allConnectors": [
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-381",
-              "ap2ID": "id-383"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-381",
-              "ap2ID": "id-392"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-383",
-              "ap2ID": "id-389"
-            },
-            {
-              "ap2Name": "number or geometry",
-              "ap1ID": "id-389",
-              "ap2ID": "id-379"
             }
           ],
           "fileTypeVersion": 1
@@ -7107,6 +7106,11 @@
       ],
       "allConnectors": [
         {
+          "ap2Name": "Shape3",
+          "ap1ID": "id-19065",
+          "ap2ID": "id-398"
+        },
+        {
           "ap2Name": "Shape6",
           "ap1ID": "id-2465",
           "ap2ID": "id-398"
@@ -7119,11 +7123,6 @@
         {
           "ap2Name": "Shape2",
           "ap1ID": "id-355",
-          "ap2ID": "id-398"
-        },
-        {
-          "ap2Name": "Shape3",
-          "ap1ID": "id-377",
           "ap2ID": "id-398"
         },
         {
@@ -22103,8 +22102,7 @@
                                 },
                                 {
                                   "name": "yDist",
-                                  "ioValue": 0,
-                                  "currentEquation": "0"
+                                  "ioValue": 0
                                 },
                                 {
                                   "name": "zDist",
@@ -22238,13 +22236,11 @@
                                 },
                                 {
                                   "name": "yDist",
-                                  "ioValue": 0,
-                                  "currentEquation": "0"
+                                  "ioValue": 0
                                 },
                                 {
                                   "name": "zDist",
-                                  "ioValue": 0,
-                                  "currentEquation": "0"
+                                  "ioValue": 0
                                 }
                               ]
                             },
@@ -22671,8 +22667,7 @@
                                 },
                                 {
                                   "name": "yDist",
-                                  "ioValue": 0,
-                                  "currentEquation": "0"
+                                  "ioValue": 0
                                 },
                                 {
                                   "name": "zDist",
@@ -22810,8 +22805,7 @@
                                 },
                                 {
                                   "name": "zDist",
-                                  "ioValue": 0,
-                                  "currentEquation": "0"
+                                  "ioValue": 0
                                 }
                               ]
                             },
@@ -22848,8 +22842,7 @@
                                 },
                                 {
                                   "name": "zDist",
-                                  "ioValue": 0,
-                                  "currentEquation": "0"
+                                  "ioValue": 0
                                 }
                               ]
                             },
@@ -23415,8 +23408,7 @@
                             },
                             {
                               "name": "xDist",
-                              "ioValue": 0,
-                              "currentEquation": "0"
+                              "ioValue": 0
                             },
                             {
                               "name": "yDist",
@@ -23550,8 +23542,7 @@
                             },
                             {
                               "name": "xDist",
-                              "ioValue": 0,
-                              "currentEquation": "0"
+                              "ioValue": 0
                             },
                             {
                               "name": "yDist",
@@ -23772,8 +23763,7 @@
                             },
                             {
                               "name": "yDist",
-                              "ioValue": 0,
-                              "currentEquation": "0"
+                              "ioValue": 0
                             },
                             {
                               "name": "zDist",
@@ -24789,13 +24779,11 @@
                                 },
                                 {
                                   "name": "yDist",
-                                  "ioValue": 0,
-                                  "currentEquation": "0"
+                                  "ioValue": 0
                                 },
                                 {
                                   "name": "zDist",
-                                  "ioValue": 0,
-                                  "currentEquation": "0"
+                                  "ioValue": 0
                                 }
                               ]
                             },
@@ -25132,13 +25120,11 @@
                                 },
                                 {
                                   "name": "yDist",
-                                  "ioValue": 0,
-                                  "currentEquation": "0"
+                                  "ioValue": 0
                                 },
                                 {
                                   "name": "zDist",
-                                  "ioValue": 0,
-                                  "currentEquation": "0"
+                                  "ioValue": 0
                                 }
                               ]
                             },
@@ -25859,8 +25845,7 @@
                             },
                             {
                               "name": "xDist",
-                              "ioValue": 0,
-                              "currentEquation": "0"
+                              "ioValue": 0
                             },
                             {
                               "name": "yDist",
@@ -26038,13 +26023,11 @@
                                 },
                                 {
                                   "name": "yDist",
-                                  "ioValue": 0,
-                                  "currentEquation": "0"
+                                  "ioValue": 0
                                 },
                                 {
                                   "name": "zDist",
-                                  "ioValue": 0,
-                                  "currentEquation": "0"
+                                  "ioValue": 0
                                 }
                               ]
                             },
@@ -26358,8 +26341,7 @@
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 0,
-                              "currentEquation": "0"
+                              "ioValue": 0
                             }
                           ]
                         },
@@ -26383,8 +26365,7 @@
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 0,
-                              "currentEquation": "0"
+                              "ioValue": 0
                             }
                           ]
                         },
@@ -26408,8 +26389,7 @@
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 0,
-                              "currentEquation": "0"
+                              "ioValue": 0
                             }
                           ]
                         },
