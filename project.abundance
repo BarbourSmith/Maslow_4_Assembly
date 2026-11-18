@@ -813,16 +813,15 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 0,
-                  "currentEquation": "0"
+                  "ioValue": -6
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 117.25
+                  "ioValue": 124.65
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 42.3
+                  "ioValue": 30.8
                 }
               ]
             },
@@ -1057,7 +1056,8 @@
                 },
                 {
                   "name": "Stiffness",
-                  "ioValue": 0.6
+                  "ioValue": 0.6,
+                  "currentEquation": "0.6"
                 },
                 {
                   "name": "Flip Start",
@@ -1122,7 +1122,7 @@
                   "type": "edgeselect",
                   "options": [],
                   "selectedEdgeData": {
-                    "1": [
+                    "0": [
                       3
                     ]
                   }
@@ -1418,16 +1418,15 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 0,
-                  "currentEquation": "0"
+                  "ioValue": 6
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -117.25
+                  "ioValue": -124.65
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 42.3
+                  "ioValue": 30.8
                 }
               ]
             },
@@ -1662,8 +1661,7 @@
                 },
                 {
                   "name": "Stiffness",
-                  "ioValue": 0.5,
-                  "currentEquation": "0.5"
+                  "ioValue": 0.6
                 },
                 {
                   "name": "Flip Start",
@@ -1704,7 +1702,7 @@
                     },
                     {
                       "name": "stiffness",
-                      "ioValue": 0.5
+                      "ioValue": 0.6
                     },
                     {
                       "name": "flipStart",
@@ -1728,7 +1726,7 @@
                   "type": "edgeselect",
                   "options": [],
                   "selectedEdgeData": {
-                    "3": [
+                    "1": [
                       3
                     ]
                   }
@@ -1957,30 +1955,6 @@
         }
       ],
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.9,
-      "y": 0.95,
-      "uniqueID": "id-14822",
-      "ioValues": [
-        {
-          "name": "makeDisjoint",
-          "ioValue": false
-        },
-        {
-          "name": "Shape 1",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Shape2",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Shape3",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ]
     },
     {
       "atomType": "Output",
@@ -3051,7 +3025,7 @@
                   "x": 0.45,
                   "y": 0.85,
                   "uniqueID": "id-14429",
-                  "name": "Stepper Cable Plug",
+                  "name": "Motor Cable Exit",
                   "topLevel": false,
                   "allAtoms": [
                     {
@@ -3065,121 +3039,6 @@
                           "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ]
-                    },
-                    {
-                      "atomType": "Molecule",
-                      "x": 0.3,
-                      "y": 0.3,
-                      "uniqueID": "id-14433",
-                      "name": "Plug Body",
-                      "topLevel": false,
-                      "allAtoms": [
-                        {
-                          "atomType": "Output",
-                          "x": 0.98,
-                          "y": 0.5,
-                          "uniqueID": "id-14435",
-                          "ioValues": [
-                            {
-                              "name": "number or geometry",
-                              "ioValue": "__GEOMETRY_INPUT__"
-                            }
-                          ]
-                        },
-                        {
-                          "atomType": "Rectangle",
-                          "x": 0.15,
-                          "y": 0.5,
-                          "uniqueID": "id-14437",
-                          "ioValues": [
-                            {
-                              "name": "x length",
-                              "ioValue": 13
-                            },
-                            {
-                              "name": "y length",
-                              "ioValue": 6
-                            }
-                          ]
-                        },
-                        {
-                          "atomType": "Extrude",
-                          "x": 0.35,
-                          "y": 0.5,
-                          "uniqueID": "id-14441",
-                          "ioValues": [
-                            {
-                              "name": "geometry",
-                              "ioValue": "__GEOMETRY_INPUT__"
-                            },
-                            {
-                              "name": "height",
-                              "ioValue": 6
-                            }
-                          ]
-                        },
-                        {
-                          "atomType": "Move",
-                          "x": 0.55,
-                          "y": 0.5,
-                          "uniqueID": "id-14445",
-                          "ioValues": [
-                            {
-                              "name": "geometry",
-                              "ioValue": "__GEOMETRY_INPUT__"
-                            },
-                            {
-                              "name": "xDist",
-                              "ioValue": 0,
-                              "currentEquation": "0"
-                            },
-                            {
-                              "name": "yDist",
-                              "ioValue": 115.5
-                            },
-                            {
-                              "name": "zDist",
-                              "ioValue": 34.5
-                            }
-                          ]
-                        },
-                        {
-                          "atomType": "Color",
-                          "x": 0.75,
-                          "y": 0.5,
-                          "uniqueID": "id-14451",
-                          "ioValues": [
-                            {
-                              "name": "geometry",
-                              "ioValue": "__GEOMETRY_INPUT__"
-                            }
-                          ],
-                          "selectedColor": "White"
-                        }
-                      ],
-                      "allConnectors": [
-                        {
-                          "ap2Name": "geometry",
-                          "ap1ID": "id-14437",
-                          "ap2ID": "id-14441"
-                        },
-                        {
-                          "ap2Name": "geometry",
-                          "ap1ID": "id-14441",
-                          "ap2ID": "id-14445"
-                        },
-                        {
-                          "ap2Name": "geometry",
-                          "ap1ID": "id-14445",
-                          "ap2ID": "id-14451"
-                        },
-                        {
-                          "ap2Name": "number or geometry",
-                          "ap1ID": "id-14451",
-                          "ap2ID": "id-14435"
-                        }
-                      ],
-                      "fileTypeVersion": 1
                     },
                     {
                       "atomType": "Molecule",
@@ -3225,7 +3084,7 @@
                             },
                             {
                               "name": "height",
-                              "ioValue": 2
+                              "ioValue": 17.5
                             }
                           ]
                         },
@@ -3265,16 +3124,15 @@
                             },
                             {
                               "name": "xDist",
-                              "ioValue": 0,
-                              "currentEquation": "0"
+                              "ioValue": -6
                             },
                             {
                               "name": "yDist",
-                              "ioValue": 115.5
+                              "ioValue": 122.9
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 40.5
+                              "ioValue": 13.5
                             }
                           ]
                         },
@@ -3338,10 +3196,6 @@
                         {
                           "name": "Shape2",
                           "ioValue": "__GEOMETRY_INPUT__"
-                        },
-                        {
-                          "name": "Shape3",
-                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ]
                     },
@@ -3363,11 +3217,6 @@
                     }
                   ],
                   "allConnectors": [
-                    {
-                      "ap2Name": "Shape 1",
-                      "ap1ID": "id-14433",
-                      "ap2ID": "id-14480"
-                    },
                     {
                       "ap2Name": "Shape2",
                       "ap1ID": "id-14454",
@@ -4458,11 +4307,11 @@
                             },
                             {
                               "name": "yDist",
-                              "ioValue": 15.5
+                              "ioValue": 24.15
                             },
                             {
                               "name": "zDist",
-                              "ioValue": 22.5
+                              "ioValue": 1.5
                             }
                           ]
                         },
@@ -7678,7 +7527,7 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ],
-      "readMeText": "# Maslow 4.1 Assembly\n\nA complete 3D assembly of the [Maslow 4.1](https://www.maslowcnc.com) CNC router, built to show how the machine goes together and what every part is. The printed and molded parts are the official STEP files from [MaslowCNC/Maslow4](https://github.com/MaslowCNC/Maslow4), loaded unmodified straight from that repository.\n\n## How the project is organized\n\n- **Sled Assembly**: the sled, the acrylic dust cover, the 2.5 in dust hose adapter, the two Z axis stepper motors with their lead screws and cable plugs, and the two linear rod towers (linear rod, rod clamp, support riser and riser top). The other dust hose adapter sizes are in *Dust Hose Adapter Options*.\n- **Router Assembly**: the DeWalt DWP611 router held by two Router Clamps (each with its clamp wedge), the four uprights (two Inner Posts each, with linear bearings riding on the rods), the stack of four Arms, the Controller and the Arm Cables. The Controller is the PCB holder, the 84 mm JST-XH 5 Axis Control Board (its connectors, and the ESP32 module underneath), the cable plugs in its connectors, the cooling fan and the PCB cover, which sits on the board. Change the Move at the end of this molecule to raise or lower the router along the Z axis.\n- **Arm** (used four times): two Arm Halves around the Belt and Spool, the drive motor with its leads, the encoder board and its cable plug, drive and idler gears, the two belt rollers (one carries the encoder magnet), the belt guard, the belt and the two-piece belt end. The arms are stacked in the order shown in the assembly guide.\n- **Power Supply**, with the gland its DC cable leaves through.\n- **Power Cable** and **Z Motor Cables**: the cables that run from the router down to the power supply and the Z steppers.\n\n## Wiring\n\nEvery cable is a [Wire_Between_Points](https://github.com/BarbourSmith/Wire_Between_Points) molecule: a round wire swept along a smooth curve from one circular edge to another, as thick as the circle it starts from.\n\n- **Arm Cables**: each arm has an encoder cable from the JST-XH plug on its encoder board to a 5-pin encoder socket, and a red and a black wire from the top of its motor to a 2-pin motor socket.\n- **Power Cable**: the power supply's DC cable to the XT60 socket.\n- **Z Motor Cables**: each Z stepper's cable to its 4-pin header near the middle of the board. The front stepper sits under the dust hose adapter, so its cable passes through it.\n\nThe connector positions on the control board come from its Gerber files in [MaslowCNC/Boards](https://github.com/MaslowCNC/Boards). Each cable's ends are picked with *selected.EdgesByShape*: the tiny cube placed by the Move atom beside each picker marks the circular edge (the rim of a cable stub) the wire starts or ends at. Move the cube to re-route a cable, or remove the picker and use **Select Edges** on the wire's input to pick the edge by hand. Stiffness, Flip Start and Flip End on each wire shape its curve.\n\n## Downloads\n\nEvery part that comes from the Maslow4 repository has an Export atom, so in Run mode each one can be downloaded as a STEP file (Arm, Belt End, Belt Guard, Belt Roller, Clamp, Clamp Wedge, Dust Cover, all seven Dust Hose adapters, Inner Post, Linear Rods Clamp, PCB Cover, PCB Holder, Post Support, Post Top, Sled and Spool).\n\nMotors, gears, bearings, rods, circuit boards, connectors, cables, the fan, the router and the M3 fasteners are simplified stand-ins, not manufacturer models.\n\n## Bill of materials\n\nEach purchased part has a BOM tag that links to its page on [shop.maslowcnc.com](https://shop.maslowcnc.com). Parts sold in bags or packs are priced per piece. All of the nuts and bolts come in the Hardware Bag. A DeWalt DWP611 router (D26200 in 240 V regions) is needed but is not included in the kit.\n\n## Building one\n\nStep-by-step instructions are in the [Maslow assembly guide](https://www.maslowcnc.com/assembly-guide). The CAD files are released under the CC BY-SA 4.0 license.",
+      "readMeText": "# Maslow 4.1 Assembly\n\nA complete 3D assembly of the [Maslow 4.1](https://www.maslowcnc.com) CNC router, built to show how the machine goes together and what every part is. The printed and molded parts are the official STEP files from [MaslowCNC/Maslow4](https://github.com/MaslowCNC/Maslow4), loaded unmodified straight from that repository.\n\n## How the project is organized\n\n- **Sled Assembly**: the sled, the acrylic dust cover, the 2.5 in dust hose adapter, the two Z axis stepper motors with their lead screws and built-in cables, and the two linear rod towers (linear rod, rod clamp, support riser and riser top). The other dust hose adapter sizes are in *Dust Hose Adapter Options*.\n- **Router Assembly**: the DeWalt DWP611 router held by two Router Clamps (each with its clamp wedge), the four uprights (two Inner Posts each, with linear bearings riding on the rods), the stack of four Arms, the Controller and the Arm Cables. The Controller is the PCB holder, the 84 mm JST-XH 5 Axis Control Board (its connectors, and the ESP32 module underneath), the cable plugs in its connectors, the cooling fan and the PCB cover, which sits on the board. Change the Move at the end of this molecule to raise or lower the router along the Z axis.\n- **Arm** (used four times): two Arm Halves around the Belt and Spool, the drive motor with its leads, the encoder board and its cable plug, drive and idler gears, the two belt rollers (one carries the encoder magnet), the belt guard, the belt and the two-piece belt end. The arms are stacked in the order shown in the assembly guide.\n- **Power Supply**, with the gland its DC cable leaves through.\n- **Power Cable** and **Z Motor Cables**: the cables that run from the router down to the power supply and the Z steppers.\n\n## Wiring\n\nEvery cable is a [Wire_Between_Points](https://github.com/BarbourSmith/Wire_Between_Points) molecule: a round wire swept along a smooth curve from one circular edge to another, as thick as the circle it starts from.\n\n- **Arm Cables**: each arm has an encoder cable from the JST-XH plug on its encoder board to a 5-pin encoder socket, and a red and a black wire from the top of its motor to a 2-pin motor socket.\n- **Power Cable**: the power supply's DC cable to the XT60 socket.\n- **Z Motor Cables**: each Z stepper's cable is built into the motor. It leaves the side of the motor, runs straight up beside it, and plugs into a 4-pin JST-PH stepper socket at the edge of the board (U11 and U8). The two 4-pin XH headers in the middle of the board are the AUX and serial ports.\n\nThe connector positions on the control board come from its Gerber files and schematic in [MaslowCNC/Boards](https://github.com/MaslowCNC/Boards). Each cable's ends are picked with *selected.EdgesByShape*: the tiny cube placed by the Move atom beside each picker marks the circular edge (the rim of a cable stub) the wire starts or ends at. Move the cube to re-route a cable, or remove the picker and use **Select Edges** on the wire's input to pick the edge by hand. Stiffness, Flip Start and Flip End on each wire shape its curve.\n\n## Downloads\n\nEvery part that comes from the Maslow4 repository has an Export atom, so in Run mode each one can be downloaded as a STEP file (Arm, Belt End, Belt Guard, Belt Roller, Clamp, Clamp Wedge, Dust Cover, all seven Dust Hose adapters, Inner Post, Linear Rods Clamp, PCB Cover, PCB Holder, Post Support, Post Top, Sled and Spool).\n\nMotors, gears, bearings, rods, circuit boards, connectors, cables, the fan, the router and the M3 fasteners are simplified stand-ins, not manufacturer models.\n\n## Bill of materials\n\nEach purchased part has a BOM tag that links to its page on [shop.maslowcnc.com](https://shop.maslowcnc.com). Parts sold in bags or packs are priced per piece. All of the nuts and bolts come in the Hardware Bag. A DeWalt DWP611 router (D26200 in 240 V regions) is needed but is not included in the kit.\n\n## Building one\n\nStep-by-step instructions are in the [Maslow assembly guide](https://www.maslowcnc.com/assembly-guide). The CAD files are released under the CC BY-SA 4.0 license.",
       "global": true
     },
     {
@@ -30928,11 +30777,6 @@
       "ap2ID": "id-1791"
     },
     {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-14495",
-      "ap2ID": "id-14822"
-    },
-    {
       "ap2Name": "Shape5",
       "ap1ID": "id-14495",
       "ap2ID": "id-1791"
@@ -30946,11 +30790,6 @@
       "ap2Name": "Sled",
       "ap1ID": "id-323",
       "ap2ID": "id-14495"
-    },
-    {
-      "ap2Name": "Shape2",
-      "ap1ID": "id-323",
-      "ap2ID": "id-14822"
     },
     {
       "ap2Name": "Shape 1",
