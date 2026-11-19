@@ -2003,6 +2003,40 @@
       ]
     },
     {
+      "atomType": "Export",
+      "x": 0.8089,
+      "y": 0.7549,
+      "uniqueID": "id-28759",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "GLB",
+          "currentEquation": "GLB"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "STL Tolerance",
+          "ioValue": 0.1
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Maslow_4_Assembly",
+          "currentEquation": "Maslow_4_Assembly"
+        }
+      ],
+      "type": "GLB",
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Maslow_4_Assembly"
+    },
+    {
       "atomType": "Molecule",
       "x": 0.2116,
       "y": 0.3099,
@@ -18321,7 +18355,7 @@
                             },
                             {
                               "name": "Stiffness",
-                              "ioValue": 0.45
+                              "ioValue": 0.3
                             },
                             {
                               "name": "Flip Start",
@@ -18362,7 +18396,7 @@
                                 },
                                 {
                                   "name": "stiffness",
-                                  "ioValue": 0.45
+                                  "ioValue": 0.3
                                 },
                                 {
                                   "name": "flipStart",
@@ -18901,7 +18935,7 @@
                             },
                             {
                               "name": "Stiffness",
-                              "ioValue": 0.45
+                              "ioValue": 0.3
                             },
                             {
                               "name": "Flip Start",
@@ -18942,7 +18976,7 @@
                                 },
                                 {
                                   "name": "stiffness",
-                                  "ioValue": 0.45
+                                  "ioValue": 0.3
                                 },
                                 {
                                   "name": "flipStart",
@@ -20757,7 +20791,7 @@
                             },
                             {
                               "name": "Stiffness",
-                              "ioValue": 0.5
+                              "ioValue": 0.3
                             },
                             {
                               "name": "Flip Start",
@@ -20798,7 +20832,7 @@
                                 },
                                 {
                                   "name": "stiffness",
-                                  "ioValue": 0.5
+                                  "ioValue": 0.3
                                 },
                                 {
                                   "name": "flipStart",
@@ -21337,7 +21371,7 @@
                             },
                             {
                               "name": "Stiffness",
-                              "ioValue": 0.5
+                              "ioValue": 0.3
                             },
                             {
                               "name": "Flip Start",
@@ -21378,7 +21412,7 @@
                                 },
                                 {
                                   "name": "stiffness",
-                                  "ioValue": 0.5
+                                  "ioValue": 0.3
                                 },
                                 {
                                   "name": "flipStart",
@@ -23193,7 +23227,7 @@
                             },
                             {
                               "name": "Stiffness",
-                              "ioValue": 0.5
+                              "ioValue": 0.3
                             },
                             {
                               "name": "Flip Start",
@@ -23234,7 +23268,7 @@
                                 },
                                 {
                                   "name": "stiffness",
-                                  "ioValue": 0.5
+                                  "ioValue": 0.3
                                 },
                                 {
                                   "name": "flipStart",
@@ -23773,7 +23807,7 @@
                             },
                             {
                               "name": "Stiffness",
-                              "ioValue": 0.5
+                              "ioValue": 0.3
                             },
                             {
                               "name": "Flip Start",
@@ -23814,7 +23848,7 @@
                                 },
                                 {
                                   "name": "stiffness",
-                                  "ioValue": 0.5
+                                  "ioValue": 0.3
                                 },
                                 {
                                   "name": "flipStart",
@@ -25629,7 +25663,7 @@
                             },
                             {
                               "name": "Stiffness",
-                              "ioValue": 0.5
+                              "ioValue": 0.3
                             },
                             {
                               "name": "Flip Start",
@@ -25670,7 +25704,7 @@
                                 },
                                 {
                                   "name": "stiffness",
-                                  "ioValue": 0.5
+                                  "ioValue": 0.3
                                 },
                                 {
                                   "name": "flipStart",
@@ -26209,7 +26243,7 @@
                             },
                             {
                               "name": "Stiffness",
-                              "ioValue": 0.5
+                              "ioValue": 0.3
                             },
                             {
                               "name": "Flip Start",
@@ -26250,7 +26284,7 @@
                                 },
                                 {
                                   "name": "stiffness",
-                                  "ioValue": 0.5
+                                  "ioValue": 0.3
                                 },
                                 {
                                   "name": "flipStart",
@@ -36585,6 +36619,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-1791",
       "ap2ID": "id-165"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1791",
+      "ap2ID": "id-28759"
     },
     {
       "ap2Name": "Sled",
